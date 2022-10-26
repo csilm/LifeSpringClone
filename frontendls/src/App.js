@@ -2,13 +2,13 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from './components/Footer/Footer';
 import HPContent from './components/Homepage/HPContent';
+import Homepage from './components/Homepage/Homepage';
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HPContent />}/>
-        <Route path="/footer" element={<Footer />}/>
+        <Route path="/" element={<Homepage/>}/>
       </Routes>
     </BrowserRouter>
     </div>

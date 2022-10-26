@@ -73,6 +73,8 @@ const Footer = () => {
                                     <a className='m-auto p-3 text-red-700 text-xl' target="blank" href={'https://www.youtube.com/channel/UCIhnNMshTmGQmkJaBLGe5aw'}> <BsYoutube /> </a>
                                     <a className='m-auto p-3 hover:text-green-600 text-xl' target="blank" href={'https://www.instagram.com/lifespringinstitute/'}> <BsInstagram /> </a>
                                     <a className='m-auto p-3 text-blue-400 text-xl' target="blank" href={"https://www.linkedin.com/company/lifespring/"}> <FaLinkedinIn /> </a>
+
+                                    
                                 </div>
                             </div>
                         </div>
