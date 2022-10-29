@@ -1,0 +1,24 @@
+.animation
+{
+   animation-name: anim;
+   animation-timing-function: ease-in;
+   animation-iteration-count: 1;
+   animation-duration: 1s;
+ 
+}
+@keyframes anim {
+  0%
+  {
+    width: 19.5rem;
+    height: auto;
+    opacity: 0;
+  }
+  100%
+  {
+    width: 20rem;
+    height: auto;
+    opacity: 1;
+  }
+   
+    
+}
