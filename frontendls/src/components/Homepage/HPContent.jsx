@@ -11,16 +11,6 @@ import Image7 from "../static/img/HPImage/afroza-jesmin.jpg"
 import Image8 from "../static/img/HPImage/ashfia.jpg"
 import Image9 from "../static/img/HPImage/azharul.jpg"
 import Image10 from "../static/img/HPImage/Fariduzzaman.jpg"
-import Image11 from "../static/img/HPImage/golam-mostafa.jpg"
-import Image12 from "../static/img/HPImage/mahmud-asif.jpg"
-import Image13 from "../static/img/HPImage/mithila.jpg"
-import Image14 from "../static/img/HPImage/munmum-jahan.jpg"
-import Image15 from "../static/img/HPImage/Nafia-Farzana.jpg"
-import Image16 from "../static/img/HPImage/sajib-kumar.jpg"
-import Image17 from "../static/img/HPImage/sajib.jpg"
-import Image18 from "../static/img/HPImage/sayedul-ashraf.jpg"
-import Image19 from '../static/img/HPImage/Shusama.jpg'
-import Image20 from "../static/img/HPImage/tumpa.jpeg"
 
 const HPContent = () => {
     const cardlist = []
@@ -87,6 +77,7 @@ const HPContent = () => {
             degree: "M.S. Counselling Psychology (DU)"
         },
         
+        
     ]
     informations.forEach((information) => {
         cardlist.push(
@@ -100,11 +91,11 @@ const HPContent = () => {
                             <p className="prof-cat text-teal-800 bg-teal-200"> {information.prof} </p>
                         </div>
                         <div className='mt-2 text-left'>
-                            <a className="mb-3 font-mono font-bold text-md text-gray-500 hover:text-green-800"> {information.name} </a>
+                            <a href={'/'} className="mb-3 font-mono font-bold text-md text-gray-500 hover:text-green-800"> {information.name} </a>
                             <p className="mb-3 font-sanstext-md text-gray-500"> {information.degree} </p>
                         </div>
                         <div className='text-left'>
-                            <a className="text-sm text-lime-700 font-bold hover:text-black"> Book an appointment </a>
+                            <a href={'/'} className="text-sm text-lime-700 font-bold hover:text-black"> Book an appointment </a>
                         </div>
                     </div>
                 </div>
