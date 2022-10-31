@@ -1,0 +1,16 @@
+.slick-dots li button::before{
+    content: "━";
+    font-size: 30px;
+    font-weight: 900;
+}
+.slick-dots li button{
+    width: 30px;
+}
+.slick-dots li{
+    width: 30px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  background-color: rgb(153,204,51);
+}

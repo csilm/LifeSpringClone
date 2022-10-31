@@ -72,7 +72,7 @@
 }
 .dropdown:hover .ub
 {
- width: 100%;
+
  height: 2.5px;
  background-color:blue;
  animation-name: anim2;
@@ -80,11 +80,10 @@
  animation-iteration-count: 1;
  animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
  border-radius: 10px;
-    
 }
 .btn:hover .ub1
 {
- width: 100%;
+
  height: 2.5px;
  background-color:blue;
  animation-name: anim2;

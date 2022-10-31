@@ -7,6 +7,8 @@ import { Rotate as Hamburger } from 'hamburger-react'
 import SmallScreen from './SmallScreen'
 import { useState } from 'react'
 import Logo from '../static/img/lifespring-footer-logo.png'
+import { IoIosArrowDown } from 'react-icons/io'
+
 
 
 
@@ -32,11 +34,11 @@ const Navbar = () => {
                 </div>
                 <div className='lg:w-1/2 w-full flex justify-center items-center flex-row flex-wrap lg:p-0 p-[.1rem]'>
                     <div className='text-sm text-white cursor-pointer hover:text-yellow-400 trns font-semibold px-2 bder'>Log in </div>
-                    <div className='ttext cursor-pointer text-white hover:text-yellow-400 trns font-semibold px-3 bder'>Register</div>
-                    <div className='ttext cursor-pointer text-white hover:text-yellow-400 trns font-semibold px-3 '><a className='' target="blank" href={'https://www.facebook.com/lifespringinstitute/'}> <BsFacebook /> </a></div>
-                    <div className='ttext cursor-pointer text-white hover:text-yellow-400 trns font-semibold px-3 '><a className='' target="blank" href={'https://www.youtube.com/channel/UCIhnNMshTmGQmkJaBLGe5aw'}> <BsYoutube /> </a></div>
-                    <div className='ttext cursor-pointer text-white hover:text-yellow-400 trns font-semibold px-3 '><a className='' target="blank" href={'https://www.instagram.com/lifespringinstitute/'}> <BsInstagram /> </a></div>
-                    <div className='ttext cursor-pointer text-white hover:text-yellow-400 trns font-semibold px-3 '><a className='' target="blank" href={"https://www.linkedin.com/company/lifespring/"}> <FaLinkedinIn /> </a></div>
+                    <div className='text cursor-pointer text-white hover:text-yellow-400 trns font-semibold px-3 bder'>Register</div>
+                    <div className='text cursor-pointer text-white hover:text-yellow-400 trns font-semibold px-3 '><a className='' target="blank" href={'https://www.facebook.com/lifespringinstitute/'}> <BsFacebook /> </a></div>
+                    <div className='text cursor-pointer text-white hover:text-yellow-400 trns font-semibold px-3 '><a className='' target="blank" href={'https://www.youtube.com/channel/UCIhnNMshTmGQmkJaBLGe5aw'}> <BsYoutube /> </a></div>
+                    <div className='text cursor-pointer text-white hover:text-yellow-400 trns font-semibold px-3 '><a className='' target="blank" href={'https://www.instagram.com/lifespringinstitute/'}> <BsInstagram /> </a></div>
+                    <div className='text cursor-pointer text-white hover:text-yellow-400 trns font-semibold px-3 '><a className='' target="blank" href={"https://www.linkedin.com/company/lifespring/"}> <FaLinkedinIn /> </a></div>
 
                 </div>
             </div>
@@ -64,8 +66,8 @@ const Navbar = () => {
                         <div>
                             <ul className="w-full">
                                 <li className="dropdown inline px-4 text-black hover:text-blue-700 cursor-pointer font-semibold text-base tracking-wide">
-                                    <button className='btn'>Professionals <div className='ub'></div></button>
-                                    <div className="dropdown-menu z-10 absolute hidden h-auto  pt-4">
+                                    <button className='btn'> Professionals <div className='ub'></div></button>
+                                    <div className="dropdown-menu z-10 absolute hidden  h-auto  pt-4">
                                         <ul className="block w-[17rem] ml-[5rem] sty bg-white px-10 shadow-lg rounded-sm py-2 justify-start items-start">
                                             <li className=" py-2.5"><a className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">All Department</a></li>
                                             <li className=" py-2.5"><a className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Psychiatris</a></li>
@@ -99,7 +101,7 @@ const Navbar = () => {
                                 <li className="dropdown inline px-4 text-black hover:text-blue-700 cursor-pointer font-semibold text-base tracking-wide">
                                     <button className='btn'>Testimonials<div className='ub'></div></button>
                                     <div className="dropdown-menu absolute hidden h-auto pt-4">
-                                        <ul className="block w-[17rem] mt-0 sty bg-white px-10 shadow-lg rounded-sm  py-2 justify-start items-start ml-[25rem]">
+                                        <ul className="block w-[17rem] mt-0 sty bg-white px-10 shadow-lg rounded-sm  py-2 justify-start items-start ml-[27rem]">
                                             <li className="py-2.5"><a className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Clients Feedback</a></li>
                                             <li className="py-2.5"><a className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Purify Class Review</a></li>
                                         </ul>
