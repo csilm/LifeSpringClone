@@ -1,12 +1,12 @@
 .animation
 {
-   animation-name: anim;
+   animation-name: animff;
    animation-timing-function: ease-in;
    animation-iteration-count: 1;
    animation-duration: 1s;
  
 }
-@keyframes anim {
+@keyframes animff {
   0%
   {
     width: 17.5rem;
