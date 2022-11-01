@@ -8,6 +8,7 @@ import SmallScreen from './SmallScreen'
 import { useState } from 'react'
 import Logo from '../static/img/lifespring-footer-logo.png'
 import { IoIosArrowDown } from 'react-icons/io'
+import Prof from '../Proff/Prof'
 
 
 
@@ -24,6 +25,7 @@ const Navbar = () => {
     }
     window.addEventListener('scroll', ChangeColor)
     const [click, setClick] = useState(false);
+  
     return (
         <div className={color ? 'navDropFromUpAnim w-full z-10 h-auto flex justify-center items-center flex-wrap flex-col fixed top-0 ' : 'w-full h-auto flex justify-center items-center flex-wrap flex-col'}>
             <div className='w-full h-auto flex justify-center items-center flex-wrap p-2 ' style={{backgroundColor : "#1C6732"}}>
@@ -69,7 +71,7 @@ const Navbar = () => {
                                     <button className='btn'> Professionals <div className='ub'></div></button>
                                     <div className="dropdown-menu z-10 absolute hidden  h-auto  pt-4">
                                         <ul className="block w-[17rem] ml-[5rem] sty bg-white px-10 shadow-lg rounded-sm py-2 justify-start items-start">
-                                            <li className=" py-2.5"><a className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">All Department</a></li>
+                                            <li onClick={()=>{}} className=" py-2.5"><a className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">All Department</a></li>
                                             <li className=" py-2.5"><a className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Psychiatris</a></li>
                                             <li className=" py-2.5"><a className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Psychologist</a></li>
                                             <li className=" py-2.5"><a className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Counselor</a></li>
@@ -117,7 +119,9 @@ const Navbar = () => {
 
             </div>
 
-
+          <div className='w-full h-auto'>
+            
+          </div>
 
         </div>
     )
