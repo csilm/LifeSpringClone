@@ -10,10 +10,10 @@ const SmallScreen = () => {
 
               <ul className="w-full duration-500">
                <li className="dropdown text-white hover:text-blue-400 cursor-pointer font-semibold text-base py-5">
-                  <button className=' w-1/2 flex flex-col justify-start items-start px-5'>Professionals <div className='ub'></div></button>
+                  <button href = {"/allProffesionals"} className=' w-1/2 flex flex-col justify-start items-start px-5'>Professionals <div className='ub'></div></button>
                    <div className="dropdown-menu hidden h-auto duration-75 pt-4">
                        <ul className="block w-[20rem] rounded-sm py-2 ">
-                           <li className=" flex justify-start items-start px-5 py-2.5"><a className=" block text-sm text-white font-bold hover:text-green-600 cursor-pointer">All Department</a></li>
+                           <li className=" flex justify-start items-start px-5 py-2.5"><a href={'/allProffesionals'} className=" block text-sm text-white font-bold hover:text-green-600 cursor-pointer">All Department</a></li>
                            <li className=" flex justify-start items-start px-5 py-2.5"><a className=" block text-sm text-white font-bold hover:text-green-600 cursor-pointer">Psychiatris</a></li>
                            <li className=" flex justify-start items-start px-5 py-2.5"><a className=" block text-sm text-white font-bold hover:text-green-600 cursor-pointer">Psychologist</a></li>
                            <li className=" flex justify-start items-start px-5 py-2.5"><a className=" block text-sm text-white font-bold hover:text-green-600 cursor-pointer">Counselor</a></li>

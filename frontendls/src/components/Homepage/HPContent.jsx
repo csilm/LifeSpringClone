@@ -103,7 +103,7 @@ const HPContent = () => {
         );
     });
     const settings = {
-        className: "center",
+        className: "center hpContentSlide",
         infinite: true,
         centerPadding: "10px",
         slidesToShow: 5,

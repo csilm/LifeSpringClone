@@ -2,6 +2,7 @@ import React from 'react'
 import "../static/css/hpcontent.css"
 import './style.css'
 
+<<<<<<< HEAD
 const Card = ({ img, prof, name, degree }) => {
     return (
         <div className='px-1 lg:w-[20rem] mx-3 animation'>
@@ -12,6 +13,14 @@ const Card = ({ img, prof, name, degree }) => {
                 <div className="py-5">
                     <div className='my-1 text-left'>
                         <p className="prof-cat text-teal-800 bg-teal-200"> {prof} </p>
+=======
+const Card = ({img,prof,name,degree}) => {
+  return (
+           <div className='px-1 lg:w-[18rem] mx-3 my-1 animation'>
+                <div className="bg-white max-w-sm">
+                    <div className='overflow-hidden rounded-lg'>
+                        <img className="hover:scale-125 ease-in-out duration-500" src={img} alt="" />
+>>>>>>> bd12f5076242245c276e7654b431c9cdfb46e09b
                     </div>
                     <div className='mt-2 text-left'>
                         <a className="mb-3 font-mono font-bold text-md text-gray-500 hover:text-green-800"> {name} </a>

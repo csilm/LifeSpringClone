@@ -50,7 +50,7 @@ const Navbar = () => {
 
             <div className={color ? 'w-full h-[5rem] bg-white' : 'w-full h-[5rem] bg-transparent'}>
                 <div className=' w-full flex flex-row justify-between items-center p-2'>
-                    <div className=' w-1/5 h-4/5 lg:pl-28 flex flex-row'>
+                    <div className=' lg:w-1/5 h-4/5 lg:pl-28 flex flex-row'>
                         <img className='w-[11rem]' src={Logo} alt="" />
                     </div>
                     <div className='lg:hidden block trans'>
@@ -71,7 +71,11 @@ const Navbar = () => {
                                     <button className='btn'> Professionals <div className='ub'></div></button>
                                     <div className="dropdown-menu z-10 absolute hidden  h-auto  pt-4">
                                         <ul className="block w-[17rem] ml-[5rem] sty bg-white px-10 shadow-lg rounded-sm py-2 justify-start items-start">
+<<<<<<< HEAD
                                             <li onClick={()=>{}} className=" py-2.5"><a className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">All Department</a></li>
+=======
+                                            <li className=" py-2.5"><a href={"/allProffesionals"} className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">All Department</a></li>
+>>>>>>> bd12f5076242245c276e7654b431c9cdfb46e09b
                                             <li className=" py-2.5"><a className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Psychiatris</a></li>
                                             <li className=" py-2.5"><a className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Psychologist</a></li>
                                             <li className=" py-2.5"><a className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Counselor</a></li>

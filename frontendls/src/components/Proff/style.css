@@ -9,13 +9,13 @@
 @keyframes animff {
   0%
   {
-    width: 19.5rem;
+    width: 17.5rem;
     height: auto;
     opacity: 0;
   }
   100%
   {
-    width: 20rem;
+    width: 18rem;
     height: auto;
     opacity: 1;
   }
