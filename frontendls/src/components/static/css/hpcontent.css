@@ -1,5 +1,5 @@
-.slick-prev:before,
-.slick-next:before {
+.hpContentSlide .slick-prev:before,
+.hpContentSlide .slick-next:before {
   background-color: black;
   border-radius: 60%;
   font-size: 25px;

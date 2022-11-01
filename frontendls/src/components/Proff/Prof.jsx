@@ -2,13 +2,14 @@ import React,{useState}  from 'react'
 import "../static/css/hpcontent.css"
 import Info from './Info.json'
 import Card from './Card'
+import Navbar from '../Navbar/Navbar'
 
 const Prof = () => {
   const [active,setactive]=useState("ALL");
 
   return (
     <div>
-     
+     <Navbar/>
      <div className='w-full h-auto bg-slate-100 py-4 text-start px-10 text-md font-mono text-slate-600 font-semibold'>
         <a href="">Home</a> / Professionals
       </div>

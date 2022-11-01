@@ -3,6 +3,7 @@ import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
 import HPContent from './HPContent'
 import ClientsFeedBack from './ClientsFeedBack'
+import HealthBlog from './HealthBlog'
 
 const Homepage = () => {
   return (
@@ -10,6 +11,7 @@ const Homepage = () => {
       <Navbar />
       <HPContent/>
       <ClientsFeedBack/>
+      <HealthBlog/>
       <Footer/>
     </div>
   )

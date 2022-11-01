@@ -61,17 +61,18 @@ const ClientsFeedBack = () => {
                         <h2 className='mt-2 text-black font-semibold text-lg'> {information.clientsOf} </h2>
                     </div>
                     <div className="cmnt mb-5">
-                        <p className='text-black font-semibold font-sans text-md text-center leading-10'>
+                        <p className='text-black font-semibold font-sans text-md lg:text-lg text-center space-x-2 leading-6 lg:leading-10'>
                             "{information.comment}" </p>
                     </div>
                     <div className="rest">
-                        <h3 className="name font-bold"> {information.name} <span className="prof text-slate-400 ml-3"> {information.prof} </span> </h3>
+                        <h3 className="name font-bold leading-6"> {information.name} <span className="prof text-slate-400 ml-3"> {information.prof} </span> </h3>
                     </div>
                 </div>
             </div>
         );
     });
     const settings = {
+        className: "clientsFeedBack",
         dots: true,
         fade: true,
         infinite: true,
@@ -79,13 +80,12 @@ const ClientsFeedBack = () => {
         slidesToScroll: 1,
         autoplay: true,
         speed: 1000,
-        autoplaySpeed: 3000,
-        cssEase: "linear"
+        autoplaySpeed: 4000,
     };
     return (
         <div className='bg-slate-50'>
             <hr className='my-10' />
-            <div className='mx-10 lg:mx-28 mb-20' id="healthProffessionals">
+            <div className='mx-5 lg:mx-28 mb-20' id="healthProffessionals">
                 <div className="grid grid-cols-2 lg:h-16">
                     <div className="hpTitle text-left lg:text-2xl my-3 font-sans">
                         <h2>Clients<b className='text-green-600'> Feedback</b> </h2>

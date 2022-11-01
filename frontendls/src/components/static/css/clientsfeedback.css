@@ -1,16 +1,17 @@
-.slick-dots li button::before{
+.clientsFeedBack .slick-dots li button::before{
     content: "━";
     font-size: 30px;
     font-weight: 900;
 }
-.slick-dots li button{
+.clientsFeedBack .slick-dots li button{
     width: 30px;
 }
-.slick-dots li{
+.clientsFeedBack .slick-dots li{
     width: 30px;
 }
 
-.slick-prev:before,
-.slick-next:before {
+.clientsFeedBack .slick-prev:before,
+.clientsFeedBack .slick-next:before {
   background-color: rgb(153,204,51);
+  border-radius: 60%;
 }
