@@ -1,19 +1,24 @@
 import React from 'react'
-import Banner from './Banner';
 import Courses from './Courses';
 import Video from './Video';
+import Navbar from '../Navbar/Navbar'
+import HPContent from './HPContent'
+import ClientsFeedBack from './ClientsFeedBack'
+import HealthBlog from './HealthBlog'
+import Banner from '../Homepage/Banner';
+import Footer from '../Footer/Footer';
 const Homepage = () => {
   return (
-    <>
-    {/*<div>
-      Homepage
-      </div>*/}
-      
+    <div>
+      <Navbar />
       <Banner/>
       <Courses />
+      <HPContent/>
+      <ClientsFeedBack/>
+      <HealthBlog/>
       <Video/>
-    </>
+      <Footer/>
+    </div>
   )
 }
-
 export default Homepage

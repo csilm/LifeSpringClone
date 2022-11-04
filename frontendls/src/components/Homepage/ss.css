@@ -1,94 +1,102 @@
-.box{
+.box {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
-.img-video{
+
+.img-video {
+
+  position: absolute;
+
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.video-animation {
+  /*display: inline-block;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  padding: 40px;
+  height: 20px;
+  /*bottom: 60px;*/
+  border-radius: 50%;
+  /*background: #689F38;*/
+  text-align: center;
+  position: absolute;
+
+  transition: 1s all;
+  transform: scale(1);
+  border: 4px solid white;
+
+}
+
+.icon {
   position: absolute;
 }
-    .video-container{    
-        padding: 100px;
-        position: absolute;
-        width: 30px;
-        height: 30px;
-        border-radius: 10px;
-        /*background-color: blue;*/
-    }
-    .btn{
-        display: inline-block;
-        width: 20px;
-        padding: 30px;
-        height: 20px;
-        bottom: 60px;
-        border-radius: 50%;
-        background: #689F38;
-        text-align: center;
-        position:absolute;
-        /*z-index: inherit;*/
-        transition: 1s all;
-        transform: scale(1);
-        border: 0.7px solid white;
-      /*&_icon{
-          width: 20px;
-          height: 20px;
-          z-index: 10;
-      }*/
-    }
-    .icon{
-        width: 20px;
-          height: 20px;
-          z-index: 10;
-          top: 10px;
-          left: 10px;
-          position: absolute;
-        
-    }
-    .btn::after{
-        content: '';
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        padding: 30px;
-        border-radius: 50%;
-        position: absolute;
-        border: 0.7px solid white;
-        top: 0px;
-        left: 0px;
-        right: 0px;
-        bottom: 0px;
-        z-index: 0;
-        transform: scale(1);
-        opacity: 40%;
-        animation: 2s ease-in-out infinite waveAlarm;
-      }
-      .btn::before{
-        content: '';
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        padding: 30px;
-        border-radius: 50%;
-        position: absolute;
-        border: 2px solid white;
-        top: 0px;
-        left: 0px;
-        right: 0px;
-        bottom: 0px;
-        z-index: 0;
-        transform: scale(1);
-        opacity: 50%;
-        animation: 2s ease-in-out 0.5s infinite waveAlarm;
-      }
-      .btn:hover{
-        transform: scale(1.1);
-      }  
-    
 
-@keyframes waveAlarm{
-    0%{
-        transform: scale(1);
-        opacity: 40%;
-    }
-    100%{
-        transform: scale(3);
-        opacity: 0;
-    }
+.video-animation::after {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 30px;
+  border-radius: 50%;
+  position: absolute;
+  border: 3px solid white;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  /*z-index: 0;*/
+  transform: scale(1);
+  opacity: 40%;
+  animation: 2s ease-in-out infinite waveAlarm;
+}
+
+.video-animation::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 30px;
+  border-radius: 50%;
+  position: absolute;
+  border: 3px solid white;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  /*z-index: 0;*/
+  transform: scale(1);
+  opacity: 50%;
+  animation: 2s ease-in-out 0.5s infinite waveAlarm;
+}
+
+.video-animation:hover {
+  transform: scale(1.1);
+}
+
+
+@keyframes waveAlarm {
+  0% {
+    transform: scale(1);
+    opacity: 40%;
+  }
+
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
 }

@@ -11,7 +11,7 @@ import { Autoplay } from 'swiper';
 const Banner = () => {
     return (
         <div className='overflow-hidden bg-gray-100'>
-            <hr className='my-10 ' />
+            {/*<hr className='my-10 ' />*/}
             <div className='mx-5'>
                 <Swiper
                     navigation={true} modules={[Navigation]} 
