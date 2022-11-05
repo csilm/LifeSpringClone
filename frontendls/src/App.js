@@ -1,8 +1,8 @@
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import './App.css';
+import Homepage from './components/Homepage/Homepage';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Homepage from "./components/Homepage/Homepage";
 import Prof from "./components/Proff/Prof"
 import ListOfOurServices from "./components/ServicesPages/ListOfOurServices";
 import PsychologicalCounseling from "./components/ServicesPages/PsychologicalCounseling";
@@ -13,6 +13,10 @@ import MentalHealthTest from "./components/ServicesPages/MentalHealthTest";
 function App() {
   return (
     <div className="App">
+      {/*<h1 className="text-3xl font-bold underline">
+      Hello world!
+    </h1>*/}
+    {/*<Homepage/>*/}
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<Homepage />}/>
