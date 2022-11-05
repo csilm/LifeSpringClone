@@ -33,13 +33,13 @@ const SmallScreen = () => {
                </li>
                <div className='w-4/5 ml-[1.2rem] h-[.05rem] bg-black  '></div>
                <li className="dropdown tran text-white hover:text-blue-400 cursor-pointer font-semibold text-base py-5">
-                  <button className=' w-1/3 flex justify-start flex-col items-start px-5'>Services<div className='ub'></div></button>
+                  <button className=' w-1/3 flex justify-start flex-col items-start px-5'><a href={"/listOfServices"}> Services </a><div className='ub'></div></button>
                    <div className="dropdown-menu hidden h-auto trans pt-4">
                        <ul className="block w-[20rem] mt-0 rounded-sm py-2 justify-center items-center">
-                           <li className="flex justify-start items-start px-5 py-2.5"><a className="block text-sm text-white font-bold hover:text-green-600 cursor-pointer">Psychological Counseling</a></li>
-                           <li className="flex justify-start items-start px-5 py-2.5"><a className="block text-sm text-white font-bold hover:text-green-600 cursor-pointer">Corporate Service</a></li>
-                           <li className="flex justify-start items-start px-5 py-2.5"><a className="block text-sm text-white font-bold hover:text-green-600 cursor-pointer">Child Developement</a></li>
-                           <li className="flex justify-start items-start px-5 py-2.5"><a className="block text-sm text-white font-bold hover:text-green-600 cursor-pointer">Free Mental health Test</a></li>
+                           <li className="flex justify-start items-start px-5 py-2.5"><a href={'/psychologicalCounseling'} className="block text-sm text-white font-bold hover:text-green-600 cursor-pointer">Psychological Counseling</a></li>
+                           <li className="flex justify-start items-start px-5 py-2.5"><a href={'/corporateService'} className="block text-sm text-white font-bold hover:text-green-600 cursor-pointer">Corporate Service</a></li>
+                           <li className="flex justify-start items-start px-5 py-2.5"><a href={'/childDevelopment'} className="block text-sm text-white font-bold hover:text-green-600 cursor-pointer">Child Developement</a></li>
+                           <li className="flex justify-start items-start px-5 py-2.5"><a href={'/mentalHealthTest'} className="block text-sm text-white font-bold hover:text-green-600 cursor-pointer">Free Mental health Test</a></li>
                        </ul>
                    </div>
                </li>

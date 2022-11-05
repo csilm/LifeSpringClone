@@ -1,6 +1,6 @@
 import React from 'react'
 import Slider from "react-slick";
-import "../static/css/hpcontent.css"
+import "../static/css/Homepage/hpcontent.css"
 import Image1 from "../static/img/HPImage/yahia-amin.jpg"
 import Image2 from "../static/img/HPImage/sayedul-ashraf.jpg"
 import Image3 from "../static/img/HPImage/aklima.jpg"

@@ -1,7 +1,7 @@
 import React from 'react'
 import { RiDoubleQuotesR } from 'react-icons/ri'
 import Slider from "react-slick";
-import '../static/css/clientsfeedback.css'
+import '../static/css/Homepage/clientsfeedback.css'
 import Image1 from "../static/img/ClientReview/golam.jpg"
 import Image2 from "../static/img/ClientReview/munmun.jpg"
 import Image3 from "../static/img/ClientReview/man2.jpg"

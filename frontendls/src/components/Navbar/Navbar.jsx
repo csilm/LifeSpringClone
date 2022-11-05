@@ -7,7 +7,7 @@ import { Rotate as Hamburger } from 'hamburger-react'
 import SmallScreen from './SmallScreen'
 import { useState } from 'react'
 import Logo from '../static/img/lifespring-footer-logo.png'
-import { IoIosArrowDown } from 'react-icons/io'
+// import { IoIosArrowDown } from 'react-icons/io'
 
 
 
@@ -86,13 +86,13 @@ const Navbar = () => {
                                     </div>
                                 </li>
                                 <li className="dropdown inline px-4 text-black hover:text-blue-700 cursor-pointer font-semibold text-base tracking-wide">
-                                    <button className='btn'>Services <div className='ub'></div></button>
+                                    <button className='btn'> <a href={"/listOfServices"}> Services </a> <div className='ub'></div></button>
                                     <div className="dropdown-menu z-10 absolute hidden h-auto pt-4">
                                         <ul className="block w-[17rem] mt-0 sty bg-white px-10 shadow-lg rounded-sm py-2 justify-start items-start ml-[12rem]">
-                                            <li className="py-2.5"><a className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Psychological Counseling</a></li>
-                                            <li className="py-2.5"><a className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Corporate Service</a></li>
-                                            <li className="py-2.5"><a className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Child Developement</a></li>
-                                            <li className="py-2.5"><a className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Free Mental health Test</a></li>
+                                            <li className="py-2.5"><a href={'/psychologicalCounseling'} className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Psychological Counseling</a></li>
+                                            <li className="py-2.5"><a href={'/corporateService'} className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Corporate Service</a></li>
+                                            <li className="py-2.5"><a href={'/childDevelopment'} className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Child Developement</a></li>
+                                            <li className="py-2.5"><a href={'/mentalHealthTest'} className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Free Mental health Test</a></li>
                                         </ul>
                                     </div>
                                 </li>

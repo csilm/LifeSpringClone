@@ -1,5 +1,5 @@
 import React from 'react'
-import "../static/css/hpcontent.css"
+import "../static/css/Homepage/hpcontent.css"
 import './style.css'
 
 const Card = ({img,prof,name,degree}) => {

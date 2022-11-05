@@ -1,5 +1,5 @@
 import React,{useState}  from 'react'
-import "../static/css/hpcontent.css"
+import "../static/css/Homepage/hpcontent.css"
 import Info from './Info.json'
 import Card from './Card'
 import Navbar from '../Navbar/Navbar'
@@ -11,7 +11,7 @@ const Prof = () => {
     <div>
      <Navbar/>
      <div className='w-full h-auto bg-slate-100 py-4 text-start px-10 text-md font-mono text-slate-600 font-semibold'>
-        <a className='hover:text-black' href="">Home</a> / Professionals
+        <a className='hover:text-black' href={"/"}>Home</a> / Professionals
       </div>
       <div className='w-full h-auto flex flex-col justify-center items-center flex-wrap'>
         <div className='w-full h-auto px-10 pt-8'>

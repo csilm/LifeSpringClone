@@ -11,7 +11,7 @@ import CounsellorsNearMe from "../static/img/HealthBlog/Best-Mental-Health-Couns
 import WConsultAPsy from "../static/img/HealthBlog/When-Should-You-Consult-A-Psychiatrist.jpg"
 import BDMentalHealth from "../static/img/HealthBlog/Mental-Health-in-Bangladesh.jpeg"
 
-import "../static/css/healthblog.css"
+import "../static/css/Homepage/healthblog.css"
 
 const HealthBlog = () => {
     const blogList = []
