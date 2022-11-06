@@ -12,9 +12,9 @@ const AfterBanner = () => {
     };
   return (
     <div>
-        <div className='mt-20 mb-10'>
-                    <div className='mx-[30%]'>
-                        <div className="m-5">
+        <div className='lg:mt-20 mt-10 mb-10'>
+                    <div className='lg:mx-[30%]'>
+                        <div className="lg:m-5">
                             <Slider {...settings}>
                                 <div>
                                     <h2 className='px-10 py-5 text-white font-semibold text-3xl bg-green-700'>Educated 1 million +</h2>

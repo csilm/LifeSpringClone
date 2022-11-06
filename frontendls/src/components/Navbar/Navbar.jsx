@@ -51,7 +51,7 @@ const Navbar = () => {
             <div className={color ? 'w-full h-[5rem] bg-white' : 'w-full h-[5rem] bg-[#E4FAFF]'}>
                 <div className=' w-full flex flex-row justify-between items-center p-2'>
                     <div className=' lg:w-1/5 h-4/5 lg:pl-28 flex flex-row'>
-                        <img className='w-[11rem]' src={Logo} alt="" />
+                       <a href={"/"}> <img className='w-[11rem]' src={Logo} alt="" /> </a>
                     </div>
                     <div className='lg:hidden block trans'>
 

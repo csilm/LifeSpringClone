@@ -4,13 +4,15 @@ import Info from './Info.json'
 import Card from './Card'
 import './style.css'
 import { AiOutlineDown } from "react-icons/ai";
+import Navbar from '../Navbar/Navbar'
+import Footer from '../Footer/Footer'
 
 const Prof = () => {
   const [active, setactive] = useState("ALL");
 
   return (
     <div>
-
+      <Navbar />
       <div className='w-full h-auto bg-slate-100 py-4 text-start px-10 text-md font-mono text-slate-600 font-semibold'>
         <a className='hover:text-black' href="#i">Home</a> / Professionals
       </div>
@@ -116,6 +118,7 @@ const Prof = () => {
           })}
         </div>
       </div>
+      <Footer/>
     </div>
   )
 }
