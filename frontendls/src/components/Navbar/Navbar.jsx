@@ -48,7 +48,7 @@ const Navbar = () => {
 
 
 
-            <div className={color ? 'w-full h-[5rem] bg-white' : 'w-full h-[5rem] bg-transparent'}>
+            <div className={color ? 'w-full h-[5rem] bg-white' : 'w-full h-[5rem] bg-[#E4FAFF]'}>
                 <div className=' w-full flex flex-row justify-between items-center p-2'>
                     <div className=' lg:w-1/5 h-4/5 lg:pl-28 flex flex-row'>
                         <img className='w-[11rem]' src={Logo} alt="" />
@@ -103,8 +103,8 @@ const Navbar = () => {
                                 <li className="inline px-4 text-black hover:text-blue-600 cursor-pointer font-semibold text-base tracking-wide"><button className='btn'>Blogs<div className='ub1'></div></button></li>
                                 <li className="dropdown inline px-4 text-black hover:text-blue-700 cursor-pointer font-semibold text-base tracking-wide">
                                     <button className='btn'>Testimonials<div className='ub'></div></button>
-                                    <div className="dropdown-menu absolute hidden h-auto pt-4">
-                                        <ul className="block w-[17rem] mt-0 sty bg-white px-10 shadow-lg rounded-sm  py-2 justify-start items-start ml-[27rem]">
+                                    <div className="dropdown-menu z-10 absolute hidden h-auto pt-4">
+                                        <ul className="block w-[17rem] mt-0 sty bg-white px-10 shadow-lg rounded-sm  py-2 justify-start items-start ml-[30rem]">
                                             <li className="py-2.5"><a className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Clients Feedback</a></li>
                                             <li className="py-2.5"><a className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Purify Class Review</a></li>
                                         </ul>

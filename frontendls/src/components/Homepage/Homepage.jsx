@@ -5,13 +5,18 @@ import Navbar from '../Navbar/Navbar'
 import HPContent from './HPContent'
 import ClientsFeedBack from './ClientsFeedBack'
 import HealthBlog from './HealthBlog'
-import Banner from '../Homepage/Banner';
 import Footer from '../Footer/Footer';
+import Bannar2 from './Bannar2';
+import AfterBanner from './AfterBanner';
+// import Banner from './Banner';
+
 const Homepage = () => {
   return (
     <div>
       <Navbar />
-      <Banner/>
+      <Bannar2 />
+      {/* <Banner /> */}
+      <AfterBanner />
       <Courses />
       <HPContent/>
       <ClientsFeedBack/>
