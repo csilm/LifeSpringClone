@@ -10,9 +10,9 @@ const ListOfOurServices = () => {
             <div className='w-full h-auto bg-slate-100 py-4 text-start px-10 text-md font-mono text-slate-600 font-semibold'>
                 <a className='hover:text-black' href={"/"}>Home</a> / List of our services
             </div>
-            <div className='my-20'>
-                <div className="mx-24 px-10">
-                    <div className="grid grid-cols-3">
+            <div className='lg:my-20'>
+                <div className="lg:mx-24 mt-10 px-10">
+                    <div className="grid lg:grid-cols-3">
                         <div className="max-w-sm p-2 rounded-lg">
                             <div>
                                 <div className='cardImage rounded-b-lg h-56'>

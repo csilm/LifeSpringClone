@@ -28,9 +28,9 @@ const Bannar2 = () => {
                                 </div>
 
                                 <div>
-                                    <button className='mbtn-shadow my-2 z-10 bg-green-700 text-white lg:py-1 w-44 rounded-full lg:w-[70%] lg:text-md hover:bg-green-500 hover:text-black uppercase text-xs'>Book an appointment</button><br />
-                                    <button className='mbtn-shadow my-2 z-10 bg-green-700 text-white lg:py-1 w-44 rounded-full lg:w-[70%] lg:text-md hover:bg-green-500 hover:text-black uppercase text-xs'>Enroll Course</button><br />
-                                    <button className='mbtn-shadow my-2 z-10 bg-green-700 text-white lg:py-1 w-44 rounded-full lg:w-[70%] lg:text-md hover:bg-green-500 hover:text-black uppercase text-xs'>Free Mental Health</button><br />
+                                    <button className='mbtn-shadow my-2 z-10 bg-green-700 text-white lg:py-2 w-44 rounded-full lg:w-[80%] lg:text-sm hover:bg-green-500 hover:text-black uppercase text-xs'>Book an appointment</button><br />
+                                    <button className='mbtn-shadow my-2 z-10 bg-green-700 text-white lg:py-2 w-44 rounded-full lg:w-[80%] lg:text-sm hover:bg-green-500 hover:text-black uppercase text-xs'>Enroll Course</button><br />
+                                    <button className='mbtn-shadow my-2 z-10 bg-lime-700 text-white lg:py-2 w-44 rounded-full lg:w-[80%] lg:text-sm hover:bg-green-500 hover:text-black uppercase text-xs'>Free Mental Health</button><br />
                                 </div>
                             </div>
                             <div className='lg:col-span-2 mt-5 '>
@@ -46,9 +46,9 @@ const Bannar2 = () => {
                                 </div>
 
                                 <div>
-                                    <button className='mbtn-shadow my-2 z-10 bg-green-700 text-white lg:py-1 text-xs w-44 rounded-full lg:w-[70%] lg:text-md hover:bg-green-500 hover:text-black uppercase'>Book an appointment</button><br />
-                                    <button className='mbtn-shadow my-2 z-10 bg-green-700 text-white lg:py-1 text-xs w-44 rounded-full lg:w-[70%] lg:text-md hover:bg-green-500 hover:text-black uppercase'>Enrol Course</button><br />
-                                    <button className='mbtn-shadow my-2 z-10 bg-green-700 text-white lg:py-1 text-xs w-44 rounded-full lg:w-[70%] lg:text-md hover:bg-green-500 hover:text-black uppercase'>Free Mental Health</button><br />
+                                    <button className='mbtn-shadow my-2 z-10 bg-green-700 text-white lg:py-2 text-xs w-44 rounded-full lg:w-[80%] lg:text-sm hover:bg-green-500 hover:text-black uppercase'>Book an appointment</button><br />
+                                    <button className='mbtn-shadow my-2 z-10 bg-green-700 text-white lg:py-2 text-xs w-44 rounded-full lg:w-[80%] lg:text-sm hover:bg-green-500 hover:text-black uppercase'>Enrol Course</button><br />
+                                    <button className='mbtn-shadow my-2 z-10 bg-lime-700 text-white lg:py-2 text-xs w-44 rounded-full lg:w-[80%] lg:text-sm hover:bg-green-500 hover:text-black uppercase'>Free Mental Health</button><br />
                                 </div>
                             </div>
                             <div className='lg:col-span-2 mt-5'>
@@ -64,9 +64,9 @@ const Bannar2 = () => {
                                 </div>
 
                                 <div>
-                                    <button className='mbtn-shadow my-2 z-10 bg-green-700 text-white text-xs lg:py-1 rounded-full lg:w-[70%] lg:text-md w-44 hover:bg-green-500 hover:text-black uppercase'>Book an appointment</button><br />
-                                    <button className='mbtn-shadow my-2 z-10 bg-green-700 text-white text-xs lg:py-1 rounded-full lg:w-[70%] lg:text-md w-44 hover:bg-green-500 hover:text-black uppercase'>Enroll Course</button><br />
-                                    <button className='mbtn-shadow my-2 z-10 bg-green-700 text-white text-xs lg:py-1 rounded-full lg:w-[70%] lg:text-md w-44 hover:bg-green-500 hover:text-black uppercase'>Free Mental Health</button><br />
+                                    <button className='mbtn-shadow my-2 z-10 bg-green-700 text-white text-xs lg:py-2 rounded-full lg:w-[80%] lg:text-sm w-44 hover:bg-green-500 hover:text-black uppercase'>Book an appointment</button><br />
+                                    <button className='mbtn-shadow my-2 z-10 bg-green-700 text-white text-xs lg:py-2 rounded-full lg:w-[80%] lg:text-sm w-44 hover:bg-green-500 hover:text-black uppercase'>Enroll Course</button><br />
+                                    <button className='mbtn-shadow my-2 z-10 bg-lime-700 text-white text-xs lg:py-2 rounded-full lg:w-[80%] lg:text-sm w-44 hover:bg-green-500 hover:text-black uppercase'>Free Mental Health</button><br />
                                 </div>
                             </div>
                             <div className='lg:col-span-2'>

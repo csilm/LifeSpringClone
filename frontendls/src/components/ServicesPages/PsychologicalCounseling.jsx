@@ -10,15 +10,15 @@ const PsychologicalCounseling = () => {
             <div className='w-full h-auto bg-slate-100 py-4 text-start px-10 text-md font-mono text-slate-600 font-semibold'>
                 <a className='hover:text-black' href={"/"}>Home</a> / <a href={'/listOfServices'} className='hover:text-black'>List of our services</a> / Psychological Counseling
             </div>
-            <div className="mt-20 mb-10">
-                <div className="mx-32">
-                    <div className="p-5">
-                        <h2 className="text-[2.2rem] text-slate-900 font-sans pb-2 font-semibold">Counseling for Everyone</h2>
+            <div className="lg:mt-20 mt-10 lg:mb-10">
+                <div className="lg:mx-32">
+                    <div className="lg:p-5 p-2">
+                        <h2 className="lg:text-[2.2rem] text-2xl text-slate-900 font-sans pb-2 font-semibold">Counseling for Everyone</h2>
                     </div>
                 </div>
             </div>
-            <div className="mx-32">
-                <div className="grid grid-cols-2 text-left mx-5">
+            <div className="lg:mx-32">
+                <div className="grid lg:grid-cols-2 text-left lg:mx-5">
                     <div className="m-3">
                         <img className='m-auto' src={Counselling} alt="" />
                     </div>

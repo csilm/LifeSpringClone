@@ -71,20 +71,20 @@ const Navbar = () => {
                                     <button className='btn'> Professionals <div className='ub'></div></button>
                                     <div className="dropdown-menu z-10 absolute hidden  h-auto  pt-4">
                                         <ul className="block w-[17rem] ml-[5rem] sty bg-white px-10 shadow-lg rounded-sm py-2 justify-start items-start">
-                                            <li onClick={()=>{}} className=" py-2.5"><a className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">All Department</a></li>
+                                            {/* <li onClick={()=>{}} className=" py-2.5"><a className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">All Department</a></li> */}
                                             <li className=" py-2.5"><a href={"/allProffesionals"} className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">All Department</a></li>
-                                            <li className=" py-2.5"><a className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Psychiatris</a></li>
-                                            <li className=" py-2.5"><a className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Psychologist</a></li>
-                                            <li className=" py-2.5"><a className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Counselor</a></li>
-                                            <li className=" py-2.5"><a className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Child and Adolescent</a></li>
-                                            <li className=" py-2.5"><a className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Dermatologist</a></li>
-                                            <li className=" py-2.5"><a className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Sexual Health</a></li>
-                                            <li className=" py-2.5"><a className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Gynechologist</a></li>
-                                            <li className=" py-2.5"><a className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Internal Medicine</a></li>
-                                            <li className=" py-2.5"><a className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Development Therapist</a></li>
-                                            <li className=" py-2.5"><a className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">ENT</a></li>
-                                            <li className=" py-2.5"><a className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Nutritionist</a></li>
-                                            <li className=" py-2.5"><a className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Paediatrics</a></li>
+                                            <li className=" py-2.5"><a href={'/psychiatrist'} className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Psychiatris</a></li>
+                                            <li className=" py-2.5"><a href={'/psychiatrist'} className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Psychologist</a></li>
+                                            <li className=" py-2.5"><a href={'/psychiatrist'} className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Counselor</a></li>
+                                            <li className=" py-2.5"><a href={'/psychiatrist'} className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Child and Adolescent</a></li>
+                                            <li className=" py-2.5"><a href={'/psychiatrist'} className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Dermatologist</a></li>
+                                            <li className=" py-2.5"><a href={'/psychiatrist'} className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Sexual Health</a></li>
+                                            <li className=" py-2.5"><a href={'/psychiatrist'} className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Gynechologist</a></li>
+                                            <li className=" py-2.5"><a href={'/psychiatrist'} className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Internal Medicine</a></li>
+                                            <li className=" py-2.5"><a href={'/psychiatrist'} className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Development Therapist</a></li>
+                                            <li className=" py-2.5"><a href={'/psychiatrist'} className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">ENT</a></li>
+                                            <li className=" py-2.5"><a href={'/psychiatrist'} className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Nutritionist</a></li>
+                                            <li className=" py-2.5"><a href={'/psychiatrist'} className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Paediatrics</a></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -105,8 +105,8 @@ const Navbar = () => {
                                     <button className='btn'>Testimonials<div className='ub'></div></button>
                                     <div className="dropdown-menu z-10 absolute hidden h-auto pt-4">
                                         <ul className="block w-[17rem] mt-0 sty bg-white px-10 shadow-lg rounded-sm  py-2 justify-start items-start ml-[30rem]">
-                                            <li className="py-2.5"><a className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Clients Feedback</a></li>
-                                            <li className="py-2.5"><a className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Purify Class Review</a></li>
+                                            <li className="py-2.5"><a href={'/clientsFeedback'} className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Clients Feedback</a></li>
+                                            <li className="py-2.5"><a href={'/clientsReview'} className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Purify Class Review</a></li>
                                         </ul>
                                     </div>
                                 </li>

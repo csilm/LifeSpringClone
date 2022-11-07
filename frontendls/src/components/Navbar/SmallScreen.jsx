@@ -52,8 +52,8 @@ const SmallScreen = () => {
                 <button className=' flex w-1/2 justify-start flex-col items-start px-5'>Testimonials<div className='ub'></div></button>
                    <div className="dropdown-menu hidden duration-1000 h-auto pt-4">
                        <ul className="block w-[20rem] rounded-sm  py-2 justify-start items-start">
-                           <li className="flex justify-start items-start px-5 py-2.5"><a className="block text-sm text-white font-bold hover:text-green-600 cursor-pointer">Clients Feedback</a></li>
-                           <li className="flex justify-start items-start px-5 py-2.5"><a className="block text-sm text-white font-bold hover:text-green-600 cursor-pointer">Purify Class Review</a></li>
+                           <li className="flex justify-start items-start px-5 py-2.5"><a href={'/clientsFeedback'} className="block text-sm text-white font-bold hover:text-green-600 cursor-pointer">Clients Feedback</a></li>
+                           <li className="flex justify-start items-start px-5 py-2.5"><a href={'/clientsReview'} className="block text-sm text-white font-bold hover:text-green-600 cursor-pointer">Purify Class Review</a></li>
                        </ul>
                    </div>
                  </li>

@@ -10,15 +10,15 @@ const ChildDevelopement = () => {
             <div className='w-full h-auto bg-slate-100 py-4 text-start px-10 text-md font-mono text-slate-600 font-semibold'>
                 <a className='hover:text-black' href={"/"}>Home</a> / <a href={'/listOfServices'} className='hover:text-black'>List of our services</a> / Child Development
             </div>
-            <div className="mt-20 mb-10">
-                <div className="mx-16">
+            <div className="lg:mt-20 mt-10 mb-10">
+                <div className="lg:mx-16">
                     <div className="p-3">
-                        <h2 className="text-[2rem] text-green-600 font-sans pb-2 font-semibold">“If The World Is A Stage, Remember Our Children Are Sitting In The Front Row”</h2>
+                        <h2 className="lg:text-[2rem] text-lg text-green-600 font-sans pb-2 font-semibold">“If The World Is A Stage, Remember Our Children Are Sitting In The Front Row”</h2>
                     </div>
                 </div>
             </div>
-            <div className="mx-16">
-                <div className="grid grid-cols-2 text-left mx-5">
+            <div className="lg:mx-16">
+                <div className="grid lg:grid-cols-2 text-left lg:mx-5">
                     <div className="m-3">
                         <img className='m-auto' src={ChildDevelopmentPic} alt="" />
                     </div>
