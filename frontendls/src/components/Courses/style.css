@@ -1,0 +1,27 @@
+.pos
+{
+    margin-top: -38px;
+    transition-duration: .5s;
+    font-size: 12px;
+    animation-name: anm;
+    animation-duration: .2s;
+    animation-iteration-count: 1;
+    animation-timing-function:ease-in;
+
+}
+.animation
+{
+    border-radius: 10px;
+}
+
+@keyframes anm
+{
+  0%
+  {
+    margin-top: -30px;
+  }
+  100%
+  {
+    margin-top: -38px;
+  }
+}
