@@ -26,6 +26,7 @@ import Internal from "./components/Prof_Sub/Internal";
 import Therapist from "./components/Prof_Sub/Therapist";
 import Nutritionist from "./components/Prof_Sub/Nutritionist";
 import Paediatrics from "./components/Prof_Sub/Paediatrics";
+import Courses from "./components/Courses/Courses";
 
 function App() {
   return (
@@ -57,6 +58,8 @@ function App() {
         <Route path = "/corporateService" element = {<CorporateService/>}/>
         <Route path = "/childDevelopment" element = {<ChildDevelopement/>}/>
         <Route path = "/mentalHealthTest" element = {<MentalHealthTest/>}/>
+
+        <Route path = "/courses" element = {<Courses />}/>
 
         <Route path = "/clientsFeedback" element = {<ClientsFBFull/>}/>
         <Route path = "/clientsReview" element = {<ClientsReview/>}/>

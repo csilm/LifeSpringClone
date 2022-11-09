@@ -99,7 +99,7 @@ const Navbar = () => {
                                         </ul>
                                     </div>
                                 </li>
-                                <li className="inline px-4 text-black hover:text-blue-600 cursor-pointer font-semibold text-base tracking-wide"><button className='btn'>Courses<div className='ub1'></div></button></li>
+                                <li className="inline px-4 text-black hover:text-blue-600 cursor-pointer font-semibold text-base tracking-wide"> <a href={"/courses"}> <button className='btn'>Courses<div className='ub1'></div></button></a></li>
                                 <li className="inline px-4 text-black hover:text-blue-600 cursor-pointer font-semibold text-base tracking-wide"><button className='btn'>Blogs<div className='ub1'></div></button></li>
                                 <li className="dropdown inline px-4 text-black hover:text-blue-700 cursor-pointer font-semibold text-base tracking-wide">
                                     <button className='btn'>Testimonials<div className='ub'></div></button>
