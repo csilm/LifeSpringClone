@@ -15,6 +15,17 @@ import MentalHealthTest from "./components/ServicesPages/MentalHealthTest";
 import Psychiatrist from "./components/Prof_Sub/Psychiatrist"
 import ClientsFBFull from "./components/Testomonials/ClientsFBFull";
 import ClientsReview from "./components/Testomonials/ClientsReview";
+import Psychologist from "./components/Prof_Sub/Psychologist";
+import Counselor from "./components/Prof_Sub/Conselor";
+import Child from "./components/Prof_Sub/Child";
+import Dermatologist from "./components/Prof_Sub/Dermatologist";
+import ENT from "./components/Prof_Sub/ENT";
+import Sexual from "./components/Prof_Sub/Sexual";
+import Gynecologists from "./components/Prof_Sub/Gynecologists";
+import Internal from "./components/Prof_Sub/Internal";
+import Therapist from "./components/Prof_Sub/Therapist";
+import Nutritionist from "./components/Prof_Sub/Nutritionist";
+import Paediatrics from "./components/Prof_Sub/Paediatrics";
 
 function App() {
   return (
@@ -28,6 +39,17 @@ function App() {
         
         <Route path = "/allProffesionals" element = {<Prof/>}/>
         <Route path = "/psychiatrist" element = {<Psychiatrist/>}/>
+        <Route path = "/psychologist" element = {<Psychologist/>}/>
+        <Route path = "/counselor" element = {<Counselor/>}/>
+        <Route path = "/child" element = {<Child/>}/>
+        <Route path = "/dermatologist" element = {<Dermatologist/>}/>
+        <Route path = "/sexual-health" element = {<Sexual />}/>
+        <Route path = "/gynechologist" element = {<Gynecologists />}/>
+        <Route path = "/internal-med" element = {<Internal />}/>
+        <Route path = "/therapist" element = {<Therapist />}/>
+        <Route path = "/ent" element = {<ENT />}/>
+        <Route path = "/nutritionist" element = {<Nutritionist />}/>
+        <Route path = "/paediatrics" element = {<Paediatrics />}/>
 
 
         <Route path = "/listOfServices" element = {<ListOfOurServices/>}/>

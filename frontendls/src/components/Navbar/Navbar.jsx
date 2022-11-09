@@ -30,13 +30,13 @@ const Navbar = () => {
         <div className={color ? 'navDropFromUpAnim w-full z-10 h-auto flex justify-center items-center flex-wrap flex-col fixed top-0 ' : 'w-full h-auto flex justify-center items-center flex-wrap flex-col'}>
             <div className='w-full h-auto flex justify-center items-center flex-wrap p-2 ' style={{backgroundColor : "#1C6732"}}>
                 <div className='lg:w-1/2 w-full flex justify-center items-center flex-row flex-wrap lg:p-0 p-[.1rem]'>
-                    <div className='ttext cursor-pointer text-white hover:text-yellow-400 trns font-semibold px-3 bder flex flex-row justify-center items-center'><AiFillPhone /> +8809638 505 505 </div>
+                    <div className='ttext cursor-pointer text-white hover:text-yellow-400 trns font-semibold px-3 bder flex flex-row justify-center items-center'><AiFillPhone className='text-yellow-400'/> +8809638 505 505 </div>
                     <div className='ttext cursor-pointer text-white hover:text-yellow-400 trns font-semibold px-3 bder'>+8801763 438 148  </div>
-                    <div className='ttext cursor-pointer text-white hover:text-yellow-400 trns font-semibold px-3 flex flex-row justify-center items-center'><AiOutlineMail className='font-bold mx-1' />Email</div>
+                    <div className='ttext cursor-pointer text-white hover:text-yellow-400 trns font-semibold px-3 flex flex-row justify-center items-center'><AiOutlineMail className='font-bold mx-1 text-yellow-400' />Email</div>
                 </div>
                 <div className='lg:w-1/2 w-full flex justify-center items-center flex-row flex-wrap lg:p-0 p-[.1rem]'>
-                    <div className='text-sm text-white cursor-pointer hover:text-yellow-400 trns font-semibold px-2 bder'>Log in </div>
-                    <div className='text cursor-pointer text-white hover:text-yellow-400 trns font-semibold px-3 bder'>Register</div>
+                    <div className='text-sm text-white cursor-pointer hover:text-yellow-400 trns font-semibold px-2 bder'> <a href={"/login"}> Log in </a></div>
+                    <div className='text cursor-pointer text-white hover:text-yellow-400 trns font-semibold px-3 bder'><a href={"/signup"}> Register </a> </div>
                     <div className='text cursor-pointer text-white hover:text-yellow-400 trns font-semibold px-3 '><a className='' target="blank" href={'https://www.facebook.com/lifespringinstitute/'}> <BsFacebook /> </a></div>
                     <div className='text cursor-pointer text-white hover:text-yellow-400 trns font-semibold px-3 '><a className='' target="blank" href={'https://www.youtube.com/channel/UCIhnNMshTmGQmkJaBLGe5aw'}> <BsYoutube /> </a></div>
                     <div className='text cursor-pointer text-white hover:text-yellow-400 trns font-semibold px-3 '><a className='' target="blank" href={'https://www.instagram.com/lifespringinstitute/'}> <BsInstagram /> </a></div>
@@ -73,18 +73,18 @@ const Navbar = () => {
                                         <ul className="block w-[17rem] ml-[5rem] sty bg-white px-10 shadow-lg rounded-sm py-2 justify-start items-start">
                                             {/* <li onClick={()=>{}} className=" py-2.5"><a className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">All Department</a></li> */}
                                             <li className=" py-2.5"><a href={"/allProffesionals"} className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">All Department</a></li>
-                                            <li className=" py-2.5"><a href={'/psychiatrist'} className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Psychiatris</a></li>
-                                            <li className=" py-2.5"><a href={'/psychiatrist'} className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Psychologist</a></li>
-                                            <li className=" py-2.5"><a href={'/psychiatrist'} className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Counselor</a></li>
-                                            <li className=" py-2.5"><a href={'/psychiatrist'} className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Child and Adolescent</a></li>
-                                            <li className=" py-2.5"><a href={'/psychiatrist'} className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Dermatologist</a></li>
-                                            <li className=" py-2.5"><a href={'/psychiatrist'} className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Sexual Health</a></li>
-                                            <li className=" py-2.5"><a href={'/psychiatrist'} className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Gynechologist</a></li>
-                                            <li className=" py-2.5"><a href={'/psychiatrist'} className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Internal Medicine</a></li>
-                                            <li className=" py-2.5"><a href={'/psychiatrist'} className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Development Therapist</a></li>
-                                            <li className=" py-2.5"><a href={'/psychiatrist'} className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">ENT</a></li>
-                                            <li className=" py-2.5"><a href={'/psychiatrist'} className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Nutritionist</a></li>
-                                            <li className=" py-2.5"><a href={'/psychiatrist'} className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Paediatrics</a></li>
+                                            <li className=" py-2.5"><a href={'/psychiatrist' } className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Psychiatris</a></li>
+                                            <li className=" py-2.5"><a href={'/psychologist' } className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Psychologist</a></li>
+                                            <li className=" py-2.5"><a href={'/counselor'    } className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Counselor</a></li>
+                                            <li className=" py-2.5"><a href={'/child'        } className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Child and Adolescent</a></li>
+                                            <li className=" py-2.5"><a href={'/dermatologist'} className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Dermatologist</a></li>
+                                            <li className=" py-2.5"><a href={'/sexual-health'} className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Sexual Health</a></li>
+                                            <li className=" py-2.5"><a href={'/gynechologist'} className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Gynechologist</a></li>
+                                            <li className=" py-2.5"><a href={'/internal-med' } className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Internal Medicine</a></li>
+                                            <li className=" py-2.5"><a href={'/therapist'    } className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Development Therapist</a></li>
+                                            <li className=" py-2.5"><a href={'/ent'          } className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">ENT</a></li>
+                                            <li className=" py-2.5"><a href={'/nutritionist' } className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Nutritionist</a></li>
+                                            <li className=" py-2.5"><a href={'/paediatrics' } className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">Paediatrics</a></li>
                                         </ul>
                                     </div>
                                 </li>

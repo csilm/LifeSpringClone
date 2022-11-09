@@ -14,18 +14,18 @@ const SmallScreen = () => {
                    <div className="dropdown-menu hidden h-auto duration-75 pt-4">
                        <ul className="block w-[20rem] rounded-sm py-2 ">
                            <li className=" flex justify-start items-start px-5 py-2.5"><a href={'/allProffesionals'} className=" block text-sm text-white font-bold hover:text-green-600 cursor-pointer">All Department</a></li>
-                           <li className=" flex justify-start items-start px-5 py-2.5"><a className=" block text-sm text-white font-bold hover:text-green-600 cursor-pointer">Psychiatris</a></li>
-                           <li className=" flex justify-start items-start px-5 py-2.5"><a className=" block text-sm text-white font-bold hover:text-green-600 cursor-pointer">Psychologist</a></li>
-                           <li className=" flex justify-start items-start px-5 py-2.5"><a className=" block text-sm text-white font-bold hover:text-green-600 cursor-pointer">Counselor</a></li>
-                           <li className=" flex justify-start items-start px-5 py-2.5"><a className=" block text-sm text-white font-bold hover:text-green-600 cursor-pointer">Child and Adolescent</a></li>
-                           <li className=" flex justify-start items-start px-5 py-2.5"><a className=" block text-sm text-white font-bold hover:text-green-600 cursor-pointer">Dermatologist</a></li>
-                           <li className=" flex justify-start items-start px-5 py-2.5"><a className=" block text-sm text-white font-bold hover:text-green-600 cursor-pointer">Sexual Health</a></li>
-                           <li className=" flex justify-start items-start px-5 py-2.5"><a className=" block text-sm text-white font-bold hover:text-green-600 cursor-pointer">Gynechologist</a></li>
-                           <li className=" flex justify-start items-start px-5 py-2.5"><a className=" block text-sm text-white font-bold hover:text-green-600 cursor-pointer">Internal Medicine</a></li>
-                           <li className=" flex justify-start items-start px-5 py-2.5"><a className=" block text-sm text-white font-bold hover:text-green-600 cursor-pointer">Development Therapist</a></li>
-                           <li className=" flex justify-start items-start px-5 py-2.5"><a className=" block text-sm text-white font-bold hover:text-green-600 cursor-pointer">ENT</a></li>
-                           <li className=" flex justify-start items-start px-5 py-2.5"><a className=" block text-sm text-white font-bold hover:text-green-600 cursor-pointer">Nutritionist</a></li>
-                           <li className=" flex justify-start items-start px-5 py-2.5"><a className=" block text-sm text-white font-bold hover:text-green-600 cursor-pointer">Paediatrics</a></li>  
+                           <li className=" flex justify-start items-start px-5 py-2.5"><a href={'/psychiatrist' } className=" block text-sm text-white font-bold hover:text-green-600 cursor-pointer">Psychiatris</a></li>
+                           <li className=" flex justify-start items-start px-5 py-2.5"><a href={'/psychologist' } className=" block text-sm text-white font-bold hover:text-green-600 cursor-pointer">Psychologist</a></li>
+                           <li className=" flex justify-start items-start px-5 py-2.5"><a href={'/counselor'    } className=" block text-sm text-white font-bold hover:text-green-600 cursor-pointer">Counselor</a></li>
+                           <li className=" flex justify-start items-start px-5 py-2.5"><a href={'/child'        } className=" block text-sm text-white font-bold hover:text-green-600 cursor-pointer">Child and Adolescent</a></li>
+                           <li className=" flex justify-start items-start px-5 py-2.5"><a href={'/dermatologist'} className=" block text-sm text-white font-bold hover:text-green-600 cursor-pointer">Dermatologist</a></li>
+                           <li className=" flex justify-start items-start px-5 py-2.5"><a href={'/sexual-health'} className=" block text-sm text-white font-bold hover:text-green-600 cursor-pointer">Sexual Health</a></li>
+                           <li className=" flex justify-start items-start px-5 py-2.5"><a href={'/gynechologist'} className=" block text-sm text-white font-bold hover:text-green-600 cursor-pointer">Gynechologist</a></li>
+                           <li className=" flex justify-start items-start px-5 py-2.5"><a href={'/internal-med' } className=" block text-sm text-white font-bold hover:text-green-600 cursor-pointer">Internal Medicine</a></li>
+                           <li className=" flex justify-start items-start px-5 py-2.5"><a href={'/therapist'    } className=" block text-sm text-white font-bold hover:text-green-600 cursor-pointer">Development Therapist</a></li>
+                           <li className=" flex justify-start items-start px-5 py-2.5"><a href={'/ent'          } className=" block text-sm text-white font-bold hover:text-green-600 cursor-pointer">ENT</a></li>
+                           <li className=" flex justify-start items-start px-5 py-2.5"><a href={'/nutritionist' } className=" block text-sm text-white font-bold hover:text-green-600 cursor-pointer">Nutritionist</a></li>
+                           <li className=" flex justify-start items-start px-5 py-2.5"><a href={'/paediatrics' } className=" block text-sm text-white font-bold hover:text-green-600 cursor-pointer">Paediatrics</a></li>  
                        </ul>
                        
                    </div>
