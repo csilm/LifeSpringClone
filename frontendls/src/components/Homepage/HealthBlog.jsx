@@ -138,7 +138,7 @@ const HealthBlog = () => {
                     <div className="hpTitle text-left lg:text-2xl my-3 font-sans">
                         <h2>Health <b className='text-green-600'>Blog</b> </h2>
                     </div>
-                    <div className="hpViewAllBtn text-right my-3 font-sans">
+                    <div className="hpViewAllBtn text-right lg:my-3 font-sans">
                         <button type="button" className="m-2 h-8 w-24 text-sm font-medium text-green-500 hover:bg-green-600 focus:outline-none bg-white rounded-md border border-green-200 hover:text-white">View All</button>
                     </div>
                 </div>

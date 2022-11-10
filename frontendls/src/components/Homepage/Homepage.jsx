@@ -1,5 +1,5 @@
 import React from 'react'
-import Courses from './Courses';
+// import Courses from './Courses';
 import Video from './Video';
 import Navbar from '../Navbar/Navbar'
 import HPContent from './HPContent'
@@ -8,7 +8,10 @@ import HealthBlog from './HealthBlog'
 import Footer from '../Footer/Footer';
 import Bannar2 from './Bannar2';
 import AfterBanner from './AfterBanner';
+import HCourses from './HCourses';
 // import Banner from './Banner';
+import OurClients from './OurClients'
+import HealthServices from './HealthServices'
 
 const Homepage = () => {
   return (
@@ -17,8 +20,11 @@ const Homepage = () => {
       <Bannar2 />
       {/* <Banner /> */}
       <AfterBanner />
-      <Courses />
+      {/* <Courses /> */}
+      <HCourses />
       <HPContent/>
+      <OurClients />
+      <HealthServices />
       <ClientsFeedBack/>
       <HealthBlog/>
       <Video/>
