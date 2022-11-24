@@ -12,6 +12,7 @@ import HCourses from './HCourses';
 // import Banner from './Banner';
 import OurClients from './OurClients'
 import HealthServices from './HealthServices'
+import GotoTopBtn from '../GotoTopBtn/GotoTopBtn';
 
 const Homepage = () => {
   return (
@@ -28,6 +29,7 @@ const Homepage = () => {
       <ClientsFeedBack/>
       <HealthBlog/>
       <Video/>
+      <GotoTopBtn/>
       <Footer/>
     </div>
   )

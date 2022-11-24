@@ -27,3 +27,9 @@
   position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 1263.2px, 0px);
 
 }
+
+@media (max-width : 1024px) {
+  .bigScreen{
+    display: none;
+  } 
+}

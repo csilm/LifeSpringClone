@@ -12,7 +12,7 @@ const HCourses = () => {
     CourseInfo.forEach((cinfo) => {
         hcourseslist.push(
             <div className='px-2'>
-                <div className="bg-white max-w-sm rounded-lg">
+                <div className="bg-white max-w-sm h-[22rem] mb-5 rounded-lg">
                     <div className='overflow-hidden rounded-lg w-full'>
                         <div className='absolute z-8 pt-3 ml-3'>
                             <div className={cinfo.info === "Featured" ? 'bg-red-600 text-sm px-1 rounded-sm text-white' : 'bg-blue-600 text-sm px-1 rounded-sm text-white'}>{cinfo.info}</div>

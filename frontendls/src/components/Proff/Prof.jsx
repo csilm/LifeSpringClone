@@ -14,10 +14,10 @@ const Prof = () => {
     <div>
       <Navbar />
       <div className='w-full h-auto bg-slate-100 py-4 text-start px-10 text-md font-mono text-slate-600 font-semibold'>
-        <a className='hover:text-black' href="#i">Home</a> / Professionals
+        <a className='hover:text-black' href={"/"}>Home</a> / Professionals
       </div>
-      <div className='w-full h-auto flex flex-col justify-center items-center flex-wrap'>
-        <div className='w-full h-auto px-10 pt-8 flex justify-center items-center flex-row flex-wrap sm:hidden lg:block md:block text-center'>
+      <div className=' w-full h-auto flex flex-col justify-center items-center flex-wrap'>
+        <div className='bigScreen w-full h-auto px-10 pt-8 flex justify-center items-center flex-row flex-wrap sm:hidden lg:block md:block text-center'>
           <button className='duration-500 text-lg font-mono py-2 font-semibold hover:text-black text-slate-500 px-3 tracking-tight' onClick={() => { setactive('ALL') }}>All</button>
           <button className='duration-500 text-lg font-mono py-2 font-semibold hover:text-black text-slate-500 px-3 tracking-tight' onClick={() => { setactive('Child') }}>Child and Adolescent Psychiatrist</button>
           <button className='duration-500 text-lg font-mono py-2 font-semibold hover:text-black text-slate-500 px-3 tracking-tight' onClick={() => { setactive('Counselor') }}>Counselor</button>
@@ -30,9 +30,9 @@ const Prof = () => {
           <button className='duration-500 text-lg font-mono py-2 font-semibold hover:text-black text-slate-500 px-3 tracking-tight' onClick={() => { setactive('Psychologist') }}>Psychologist</button>
           <button className='duration-500 text-lg font-mono py-2 font-semibold hover:text-black text-slate-500 px-3 tracking-tight' onClick={() => { setactive('Sexual') }}>Sexual Health</button>
         </div>
-        <div className=' h-auto flex justify-center items-center lg:hidden md:hidden sm:block text-center p-5 w-1/2'>
-          <li className="dropdown inline px-4 text-black hover:text-blue-700 cursor-pointer font-semibold text-base tracking-wide">
-            <button className=' border-2 px-4 w-full p-2 flex flex-row justify-between'>Professionals <div className='pt-1'><AiOutlineDown/></div></button>
+        <div className='h-auto flex justify-center items-center lg:hidden md:hidden sm:block text-center p-5 w-1/2'>
+          <li className="dropdown inline px-4 text-slate-500 hover:text-blue-700 cursor-pointer font-semibold text-base tracking-wide">
+            <button className=' border-2 px-6 w-full p-2 flex rounded-md flex-row justify-between'>Professionals <div className='pt-1'><AiOutlineDown/></div></button>
             <div className="dropdown-menu z-10 absolute hidden h-auto  pt-4">
               <ul className="block w-[21rem] sty bg-white px-10 shadow-lg rounded-sm py-2 justify-start items-start">
                 <li onClick={() =>{setactive('ALL')}} className=" py-2.5"><a href='' className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">All Department</a></li>

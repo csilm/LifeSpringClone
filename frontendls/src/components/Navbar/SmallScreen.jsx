@@ -44,7 +44,7 @@ const SmallScreen = () => {
                    </div>
                </li>
                <div className='w-4/5 ml-[1.2rem] h-[.05rem] bg-black  '></div>
-               <li className=" flex justify-start items-start px-5 text-white hover:text-blue-400 cursor-pointer font-semibold text-base py-5 "><button className='btn'>Courses<div className='ub1'></div></button></li>
+               <li className=" flex justify-start items-start px-5 text-white hover:text-blue-400 cursor-pointer font-semibold text-base py-5 "><button className='btn'> <a href={"/courses"}>Courses </a><div className='ub1'></div></button></li>
                <div className='w-4/5 ml-[1.2rem] h-[.05rem] bg-black  '></div>
                <li className=" flex justify-start items-start px-5 text-white hover:text-blue-400 cursor-pointer font-semibold text-base py-5 "><button className='btn'>Blogs<div className='ub1'></div></button></li>
                <div className='w-4/5 ml-[1.2rem] h-[.05rem] bg-black  '></div>

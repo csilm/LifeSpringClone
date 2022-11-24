@@ -8,10 +8,10 @@ const CourseCard = ({ name, details, price, tag1, tag2, tag3, info, img }) => {
   const [over, setOver] = useState(false);
 
   return (
-    <div className=' mt-5 w-[20rem] h-auto mx-4 animation shadow-lg rounded-lg'>
+    <div className='mt-5 w-[18rem] h-[33rem] mx-3 animation shadow-lg rounded-lg'>
       <div className="bg-white max-w-sm rounded-lg">
         <div className='overflow-hidden rounded-lg w-full'>
-          <div className='absolute z-10 pt-3 ml-3'>
+          <div className='absolute z-8 pt-3 ml-3'>
             <div className={info === "Featured" ? 'bg-red-600 text-sm px-1 rounded-sm text-white' : 'bg-blue-600 text-sm px-1 rounded-sm text-white'}>{info}</div>
           </div>
           <img className="hover:scale-110 ease-in-out duration-500 w-full z-2" src={img} alt="" />

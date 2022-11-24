@@ -13,24 +13,26 @@ const Courses = () => {
     <div>
       <Navbar />
       <div className='w-full h-auto flex flex-col justify-center items-center'>
-        <div className='w-full flex-wrap h-auto flex flex-row justify-start items-start bg-green-800'>
-          <div className='drop-shadow-sm lg:w-2/4 lg:pl-20 lg:py-14 p-8 sm:w-full h-auto text-4xl text-white font-mono font-bold flex items-start justify-start'>
+        <div className='w-full flex-wrap lg:mb-10 text-left h-auto flex flex-row justify-start items-start bg-[#106732]'>
+          <div className='drop-shadow-sm lg:w-[70%] lg:pl-20 lg:py-14 p-8 w-full h-auto lg:text-4xl text-lg text-white font-mono font-bold flex items-start justify-start'>
             Let’s bring a balance in your mental and physical health
           </div>
-          <div className='lg:w-1/2 sm:w-full flex lg:justify-end items-center lg:h-[10rem] lg:pt-10'>
-            <button className='ml-10 m-5 bg-white px-16 hover:bg-lime-500 duration-300 sm:mb-10 hover:text-white rounded-lg text-lg font-bold text-green-800 shadow-md shadow-slate-500 py-4'>Get Started</button>
+          <div className='lg:w-[30%] w-full flex lg:justify-end items-center lg:h-[10rem] lg:pt-10'>
+            <button className='lg:ml-10 m-5 bg-white px-16 hover:bg-lime-500 duration-300 sm:mb-10 hover:text-white rounded-lg text-lg font-bold text-green-800 shadow-md shadow-slate-500 py-4'>Get Started</button>
           </div>
 
         </div>
-        <div className='pt-5 w-full flex-wrap h-auto flex flex-row justify-center items-center'>
-          <div onClick={() => { seton("all") }} className={on === 'all' ? 'bg-lime-400 text-white duration-300 py-3 px-8 mx-5 text-md rounded-full shadow-lg font-bold cursor-pointer' : 'cursor-pointer hover:bg-lime-400 hover:text-white duration-300 py-3 px-8 m-5 text-md rounded-full shadow-lg font-bold'}>All Courses</div>
-          <div onClick={() => { seton("certificate") }} className={on === 'certificate' ? 'bg-lime-400 text-white duration-300 py-3 px-8 mx-5 text-md rounded-full shadow-lg font-bold cursor-pointer' : 'cursor-pointer hover:bg-lime-400 hover:text-white duration-300 py-3 px-8 m-5 text-md rounded-full shadow-lg font-bold'}>Certification</div>
-          <div onClick={() => { seton("child") }} className={on === 'child' ? 'bg-lime-400 text-white duration-300 py-3 px-8 mx-5 text-md rounded-full shadow-lg font-bold cursor-pointer' : 'cursor-pointer hover:bg-lime-400 hover:text-white duration-300 py-3 px-8 m-5 text-md rounded-full shadow-lg font-bold'}>Child Development</div>
-          <div onClick={() => { seton("emotional") }} className={on === 'emotional' ? 'bg-lime-400 text-white duration-300 py-3 px-8 mx-5 text-md rounded-full shadow-lg font-bold cursor-pointer' : 'cursor-pointer hover:bg-lime-400 hover:text-white duration-300 py-3 px-8 m-5 text-md rounded-full shadow-lg font-bold'}>Emotional Balance</div>
-          <div onClick={() => { seton("offer") }} className={on === 'offer' ? 'bg-lime-400 text-white duration-300 py-3 px-8 mx-5 text-md rounded-full shadow-lg font-bold cursor-pointer' : 'cursor-pointer hover:bg-lime-400 hover:text-white duration-300 py-3 px-8 m-5 text-md rounded-full shadow-lg font-bold'}>offer course</div>
-          <div onClick={() => { seton("physical") }} className={on === 'physical' ? 'bg-lime-400 text-white duration-300 py-3 px-8 mx-5 text-md rounded-full shadow-lg font-bold cursor-pointer' : ' cursor-pointer hover:bg-lime-400 hover:text-white duration-300 py-3 px-8 m-5 text-md rounded-full shadow-lg font-bold'}>Physical and Mental Health</div>
-          <div onClick={() => { seton("relationship") }} className={on === 'relationship' ? 'bg-lime-400 text-white duration-300 py-3 px-8 mx-5 text-md rounded-full shadow-lg font-bold cursor-pointer' : 'cursor-pointer hover:bg-lime-400 hover:text-white duration-300 py-3 px-8 m-5 text-md rounded-full shadow-lg font-bold'}>Relationship</div>
-          <div onClick={() => { seton("spritual") }} className={on === 'spritual' ? 'bg-lime-400 text-white duration-300 py-3 px-8 mx-5 text-md rounded-full shadow-lg font-bold cursor-pointer' : 'cursor-pointer hover:bg-lime-400 hover:text-white duration-300 py-3 px-8 m-5 text-md rounded-full shadow-lg font-bold'}>Spirituality</div>
+        <div>
+          <div className='pt-5 w-full flex-wrap h-auto flex flex-row justify-center items-center'>
+            <div onClick={() => { seton("all") }} className={on === 'all' ? 'bg-lime-400 text-white duration-300 py-3 px-8 mx-5 text-md rounded-full shadow-lg font-bold cursor-pointer' : 'cursor-pointer hover:bg-lime-400 hover:text-white duration-300 py-3 px-8 m-3 text-md rounded-full shadow-lg font-bold'}>All Courses</div>
+            <div onClick={() => { seton("certificate") }} className={on === 'certificate' ? 'bg-lime-400 text-white duration-300 py-3 px-8 mx-5 text-md rounded-full shadow-lg font-bold cursor-pointer' : 'cursor-pointer hover:bg-lime-400 hover:text-white duration-300 py-3 px-8 m-3 text-md rounded-full shadow-lg font-bold'}>Certification</div>
+            <div onClick={() => { seton("child") }} className={on === 'child' ? 'bg-lime-400 text-white duration-300 py-3 px-8 mx-5 text-md rounded-full shadow-lg font-bold cursor-pointer' : 'cursor-pointer hover:bg-lime-400 hover:text-white duration-300 py-3 px-8 m-3 text-md rounded-full shadow-lg font-bold'}>Child Development</div>
+            <div onClick={() => { seton("emotional") }} className={on === 'emotional' ? 'bg-lime-400 text-white duration-300 py-3 px-8 mx-5 text-md rounded-full shadow-lg font-bold cursor-pointer' : 'cursor-pointer hover:bg-lime-400 hover:text-white duration-300 py-3 px-8 m-3 text-md rounded-full shadow-lg font-bold'}>Emotional Balance</div>
+            <div onClick={() => { seton("offer") }} className={on === 'offer' ? 'bg-lime-400 text-white duration-300 py-3 px-8 mx-5 text-md rounded-full shadow-lg font-bold cursor-pointer' : 'cursor-pointer hover:bg-lime-400 hover:text-white duration-300 py-3 px-8 m-3 text-md rounded-full shadow-lg font-bold'}>Offer course</div>
+            <div onClick={() => { seton("physical") }} className={on === 'physical' ? 'bg-lime-400 text-white duration-300 py-3 px-8 mx-5 text-md rounded-full shadow-lg font-bold cursor-pointer' : ' cursor-pointer hover:bg-lime-400 hover:text-white duration-300 py-3 px-8 m-3 text-md rounded-full shadow-lg font-bold'}>Physical and Mental Health</div>
+            <div onClick={() => { seton("relationship") }} className={on === 'relationship' ? 'bg-lime-400 text-white duration-300 py-3 px-8 mx-5 text-md rounded-full shadow-lg font-bold cursor-pointer' : 'cursor-pointer hover:bg-lime-400 hover:text-white duration-300 py-3 px-8 m-3 text-md rounded-full shadow-lg font-bold'}>Relationship</div>
+            <div onClick={() => { seton("spritual") }} className={on === 'spritual' ? 'bg-lime-400 text-white duration-300 py-3 px-8 mx-5 text-md rounded-full shadow-lg font-bold cursor-pointer' : 'cursor-pointer hover:bg-lime-400 hover:text-white duration-300 py-3 px-8 m-3 text-md rounded-full shadow-lg font-bold'}>Spirituality</div>
+          </div>
         </div>
         <div className='w-full flex lg:justify-start justify-center pl-10 items-center flex-row flex-wrap h-auto pt-5 pb-10'>
 
