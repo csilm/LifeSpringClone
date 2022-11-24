@@ -12,11 +12,40 @@ import HCourses from './HCourses';
 // import Banner from './Banner';
 import OurClients from './OurClients'
 import HealthServices from './HealthServices'
+<<<<<<< HEAD
 import GotoTopBtn from '../GotoTopBtn/GotoTopBtn';
+=======
+import './common.css'
+import Img from './Overcoming-Depression.png'
+import { useState } from 'react';
+>>>>>>> 1afb556dfb032db05150dee4f1baa580c32a6723
 
 const Homepage = () => {
+   const [load , setLoad] = useState(false);
+   const [hide,sethide] = useState(true)
+      
   return (
     <div>
+      {load===false &&<div id="pop" className={hide===true? 'pop_Up': 'hidden'}>
+        <div className="contain">
+          <button id="close" onClick={()=>{setLoad(true)
+          sethide(false)
+          }} className="button">&times;</button>
+          <div className="top">
+            <div >
+              Say Goodbye to <br /> Depression
+            </div>
+            <img className='img' src={Img} alt="" />
+          </div>
+          <div className="form">
+            <div className="elem first">Preview Of the book</div>
+            <div className="elem"><button className="b1">Your email</button></div>
+            <div className="elem"><button className="b2">Submit</button></div>
+            <div className="elem last">Terms and conditions</div>
+          </div>
+
+        </div>
+      </div>}
       <Navbar />
       <Bannar2 />
       {/* <Banner /> */}
