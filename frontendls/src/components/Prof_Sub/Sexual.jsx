@@ -2,10 +2,13 @@ import React from 'react'
 import Info from '../Proff/Info.json'
 import Card from '../Proff/Card'
 import './style.css'
+import Navbar from '../Navbar/Navbar'
+import Footer from '../Footer/Footer'
 
 const Sexual = () => {
   return (
     <div>
+      <Navbar/>
         <div className='w-full flex flex-row h-auto bg-slate-100 py-4 text-start px-10 text-md font-mono text-slate-600 font-semibold'>
               <a className='hover:text-black mark flex flex-col flex-wrap first-letter mr-2' href='#h'>Home  <div className='line'></div></a> / <div className='hover:text-black mark flex flex-col flex-wrap first-letter mr-2 cursor-pointer px-2'>Professionals <div className='line1'></div></div> / Sexual Health
           </div>
@@ -17,6 +20,7 @@ const Sexual = () => {
                   return null
               })}
           </div> 
+          <Footer/>
     </div>
   )
 }

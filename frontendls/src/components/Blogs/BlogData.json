@@ -1,0 +1,76 @@
+[
+    {   
+        "id": 1,
+        "title": "সন্তানের পড়াশোনায় অভিভাবকের ভূমিকা",
+        "details": "শিশু পড়তে চায় না? ৯ টি উপায়ে পড়াশুনাকে করে তুলুন উপভোগ্য! …",
+        "date" : "November 13 , 2022",
+        "img": "/img/blogImg/Obibabhok.png",
+        "tag1": "child",
+        "viwes": 20,
+        "link" : "/blog1"
+    },
+    {   
+        "id": 2,
+        "title": "Mental Health: Just an Abstract Buzzword?",
+        "details": "Speaking of a time just a few decades from now, I’ve …",
+        "date" : "November 5 , 2022",
+        "img": "/img/blogImg/Mental_health.png",
+        "tag1": "mental",
+        "viwes": 36
+    },
+    {   
+        "id": 3,
+        "title": "How can you celebrate World Mental Health Day 2022?",
+        "details": "What is the World Mental Health Day? World Mental Health Day …",
+        "date" : "September 25, 2022",
+        "img": "/img/blogImg/mental_day.jpg",
+        "tag1": "mental",
+        "viwes": 175
+    },
+    {   
+        "id": 4,
+        "title": "Depression Counselling In Dhaka: Where To Find?",
+        "details": "Depression is a worldwide problem. Sadly, it’s still a taboo in …",
+        "date" : " August 14, 2022",
+        "img": "/img/blogImg/Depression.jpg",
+        "tag1": "diff",
+        "viwes": 271
+    },
+    {   
+        "id": 5,
+        "title": "Psychiatrist Online Consultation: How Easy Is It?",
+        "details": "Psychiatrists are real-life heroes! With the increase in mental problems, it’s …",
+        "date" : " August 10, 2022",
+        "img": "/img/blogImg/psychiatrist.jpg",
+        "tag1": "psychiatrist",
+        "viwes": 168
+    },
+    {   
+        "id": 6,
+        "title": "Child Development Center In Dhaka",
+        "details": "Your toddler needs nurturing and care from the start! Apart from …",
+        "date" : "August 5, 2022",
+        "img": "/img/blogImg/child.jpg",
+        "tag1": "child",
+        "viwes": 202
+    },
+    {   
+        "id": 7,
+        "title": "What Do Clinical Psychologists Specialize in?",
+        "details": "Clinical psychologists specialize in the diagnosis, treatment, and prevention of mental, …",
+        "date" : "November 13 , 2022",
+        "img": "/img/blogImg/psychologists.jpg",
+        "tag1": "psychologist",
+        "viwes": 210
+    },
+    {   
+        "id": 1,
+        "title": "Mental Health: Best Child Psychiatrists in Dhaka City",
+        "details": "Our childhood more or less shapes our adulthood and unresolved childhood …",
+        "date" : " July 29, 2022",
+        "img": "/img/blogImg/child-psy.jpg",
+        "tag1": "Lifspring",
+        "viwes": 287
+    }
+
+]

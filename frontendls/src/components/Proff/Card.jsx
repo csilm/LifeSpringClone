@@ -1,11 +1,11 @@
 import React from 'react'
-import "../static/css/hpcontent.css"
+import "../static/css/Homepage/hpcontent.css"
 import './style.css'
 
 
 const Card = ({ img, prof, name, degree }) => {
     return (
-        <div className='px-1 lg:w-[20rem] mx-3 animation'>
+        <div className='px-1 lg:w-[18rem] mx-3 animation'>
             <div className="bg-white max-w-sm">
                 <div className='overflow-hidden rounded-lg'>
                     <img className="hover:scale-125 ease-in-out duration-500" src={img} alt="" />
