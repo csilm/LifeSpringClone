@@ -7,7 +7,7 @@ const Blog = ({title,details,date,img,tag1,viwes,link}) => {
          <img className='hover:scale-110 ease-in-out duration-500 lg:w-[15rem] w-full rounded-md' src={img} alt="" />
       </div>
       <div className='pl-1 lg:w-2/3 w-full h-auto flex flex-wrap flex-col justify-start'>
-        <a className='w-full h-auto text-xl font-bold py-1 hover:text-lime-500 duration-500 cursor-pointer' href={link}>{title}</a>
+        <a className='w-full h-auto text-xl font-bold py-1 hover:text-lime-500 duration-500 cursor-pointer' href={"blogDetails"}>{title}</a>
         <div className='w-full h-auto flex flex-row justify-start py-2 font-semibold text-slate-500'>
           <div className='pr-5'>{date}</div>
           <div className='pl-5'>{viwes} Views</div>

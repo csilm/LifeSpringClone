@@ -30,6 +30,8 @@ import Paediatrics from "./components/Prof_Sub/Paediatrics";
 import Courses from "./components/Courses/Courses";
 import DashboardHome from "./components/Dashboard/DashboardHome";
 import ActivePage from "./components/Dashboard/ActivePage";
+import Blogs from './components/Blogs/Blogs'
+import BlogDetails from './components/Blogs/DetailsPage'
 
 function App() {
   return (
@@ -65,6 +67,8 @@ function App() {
           <Route path="/mentalHealthTest" element={<MentalHealthTest />} />
 
           <Route path="/courses" element={<Courses />} />
+          <Route path="/blog" element={<Blogs />} />
+          <Route path="/blogDetails" element={<BlogDetails />} />
 
           <Route path="/clientsFeedback" element={<ClientsFBFull />} />
           <Route path="/clientsReview" element={<ClientsReview />} />
