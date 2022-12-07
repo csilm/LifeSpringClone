@@ -5,8 +5,9 @@
         "details": "শিশু পড়তে চায় না? ৯ টি উপায়ে পড়াশুনাকে করে তুলুন উপভোগ্য! …",
         "date" : "November 13 , 2022",
         "img": "/img/blogImg/Obibabhok.png",
-        "tag1": "Lifspring",
-        "viwes": 20
+        "tag1": "child",
+        "viwes": 20,
+        "link" : "/blog1"
     },
     {   
         "id": 2,
@@ -14,7 +15,7 @@
         "details": "Speaking of a time just a few decades from now, I’ve …",
         "date" : "November 5 , 2022",
         "img": "/img/blogImg/Mental_health.png",
-        "tag1": "Lifspring",
+        "tag1": "mental",
         "viwes": 36
     },
     {   
@@ -23,7 +24,7 @@
         "details": "What is the World Mental Health Day? World Mental Health Day …",
         "date" : "September 25, 2022",
         "img": "/img/blogImg/mental_day.jpg",
-        "tag1": "Lifspring",
+        "tag1": "mental",
         "viwes": 175
     },
     {   
@@ -32,7 +33,7 @@
         "details": "Depression is a worldwide problem. Sadly, it’s still a taboo in …",
         "date" : " August 14, 2022",
         "img": "/img/blogImg/Depression.jpg",
-        "tag1": "Lifspring",
+        "tag1": "diff",
         "viwes": 271
     },
     {   
@@ -41,7 +42,7 @@
         "details": "Psychiatrists are real-life heroes! With the increase in mental problems, it’s …",
         "date" : " August 10, 2022",
         "img": "/img/blogImg/psychiatrist.jpg",
-        "tag1": "Lifspring",
+        "tag1": "psychiatrist",
         "viwes": 168
     },
     {   
@@ -50,7 +51,7 @@
         "details": "Your toddler needs nurturing and care from the start! Apart from …",
         "date" : "August 5, 2022",
         "img": "/img/blogImg/child.jpg",
-        "tag1": "Lifspring",
+        "tag1": "child",
         "viwes": 202
     },
     {   
@@ -59,7 +60,7 @@
         "details": "Clinical psychologists specialize in the diagnosis, treatment, and prevention of mental, …",
         "date" : "November 13 , 2022",
         "img": "/img/blogImg/psychologists.jpg",
-        "tag1": "Lifspring",
+        "tag1": "psychologist",
         "viwes": 210
     },
     {   
