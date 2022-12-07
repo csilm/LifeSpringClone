@@ -27,6 +27,7 @@ import Therapist from "./components/Prof_Sub/Therapist";
 import Nutritionist from "./components/Prof_Sub/Nutritionist";
 import Paediatrics from "./components/Prof_Sub/Paediatrics";
 import Courses from "./components/Courses/Courses";
+import Blogs from "./components/Blogs/Blogs";
 
 function App() {
   return (
@@ -63,6 +64,7 @@ function App() {
 
         <Route path = "/clientsFeedback" element = {<ClientsFBFull/>}/>
         <Route path = "/clientsReview" element = {<ClientsReview/>}/>
+        <Route path = "/Blogs" element = {<Blogs />}/>
 
 
       </Routes>

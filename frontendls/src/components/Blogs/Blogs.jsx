@@ -4,6 +4,8 @@ import BlogData from './BlogData.json'
 import { useState } from 'react'
 import DetailsPage from './DetailsPage'
 import Fulldata from './Fulldata.json'
+import Nav from '../Navbar/Navbar'
+import Footer from '../Footer/Footer'
 
 const Blogs = () => {
   var count1=0;
@@ -14,11 +16,14 @@ const Blogs = () => {
   var count6=0;
   const [ click , setclick] = useState("All")
   return (
-    <div className='lg:px-[10rem] px-10 flex flex-row flex-wrap pb-10'>
-    <div className='w-full bg-slate-100 absolute left-0 px-20 py-5 font-semibold text-slate-500 text-sm'>
+    <div className='w-full flex flex-col flex-wrap justify-start items-start '>
+    <Nav />
+    <div className='lg:px-[10rem] px-10 flex flex-row flex-wrap pb-10 w-full'>
+   
+    <div className='w-full bg-slate-100 absolute left-0 px-20 py-5 text-start font-semibold text-slate-500 text-sm'>
       <span>Home</span> / <span> Blogs </span> / <span>{click}</span>
     </div>
-    <div className='lg:w-4/6 h-auto w-full lg:pr-10 pt-10'>
+    <div className='lg:w-4/6 h-auto w-full text-start lg:pr-10 pt-10'>
       {click === 'All' &&
           BlogData.map((items) => {
             if (items.tag1 === 'child') {count1++;}
@@ -104,7 +109,7 @@ const Blogs = () => {
        <h1 className='text-lg font-semibold text-slate-600 '>Categories</h1>
         <div className='w-full bg-slate-200 h-[.1rem] mt-2 mb-3'></div>
         <div onClick={()=>{setclick("child")}} className='w-full flex justify-between py-3 text-slate-500 hover:text-lime-500 cursor-pointer'><h1>Child Psychiatrists in Dhaka</h1> <h1>({count1})</h1></div>
-        <div onClick={()=>{setclick("diff")}} className='w-full flex justify-between py-3 text-slate-500 hover:text-lime-500 cursor-pointer'><h1>Differences Between A Psychiatrist And A Therapist</h1> <h1>({count3})</h1></div>
+        <div onClick={()=>{setclick("diff")}} className='w-full text-start flex justify-between py-3 text-slate-500 hover:text-lime-500 cursor-pointer'><h1>Differences Between A Psychiatrist And A Therapist</h1> <h1>({count3})</h1></div>
         <div onClick={()=>{setclick("")}} className='w-full flex justify-between py-3 text-slate-500 hover:text-lime-500 cursor-pointer'><h1>Female Psychiatrists</h1> <h1>({5})</h1></div>
         <div onClick={()=>{setclick("Lifspring")}} className='w-full flex justify-between py-3 text-slate-500 hover:text-lime-500 cursor-pointer'><h1>LifeSpring</h1> <h1>({count6})</h1></div>
         <div onClick={()=>{setclick("mental")}} className='w-full flex justify-between py-3 text-slate-500 hover:text-lime-500 cursor-pointer'><h1>Mental Health</h1> <h1>({count2})</h1></div>
@@ -138,6 +143,8 @@ const Blogs = () => {
     </div>
       
     </div>
+    <Footer />
+  </div>
   )
 }
 

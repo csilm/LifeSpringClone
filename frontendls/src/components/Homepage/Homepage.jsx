@@ -12,13 +12,11 @@ import HCourses from './HCourses';
 // import Banner from './Banner';
 import OurClients from './OurClients'
 import HealthServices from './HealthServices'
-<<<<<<< HEAD
 import GotoTopBtn from '../GotoTopBtn/GotoTopBtn';
-=======
 import './common.css'
 import Img from './Overcoming-Depression.png'
 import { useState } from 'react';
->>>>>>> 1afb556dfb032db05150dee4f1baa580c32a6723
+
 
 const Homepage = () => {
    const [load , setLoad] = useState(false);
