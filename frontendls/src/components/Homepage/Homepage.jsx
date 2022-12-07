@@ -17,7 +17,6 @@ import './common.css'
 import Img from './Overcoming-Depression.png'
 import { useState } from 'react';
 
-
 const Homepage = () => {
    const [load , setLoad] = useState(false);
    const [hide,sethide] = useState(true)
