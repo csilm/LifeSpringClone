@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "./App.css";
 import Homepage from "./components/Homepage/Homepage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Prof from "./components/Proff/Prof"
+import Prof from "./components/Proff/Prof";
 import SingleVideo from "./components/Homepage/SingleVideo";
 import SingleCourse from "./components/SingleCourse/SingleCourse";
 import Login from "./components/Login/Login";
@@ -29,10 +29,20 @@ import Nutritionist from "./components/Prof_Sub/Nutritionist";
 import Paediatrics from "./components/Prof_Sub/Paediatrics";
 import Courses from "./components/Courses/Courses";
 import DashboardHome from "./components/Dashboard/DashboardHome";
+import Profile from "./components/Dashboard/Profile";
+import EnrolledCourses from "./components/Dashboard/EnrolledCourses";
+import Wishlist from "./components/Dashboard/Wishlist";
+import Reviews from "./components/Dashboard/Reviews";
+import PurchaseHistory from "./components/Dashboard/PurchaseHistory";
+import Settings from "./components/Dashboard/Settings";
 import ActivePage from "./components/Dashboard/ActivePage";
-import Blogs from './components/Blogs/Blogs'
-import BlogDetails from './components/Blogs/DetailsPage'
-
+import Blogs from "./components/Blogs/Blogs";
+import BlogDetails from "./components/Blogs/DetailsPage";
+import ActiveCourses from "./components/Dashboard/ActiveCourses";
+import AllCourses from "./components/Dashboard/AllCourses";
+import CompleteCourses from "./components/Dashboard/CompleteCourses";
+import SettingProfile from "./components/Dashboard/SettingProfile";
+import ResetPassword from "./components/Dashboard/ResetPassword";
 
 function App() {
   return (
@@ -44,7 +54,7 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/allProffesionals" element={<Prof />} />
           <Route path="/singleVideo/:id" element={<SingleVideo />} />
-          <Route path="/singleCourse" element={<SingleCourse/>} />
+          <Route path="/singleCourse" element={<SingleCourse />} />
           <Route path="/psychiatrist" element={<Psychiatrist />} />
           <Route path="/psychologist" element={<Psychologist />} />
           <Route path="/counselor" element={<Counselor />} />
@@ -73,10 +83,24 @@ function App() {
 
           <Route path="/clientsFeedback" element={<ClientsFBFull />} />
           <Route path="/clientsReview" element={<ClientsReview />} />
-          
+
           <Route path="/dashboard" element={<DashboardHome />}>
             <Route index element={<ActivePage />} />
-            <Route path="/dashboardActive" element={<ActivePage />} />
+            <Route path="profile" element={<Profile />} />
+            <Route path="enrolled-courses" element={<EnrolledCourses />}>
+              <Route index element={<AllCourses />} />
+              <Route path="all-courses" element={<AllCourses />} />
+              <Route path="active-courses" element={<ActiveCourses />} />
+              <Route path="complete-courses" element={<CompleteCourses />} />
+            </Route>
+            <Route path="wishlist" element={<Wishlist />} />
+            <Route path="reviews" element={<Reviews />} />
+            <Route path="purchase-history" element={<PurchaseHistory />} />
+            <Route path="settings" element={<Settings />}>
+              <Route index element={<SettingProfile />} />
+              <Route path="setting-profile" element={<SettingProfile />} />
+              <Route path="reset-password" element={<ResetPassword />} />
+            </Route>
           </Route>
         </Routes>
       </BrowserRouter>
