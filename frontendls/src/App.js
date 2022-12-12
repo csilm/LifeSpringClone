@@ -37,7 +37,6 @@ import PurchaseHistory from "./components/Dashboard/PurchaseHistory";
 import Settings from "./components/Dashboard/Settings";
 import ActivePage from "./components/Dashboard/ActivePage";
 import Blogs from "./components/Blogs/Blogs";
-import BlogDetails from "./components/Blogs/DetailsPage";
 import ActiveCourses from "./components/Dashboard/ActiveCourses";
 import AllCourses from "./components/Dashboard/AllCourses";
 import CompleteCourses from "./components/Dashboard/CompleteCourses";
@@ -79,7 +78,6 @@ function App() {
 
           <Route path="/courses" element={<Courses />} />
           <Route path="/blog" element={<Blogs />} />
-          <Route path="/blogDetails" element={<BlogDetails />} />
 
           <Route path="/clientsFeedback" element={<ClientsFBFull />} />
           <Route path="/clientsReview" element={<ClientsReview />} />

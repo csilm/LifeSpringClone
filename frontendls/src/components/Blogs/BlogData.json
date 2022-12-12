@@ -1,13 +1,20 @@
 [
     {   
         "id": 1,
+        "pname" : "Ali",
         "title": "সন্তানের পড়াশোনায় অভিভাবকের ভূমিকা",
         "details": "শিশু পড়তে চায় না? ৯ টি উপায়ে পড়াশুনাকে করে তুলুন উপভোগ্য! …",
         "date" : "November 13 , 2022",
         "img": "/img/blogImg/Obibabhok.png",
         "tag1": "child",
         "viwes": 20,
-        "link" : "/blog1"
+        "cont1": "Speaking of a time just a few decades from now, I’ve heard people say how they believe mental health to be a luxury when thousands of people could be suffering or dying every day from “serious” issues like physical health issues, financial issues hardships. No disrespect to those difficulties, but if the idea of mental health was simply a hoax, I believe we wouldn’t have lost as many as 700000 people per year by suicide. Or, we wouldn’t have 792,000,000 people embrace unhealthy coping strategies, only to make peace a far-fetched concept. If these numbers made you raise your eyebrows, guess I can make myself comfortable now to speak further about mental health. But before diving in, let’s address the question-“What exactly is mental health?”",
+        "cont2": "Speaking of a time just a few decades from now, I’ve heard people say how they believe mental health to be a luxury when thousands of people could be suffering or dying every day from “serious” issues like physical health issues, financial issues hardships. No disrespect to those difficulties, but if the idea of mental health was simply a hoax, I believe we wouldn’t have lost as many as 700000 people per year by suicide. Or, we wouldn’t have 792,000,000 people embrace unhealthy coping strategies, only to make peace a far-fetched concept. If these numbers made you raise your eyebrows, guess I can make myself comfortable now to speak further about mental health. But before diving in, let’s address the question-“What exactly is mental health?”",
+        "cont3": "Speaking of a time just a few decades from now, I’ve heard people say how they believe mental health to be a luxury when thousands of people could be suffering or dying every day from “serious” issues like physical health issues, financial issues hardships. No disrespect to those difficulties, but if the idea of mental health was simply a hoax, I believe we wouldn’t have lost as many as 700000 people per year by suicide. Or, we wouldn’t have 792,000,000 people embrace unhealthy coping strategies, only to make peace a far-fetched concept. If these numbers made you raise your eyebrows, guess I can make myself comfortable now to speak further about mental health. But before diving in, let’s address the question-“What exactly is mental health?”",
+        "cont4": "Speaking of a time just a few decades from now, I’ve heard people say how they believe mental health to be a luxury when thousands of people could be suffering or dying every day from “serious” issues like physical health issues, financial issues hardships. No disrespect to those difficulties, but if the idea of mental health was simply a hoax, I believe we wouldn’t have lost as many as 700000 people per year by suicide. Or, we wouldn’t have 792,000,000 people embrace unhealthy coping strategies, only to make peace a far-fetched concept. If these numbers made you raise your eyebrows, guess I can make myself comfortable now to speak further about mental health. But before diving in, let’s address the question-“What exactly is mental health?”",
+        "img1": "/img/blogImg/Obibabhok.png",
+        "img2": "/img/blogImg/Obibabhok.png",
+        "img3": "/img/blogImg/Obibabhok.png"
     },
     {   
         "id": 2,
@@ -64,7 +71,7 @@
         "viwes": 210
     },
     {   
-        "id": 1,
+        "id": 9,
         "title": "Mental Health: Best Child Psychiatrists in Dhaka City",
         "details": "Our childhood more or less shapes our adulthood and unresolved childhood …",
         "date" : " July 29, 2022",

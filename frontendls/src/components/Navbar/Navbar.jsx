@@ -7,7 +7,7 @@ import { Rotate as Hamburger } from "hamburger-react";
 import SmallScreen from "./SmallScreen";
 import { useState } from "react";
 import Logo from "../static/img/lifespring-footer-logo.png";
-import Blogs from "../Blogs/Blogs";
+
 
 const Navbar = () => {
   const [color, setColor] = useState(false);
