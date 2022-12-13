@@ -1,9 +1,9 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import DashboardHeader from "./DashboardHeader";
-import EnrolledSidebar from "./EnrolledSidebar";
+import DashboardHeader from "../DashboardHeader";
+import SettingsSidebar from "./SettingsSidebar";
 
-const EnrolledCourses = () => {
+const Settings = () => {
   return (
     <div className="space-y-6 mt-3">
       <DashboardHeader />
@@ -11,12 +11,12 @@ const EnrolledCourses = () => {
       <div className="bg-[#F8F8F8] h-screen">
         <div className="space-y-4 mt-6 ">
           <h3 className="capitalize font-extrabold text-2xl text-left pl-8">
-            Enrolled Courses
+            Settings
           </h3>
 
           <div class="flex flex-col text-start text-[#ABABAB]">
             <div class="basis-1/4">
-              <EnrolledSidebar />
+              <SettingsSidebar />
             </div>
             <div class="basis-3/4 ml-8 mt-10">
               <Outlet />
@@ -28,4 +28,4 @@ const EnrolledCourses = () => {
   );
 };
 
-export default EnrolledCourses;
+export default Settings;

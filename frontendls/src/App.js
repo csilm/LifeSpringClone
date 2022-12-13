@@ -30,20 +30,20 @@ import Paediatrics from "./components/Prof_Sub/Paediatrics";
 import Courses from "./components/Courses/Courses";
 import DashboardHome from "./components/Dashboard/DashboardHome";
 import Profile from "./components/Dashboard/Profile";
-import EnrolledCourses from "./components/Dashboard/EnrolledCourses";
 import Wishlist from "./components/Dashboard/Wishlist";
 import Reviews from "./components/Dashboard/Reviews";
 import PurchaseHistory from "./components/Dashboard/PurchaseHistory";
-import Settings from "./components/Dashboard/Settings";
+import Settings from "./components/Dashboard/Settings/Settings";
 import ActivePage from "./components/Dashboard/ActivePage";
 import Blogs from "./components/Blogs/Blogs";
 // import BlogDetails from "./components/Blogs/DetailsPage";
 import { useAuthContext } from "./hooks/useAuthContext";
-import AllCourses from "../src/components/Dashboard/AllCourses";
-import ActiveCourses from "./components/Dashboard/ActiveCourses";
-import CompleteCourses from "./components/Dashboard/CompleteCourses";
-import SettingProfile from "./components/Dashboard/SettingProfile";
-import ResetPassword from "./components/Dashboard/ResetPassword";
+import AllCourses from "../src/components/Dashboard/EnrolledCourses/AllCourses";
+import EnrolledCourses from "./components/Dashboard/EnrolledCourses/EnrolledCourses";
+import ActiveCourses from "./components/Dashboard/EnrolledCourses/ActiveCourses";
+import CompleteCourses from "./components/Dashboard/EnrolledCourses/CompleteCourses";
+import SettingProfile from "./components/Dashboard/Settings/SettingProfile";
+import ResetPassword from "./components/Dashboard/Settings/ResetPassword";
 
 function App() {
   const { user } = useAuthContext();

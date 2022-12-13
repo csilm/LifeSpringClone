@@ -1,4 +1,6 @@
 import React from "react";
+import img from "../../../assets/images/cover-photo.jpg";
+import user from "../../../assets/images/avatar-placeholder.jpg";
 
 const SettingProfile = () => {
   return (
@@ -149,7 +151,7 @@ const SettingProfile = () => {
         </div>
 
         {/* 2nd col */}
-        <div className="shadow bg-white rounded-lg p-6">
+        <div className="shadow bg-white rounded-lg p-6 h-min">
           <div className=" justify-start items-center">
             <div>
               <h1 className="text-xl font-semibold text-black">Photo</h1>
@@ -157,12 +159,51 @@ const SettingProfile = () => {
                 Upload your profile photo.
               </p>
             </div>
-            <div className=" mt-3">
+
+            <div className="">
+              <div
+                class="grid grid-rows-2 grid-flow-col rounded-md"
+                style={{ height: "180px",  backgroundImage: `url(${img})` }}
+              >
+                <div className="text-end p-4">
+                  <button className="btn bg-[#241436] rounded-full p-2">
+                    Delete Icon
+                  </button>
+                </div>
+                <div>
+                  <div class="grid grid-cols-2">
+                    <div>
+                      <div className="text-start p-4">
+                        <img
+                          className="btn bg-[#EEEEEE] rounded-full p-2"
+                          src={user}
+                          alt=""
+                          style={{ width: "130px", height: "130px" }}
+                        />
+                      </div>
+                    </div>
+                    <div className="text-end">
+                      <div className="text-end p-4">
+                        <button className="btn bg-[#99CC33] hover:bg-[#2F52C4] rounded-md p-2 text-white">
+                          Upload Cover Photo
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="text-end">
+                <p>Profile Photo Size: 200x200 pixels, </p>
+                <p>Cover Photo Size: 700x430 pixels,</p>
+              </div>
+            </div>
+
+            <div className="mt-7">
               <label className="text-black font-semibold">
                 Display name publicly as
               </label>
               <div>
-                <select className="w-full">
+                <select className="w-full rounded-md bg-[#EFEFEF] border-[#E5E5E5]">
                   <option value="name">name</option>
                 </select>
                 <p className="text-[#696981]">
