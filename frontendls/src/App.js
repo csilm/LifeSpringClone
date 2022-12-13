@@ -73,6 +73,8 @@ function App() {
 
           <Route path="/clientsFeedback" element={<ClientsFBFull />} />
           <Route path="/clientsReview" element={<ClientsReview />} />
+          <Route path="/singleCourse" element={<SingleCourse />} />
+
           
           <Route path="/dashboard" element={<DashboardHome />}>
             <Route index element={<ActivePage />} />
