@@ -1,18 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { useLogin } from "../../hooks/useLogin";
 
 const Login = () => {
   let navigate = useNavigate();
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const { login, error, isLoading } = useLogin();
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    await login(email, password);
-  };
 
   return (
     <div className="bg-[#050210]">
@@ -32,7 +22,7 @@ const Login = () => {
             />
           </div>
           <div>
-            <form className="mt-10" onSubmit={handleSubmit}>
+            <form className="mt-10">
               <div class="mb-4">
                 <label
                   for="email"
@@ -44,8 +34,6 @@ const Login = () => {
                   style={{ borderBottom: "2px solid white" }}
                   type="email"
                   id="email"
-                  onChange={(e) => setEmail(e.target.value)}
-                  value={email}
                   className="w-full bg-transparent text-white border-0 focus:outline-none focus:ring-0"
                   required=""
                 />
@@ -61,8 +49,6 @@ const Login = () => {
                   style={{ borderBottom: "2px solid white" }}
                   type="password"
                   id="password"
-                  onChange={(e) => setPassword(e.target.value)}
-                  value={password}
                   className="w-full bg-transparent text-white border-0 focus:outline-none focus:ring-0"
                   required=""
                 />
@@ -85,11 +71,9 @@ const Login = () => {
                   Remember Me
                 </label>
               </div>
-              {error && <div className="error text-red-500">{error}</div>}
               <button
                 style={{ width: "50vh" }}
                 type="submit"
-                disabled={isLoading}
                 className="text-black bg-white hover:bg-yellow-300 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-xl px-2 py-3 text-center transition-all duration-300 ease-in-out "
               >
                 LOGIN
@@ -101,7 +85,6 @@ const Login = () => {
 
             <div className="my-8">
               <p className="text-left text-white">Don't Have an account?</p>
-
               <Link to="/signup">
                 <button
                   style={{ width: "50vh" }}

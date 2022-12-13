@@ -8,15 +8,9 @@ import SmallScreen from "./SmallScreen";
 import { useState } from "react";
 import Logo from "../static/img/lifespring-footer-logo.png";
 import Blogs from "../Blogs/Blogs";
-import { useAuthContext } from "../../hooks/useAuthContext";
-import { useLogout } from "../../hooks/useLogout";
 
 const Navbar = () => {
-  const { logout } = useLogout();
-  const { user } = useAuthContext();
-
   const [color, setColor] = useState(false);
-
   const ChangeColor = () => {
     if (window.scrollY >= 100) {
       setColor(true);
@@ -52,29 +46,13 @@ const Navbar = () => {
           </div>
         </div>
         <div className="lg:w-1/2 w-full flex justify-center items-center flex-row flex-wrap lg:p-0 p-[.1rem]">
-          {!user && (
-            <>
-              <div className="text-sm text-white cursor-pointer hover:text-yellow-400 trns font-semibold px-2 bder">
-                {" "}
-                <a href={"/login"}> Log in </a>
-              </div>
-              <div className="text cursor-pointer text-white hover:text-yellow-400 trns font-semibold px-3 bder">
-                <a href={"/signup"}> Register </a>{" "}
-              </div>
-            </>
-          )}
-
-          {user && (
-            <>
-              <div className="text-sm text-white cursor-pointer hover:text-yellow-400 trns font-semibold px-2 bder">
-                <a href={"/dashboard"}> Dashboard </a>{" "}
-              </div>
-              <div className="text cursor-pointer text-white hover:text-yellow-400 trns font-semibold px-3 bder">
-                <button onClick={() => logout()}>Logout</button>
-              </div>
-            </>
-          )}
-
+          <div className="text-sm text-white cursor-pointer hover:text-yellow-400 trns font-semibold px-2 bder">
+            {" "}
+            <a href={"/login"}> Log in </a>
+          </div>
+          <div className="text cursor-pointer text-white hover:text-yellow-400 trns font-semibold px-3 bder">
+            <a href={"/signup"}> Register </a>{" "}
+          </div>
           <div className="text cursor-pointer text-white hover:text-yellow-400 trns font-semibold px-3 ">
             <a
               className=""
