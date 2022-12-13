@@ -2,8 +2,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./App.css";
 import Homepage from "./components/Homepage/Homepage";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Prof from "./components/Proff/Prof"
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import Prof from "./components/Proff/Prof";
 import SingleVideo from "./components/Homepage/SingleVideo";
 import SingleCourse from "./components/SingleCourse/SingleCourse";
 import Login from "./components/Login/Login";
@@ -30,21 +30,28 @@ import Paediatrics from "./components/Prof_Sub/Paediatrics";
 import Courses from "./components/Courses/Courses";
 import DashboardHome from "./components/Dashboard/DashboardHome";
 import ActivePage from "./components/Dashboard/ActivePage";
-import Blogs from './components/Blogs/Blogs'
-import BlogDetails from './components/Blogs/DetailsPage'
-
+import Blogs from "./components/Blogs/Blogs";
+import BlogDetails from "./components/Blogs/DetailsPage";
+import { useAuthContext } from "./hooks/useAuthContext";
 
 function App() {
+  const { user } = useAuthContext();
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
+          <Route
+            path="/login"
+            element={!user ? <Login /> : <Navigate to="/dashboard" />}
+          />
+          <Route
+            path="/signup"
+            element={!user ? <Signup /> : <Navigate to="/dashboard" />}
+          />
           <Route path="/allProffesionals" element={<Prof />} />
           <Route path="/singleVideo/:id" element={<SingleVideo />} />
-          <Route path="/singleCourse" element={<SingleCourse/>} />
+          <Route path="/singleCourse" element={<SingleCourse />} />
           <Route path="/psychiatrist" element={<Psychiatrist />} />
           <Route path="/psychologist" element={<Psychologist />} />
           <Route path="/counselor" element={<Counselor />} />
@@ -73,8 +80,11 @@ function App() {
 
           <Route path="/clientsFeedback" element={<ClientsFBFull />} />
           <Route path="/clientsReview" element={<ClientsReview />} />
-          
-          <Route path="/dashboard" element={<DashboardHome />}>
+
+          <Route
+            path="/dashboard"
+            element={user ? <DashboardHome /> : <Navigate to="/login" />}
+          >
             <Route index element={<ActivePage />} />
             <Route path="/dashboardActive" element={<ActivePage />} />
           </Route>
