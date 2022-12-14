@@ -2,7 +2,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./App.css";
 import Homepage from "./components/Homepage/Homepage";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Prof from "./components/Proff/Prof";
 import SingleVideo from "./components/Homepage/SingleVideo";
 import SingleCourse from "./components/SingleCourse/SingleCourse";
@@ -30,28 +30,45 @@ import Paediatrics from "./components/Prof_Sub/Paediatrics";
 import Courses from "./components/Courses/Courses";
 import DashboardHome from "./components/Dashboard/DashboardHome";
 import Profile from "./components/Dashboard/Profile";
-import EnrolledCourses from "./components/Dashboard/EnrolledCourses";
 import Wishlist from "./components/Dashboard/Wishlist";
 import Reviews from "./components/Dashboard/Reviews";
 import PurchaseHistory from "./components/Dashboard/PurchaseHistory";
-import Settings from "./components/Dashboard/Settings";
+import Settings from "./components/Dashboard/Settings/Settings";
 import ActivePage from "./components/Dashboard/ActivePage";
 import Blogs from "./components/Blogs/Blogs";
+<<<<<<< HEAD
 import ActiveCourses from "./components/Dashboard/ActiveCourses";
 import AllCourses from "./components/Dashboard/AllCourses";
 import CompleteCourses from "./components/Dashboard/CompleteCourses";
 import SettingProfile from "./components/Dashboard/SettingProfile";
 import ResetPassword from "./components/Dashboard/ResetPassword";
 import Admin from "./components/Admin/Admin";
+=======
+// import BlogDetails from "./components/Blogs/DetailsPage";
+import { useAuthContext } from "./hooks/useAuthContext";
+import AllCourses from "../src/components/Dashboard/EnrolledCourses/AllCourses";
+import EnrolledCourses from "./components/Dashboard/EnrolledCourses/EnrolledCourses";
+import ActiveCourses from "./components/Dashboard/EnrolledCourses/ActiveCourses";
+import CompleteCourses from "./components/Dashboard/EnrolledCourses/CompleteCourses";
+import SettingProfile from "./components/Dashboard/Settings/SettingProfile";
+import ResetPassword from "./components/Dashboard/Settings/ResetPassword";
+>>>>>>> d01ff474e5d38b20b568a224a02c9283c846ddaf
 
 function App() {
+  const { user } = useAuthContext();
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
+          <Route
+            path="/login"
+            element={!user ? <Login /> : <Navigate to="/dashboard" />}
+          />
+          <Route
+            path="/signup"
+            element={!user ? <Signup /> : <Navigate to="/dashboard" />}
+          />
           <Route path="/allProffesionals" element={<Prof />} />
           <Route path="/singleVideo/:id" element={<SingleVideo />} />
           <Route path="/singleCourse" element={<SingleCourse />} />
