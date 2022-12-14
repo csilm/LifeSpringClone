@@ -36,14 +36,14 @@ import PurchaseHistory from "./components/Dashboard/PurchaseHistory";
 import Settings from "./components/Dashboard/Settings/Settings";
 import ActivePage from "./components/Dashboard/ActivePage";
 import Blogs from "./components/Blogs/Blogs";
-<<<<<<< HEAD
-import ActiveCourses from "./components/Dashboard/ActiveCourses";
-import AllCourses from "./components/Dashboard/AllCourses";
-import CompleteCourses from "./components/Dashboard/CompleteCourses";
-import SettingProfile from "./components/Dashboard/SettingProfile";
-import ResetPassword from "./components/Dashboard/ResetPassword";
+
+// import ActiveCourses from "./components/Dashboard/ActiveCourses";
+// import AllCourses from "./components/Dashboard/AllCourses";
+// import CompleteCourses from "./components/Dashboard/CompleteCourses";
+// import SettingProfile from "./components/Dashboard/SettingProfile";
+// import ResetPassword from "./components/Dashboard/ResetPassword";
 import Admin from "./components/Admin/Admin";
-=======
+
 // import BlogDetails from "./components/Blogs/DetailsPage";
 import { useAuthContext } from "./hooks/useAuthContext";
 import AllCourses from "../src/components/Dashboard/EnrolledCourses/AllCourses";
@@ -52,7 +52,7 @@ import ActiveCourses from "./components/Dashboard/EnrolledCourses/ActiveCourses"
 import CompleteCourses from "./components/Dashboard/EnrolledCourses/CompleteCourses";
 import SettingProfile from "./components/Dashboard/Settings/SettingProfile";
 import ResetPassword from "./components/Dashboard/Settings/ResetPassword";
->>>>>>> d01ff474e5d38b20b568a224a02c9283c846ddaf
+
 
 function App() {
   const { user } = useAuthContext();

@@ -6,25 +6,12 @@ import Footer from "../Footer/Footer";
 import { BsFilePlay } from "react-icons/bs";
 import { MdFavoriteBorder } from "react-icons/md";
 const SingleCourse = () => {
-<<<<<<< HEAD
     const [accordion, setAccotdion] = useState(false);
     const btnHandle = (id) => {
         if(id === 1){
             setAccotdion(!accordion);
         }
-        if(id === 2){
-            setAccotdion(!accordion);
-        }
-        if(id === 3){
-            setAccotdion(!accordion);
-        }
-=======
-  const [accordion, setAccotdion] = useState(false);
-  const btnHandle = (id) => {
-    if (id === 1) {
-      setAccotdion(!accordion);
->>>>>>> d01ff474e5d38b20b568a224a02c9283c846ddaf
-    }
+        
     if (id === 2) {
       setAccotdion(!accordion);
     }
