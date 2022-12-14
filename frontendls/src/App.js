@@ -42,6 +42,7 @@ import AllCourses from "./components/Dashboard/AllCourses";
 import CompleteCourses from "./components/Dashboard/CompleteCourses";
 import SettingProfile from "./components/Dashboard/SettingProfile";
 import ResetPassword from "./components/Dashboard/ResetPassword";
+import Admin from "./components/Admin/Admin";
 
 function App() {
   return (
@@ -81,10 +82,11 @@ function App() {
 
           <Route path="/clientsFeedback" element={<ClientsFBFull />} />
           <Route path="/clientsReview" element={<ClientsReview />} />
-
+          <Route path="/admin" element={<Admin />} />
           <Route path="/dashboard" element={<DashboardHome />}>
             <Route index element={<ActivePage />} />
             <Route path="profile" element={<Profile />} />
+            
             <Route path="enrolled-courses" element={<EnrolledCourses />}>
               <Route index element={<AllCourses />} />
               <Route path="all-courses" element={<AllCourses />} />

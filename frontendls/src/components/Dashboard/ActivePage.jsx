@@ -1,6 +1,7 @@
 import React from "react";
-import { FaCheck, FaPlay } from "react-icons/fa";
-import { BsBook } from "react-icons/bs";
+import {  FaPlay } from "react-icons/fa";
+import {  BsPlayBtn,BsCheckCircle } from "react-icons/bs";
+import { SlBookOpen } from "react-icons/sl";
 import DashboardHeader from "./DashboardHeader";
 
 const ActivePage = () => {
@@ -17,36 +18,36 @@ const ActivePage = () => {
           <div className="grid lg:grid-cols-3 gap-6 mx-8">
             <div className="shadow bg-white rounded-lg p-6">
               <div className="flex justify-start space-x-8 items-center">
-                <div className="flex justify-center items-center border border-green-600 w-14 h-14 rounded-full">
-                  <BsBook className="text-3xl text-green-600" />
-                </div>
-                <div>
-                  <span className="text-xl font-extrabold">0</span>
-                  <p className="capitalize font-semibold">enroll courses</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="shadow bg-white rounded-lg p-6">
-              <div className="flex justify-start space-x-8 items-center">
-                <div className="flex justify-center items-center border border-red-600 w-14 h-14 rounded-full">
-                  <FaPlay className="text-3xl text-red-600" />
-                </div>
-                <div>
-                  <span className="text-xl font-extrabold">0</span>
-                  <p className="capitalize font-semibold">enroll courses</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="shadow bg-white rounded-lg p-6">
-              <div className="flex justify-start space-x-8 items-center">
                 <div className="flex justify-center items-center border border-blue-600 w-14 h-14 rounded-full">
-                  <FaCheck className="text-3xl text-blue-600" />
+                  <SlBookOpen className="text-3xl text-blue-600" />
                 </div>
-                <div>
-                  <span className="text-xl font-extrabold">0</span>
-                  <p className="capitalize font-semibold">enroll courses</p>
+                <div className="text-start">
+                  <span className="text-3xl font-extrabold text-start">0</span>
+                  <p className="capitalize  text-start">enroll courses</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="shadow bg-white rounded-lg p-6">
+              <div className="flex justify-start space-x-8 items-center">
+                <div className="flex justify-center items-center border border-yellow-400 w-14 h-14 rounded-full">
+                  <BsPlayBtn className="text-3xl text-yellow-400" />
+                </div>
+                <div className="text-start">
+                  <span className="text-3xl font-extrabold">0</span>
+                  <p className="capitalize">active courses</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="shadow bg-white rounded-lg p-6">
+              <div className="flex justify-start space-x-8 items-center">
+                <div className="flex justify-center items-center border border-green-600 w-14 h-14 rounded-full">
+                  <BsCheckCircle className="text-3xl text-green-600" />
+                </div>
+                <div className="text-start">
+                  <span className="text-3xl font-extrabold">0</span>
+                  <p className="capitalize">enroll courses</p>
                 </div>
               </div>
             </div>

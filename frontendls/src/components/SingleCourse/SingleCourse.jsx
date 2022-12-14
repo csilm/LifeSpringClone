@@ -8,13 +8,13 @@ import { MdFavoriteBorder } from 'react-icons/md';
 const SingleCourse = () => {
     const [accordion, setAccotdion] = useState(false);
     const btnHandle = (id) => {
-        if(id == 1){
+        if(id === 1){
             setAccotdion(!accordion);
         }
-        if(id == 2){
+        if(id === 2){
             setAccotdion(!accordion);
         }
-        if(id == 3){
+        if(id === 3){
             setAccotdion(!accordion);
         }
     }
