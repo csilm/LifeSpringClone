@@ -36,7 +36,7 @@ import PurchaseHistory from "./components/Dashboard/PurchaseHistory";
 import Settings from "./components/Dashboard/Settings/Settings";
 import ActivePage from "./components/Dashboard/ActivePage";
 import Blogs from "./components/Blogs/Blogs";
-
+import AddCourse from "./components/Dashboard/AddCourse";
 // import ActiveCourses from "./components/Dashboard/ActiveCourses";
 // import AllCourses from "./components/Dashboard/AllCourses";
 // import CompleteCourses from "./components/Dashboard/CompleteCourses";
@@ -52,6 +52,10 @@ import ActiveCourses from "./components/Dashboard/EnrolledCourses/ActiveCourses"
 import CompleteCourses from "./components/Dashboard/EnrolledCourses/CompleteCourses";
 import SettingProfile from "./components/Dashboard/Settings/SettingProfile";
 import ResetPassword from "./components/Dashboard/Settings/ResetPassword";
+import AddBlog from "./components/Dashboard/AddBlog";
+import AddCategory from "./components/Dashboard/AddCategory";
+import AddProfessionals from "./components/Dashboard/AddProfessionals";
+
 
 
 function App() {
@@ -111,6 +115,10 @@ function App() {
               <Route path="complete-courses" element={<CompleteCourses />} />
             </Route>
             <Route path="wishlist" element={<Wishlist />} />
+            <Route path="addCourse" element={<AddCourse />} />
+            <Route path="addBlogs" element={<AddBlog />} />
+            <Route path="addCategory" element={<AddCategory />} />
+            <Route path="addprofessionals" element={<AddProfessionals />} />
             <Route path="reviews" element={<Reviews />} />
             <Route path="purchase-history" element={<PurchaseHistory />} />
             <Route path="settings" element={<Settings />}>

@@ -5,7 +5,7 @@ import EnrolledSidebar from "./EnrolledSidebar";
 
 const EnrolledCourses = () => {
   return (
-    <div className="space-y-6 mt-3">
+    <div className="space-y-6 mt-12">
       <DashboardHeader />
 
       <div className="bg-[#F8F8F8] h-screen">

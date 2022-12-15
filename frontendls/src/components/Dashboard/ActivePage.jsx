@@ -47,7 +47,7 @@ const ActivePage = () => {
                 </div>
                 <div className="text-start">
                   <span className="text-3xl font-extrabold">0</span>
-                  <p className="capitalize">enroll courses</p>
+                  <p className="capitalize">active courses</p>
                 </div>
               </div>
             </div>
