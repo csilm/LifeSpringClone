@@ -15,9 +15,9 @@ const ActivePage = () => {
             Dashboard
           </h3> */}
 
-          <div className="grid lg:grid-cols-2 gap-3 mx-8">
+          <div className="grid lg:grid-cols-2 gap-3 mx-12">
             <div className="mt-6">
-              <div className="flex justify-start space-x-2 items-center">
+              <div className="flex justify-start space-x-6 items-center">
                 <div className="flex justify-center items-center  w-14 h-14 rounded-full">
                   <BiError className="text-7xl text-orange-400" />
                 </div>
@@ -40,7 +40,7 @@ const ActivePage = () => {
 
             <div className="p-6 mt-6">
             <h2>67% Complete.You are almost done!</h2>
-              <div className="flex justify-start space-x-8 items-center">
+              <div className="justify-start space-x-8 items-center">
                 
                 <div class="w-full  max-w-sm my-4 mx-auto rounded-lg overflow-hidden border border-gray-300">
                   
