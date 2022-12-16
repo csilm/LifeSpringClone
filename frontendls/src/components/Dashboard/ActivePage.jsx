@@ -1,15 +1,58 @@
 import React from "react";
-import {  FaPlay } from "react-icons/fa";
-import {  BsPlayBtn,BsCheckCircle } from "react-icons/bs";
+import { BiError } from "react-icons/bi";
+import { BsPlayBtn, BsCheckCircle, BsDot } from "react-icons/bs";
 import { SlBookOpen } from "react-icons/sl";
 import DashboardHeader from "./DashboardHeader";
 
 const ActivePage = () => {
   return (
-    <div className="space-y-6 mt-3">
+    <div className="space-y-6 mt-12">
       <DashboardHeader />
 
       <div className="bg-[#F8F8F8] h-screen">
+        <div className="space-y-4  mb-6">
+          {/* <h3 className="capitalize font-extrabold text-2xl text-left pl-8">
+            Dashboard
+          </h3> */}
+
+          <div className="grid lg:grid-cols-2 gap-3 mx-8">
+            <div className="mt-6">
+              <div className="flex justify-start space-x-2 items-center">
+                <div className="flex justify-center items-center  w-14 h-14 rounded-full">
+                  <BiError className="text-7xl text-orange-400" />
+                </div>
+                <div className="text-start">
+                  <h6 className="text-2xl font-extrabold text-start">
+                    Complete Your Profile
+                  </h6>
+                  <p className="">
+                    Complete your profile so people can know more about you! Go
+                    to Profile <span className="text-semibold">Settings</span>
+                  </p>
+                  <ul className="flex gap-4">
+                  {/* <BsDot className="text-7xl text-orange-400" /> */}
+                    <li>Set Your <span className="text-semibold">Profile Photo</span></li>
+                    <li>Set Your <span className="text-semibold">Profile Photo</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="p-6 mt-6">
+            <h2>67% Complete.You are almost done!</h2>
+              <div className="flex justify-start space-x-8 items-center">
+                
+                <div class="w-full  max-w-sm my-4 mx-auto rounded-lg overflow-hidden border border-gray-300">
+                  
+                  <div
+                    class="bg-yellow-300 text-xs leading-none py-1"
+                    style={{ width: "67%" }}
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="space-y-4 mt-6 ">
           <h3 className="capitalize font-extrabold text-2xl text-left pl-8">
             Dashboard
