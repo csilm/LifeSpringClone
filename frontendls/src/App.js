@@ -37,14 +37,7 @@ import Settings from "./components/Dashboard/Settings/Settings";
 import ActivePage from "./components/Dashboard/ActivePage";
 import Blogs from "./components/Blogs/Blogs";
 import AddCourse from "./components/Dashboard/AddCourse";
-// import ActiveCourses from "./components/Dashboard/ActiveCourses";
-// import AllCourses from "./components/Dashboard/AllCourses";
-// import CompleteCourses from "./components/Dashboard/CompleteCourses";
-// import SettingProfile from "./components/Dashboard/SettingProfile";
-// import ResetPassword from "./components/Dashboard/ResetPassword";
 import Admin from "./components/Admin/Admin";
-
-// import BlogDetails from "./components/Blogs/DetailsPage";
 import { useAuthContext } from "./hooks/useAuthContext";
 import AllCourses from "../src/components/Dashboard/EnrolledCourses/AllCourses";
 import EnrolledCourses from "./components/Dashboard/EnrolledCourses/EnrolledCourses";
@@ -55,8 +48,6 @@ import ResetPassword from "./components/Dashboard/Settings/ResetPassword";
 import AddBlog from "./components/Dashboard/AddBlog";
 import AddCategory from "./components/Dashboard/AddCategory";
 import AddProfessionals from "./components/Dashboard/AddProfessionals";
-
-
 
 function App() {
   const { user } = useAuthContext();
@@ -107,7 +98,7 @@ function App() {
           <Route path="/dashboard" element={<DashboardHome />}>
             <Route index element={<ActivePage />} />
             <Route path="profile" element={<Profile />} />
-            
+
             <Route path="enrolled-courses" element={<EnrolledCourses />}>
               <Route index element={<AllCourses />} />
               <Route path="all-courses" element={<AllCourses />} />

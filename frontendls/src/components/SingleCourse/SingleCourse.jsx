@@ -6,12 +6,12 @@ import Footer from "../Footer/Footer";
 import { BsFilePlay } from "react-icons/bs";
 import { MdFavoriteBorder } from "react-icons/md";
 const SingleCourse = () => {
-    const [accordion, setAccotdion] = useState(false);
-    const btnHandle = (id) => {
-        if(id === 1){
-            setAccotdion(!accordion);
-        }
-        
+  const [accordion, setAccotdion] = useState(false);
+  const btnHandle = (id) => {
+    if (id === 1) {
+      setAccotdion(!accordion);
+    }
+
     if (id === 2) {
       setAccotdion(!accordion);
     }
@@ -367,7 +367,7 @@ const SingleCourse = () => {
                 <a
                   href="https://docs.google.com/document/d/1twrAmj4rBXekddgphTLZl3z7KIKGhO7354bA3-IlXGY/edit"
                   target="_blank"
-                  rel="noopener"
+                  rel="noreferrer"
                 >
                   <b>Purify FAQ (কিছু সাধারণ প্রশ্ন-উত্তর)</b>
                 </a>
@@ -630,7 +630,7 @@ const SingleCourse = () => {
                 <a
                   href="https://docs.google.com/document/d/1twrAmj4rBXekddgphTLZl3z7KIKGhO7354bA3-IlXGY/edit"
                   target="_blank"
-                  rel="noopener"
+                  rel="noreferrer"
                 >
                   <b>Purify FAQ (কিছু সাধারণ প্রশ্ন-উত্তর)</b>
                 </a>
@@ -798,7 +798,7 @@ const SingleCourse = () => {
           {/* card */}
           <div className="w-[400px]">
             <div class=" bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 mt-[-140px] sticky">
-              <a href="#" className="w-[400px]">
+              <a href="#!" className="w-[400px]">
                 <iframe
                   className="w-[100%]"
                   height="200"
@@ -810,7 +810,7 @@ const SingleCourse = () => {
                 ></iframe>
               </a>
               <div class="p-5">
-                <a href="#"></a>
+                {/* <a href="#!"></a> */}
                 <div className="flex justify-between font-bold text-xl">
                   <p>Enrollment fee</p>
                   <p>৳ 1000</p>
