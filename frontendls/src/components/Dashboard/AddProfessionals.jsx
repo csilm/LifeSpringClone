@@ -26,7 +26,7 @@ const AddProfessionals = () => {
                     className="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3"
                     id="application-link"
                     type="text"
-                    placeholder="Mental Health"
+                    placeholder="Dr Zakier"
                   />
                 </div>
               </div>
