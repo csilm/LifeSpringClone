@@ -89,7 +89,7 @@ function App() {
           <Route path="/childDevelopment" element={<ChildDevelopement />} />
           <Route path="/mentalHealthTest" element={<MentalHealthTest />} />
 
-          <Route path="/courses" element={<Courses />} />
+          <Route path={"/courses"} element={<Courses />} />
           <Route path="/blog" element={<Blogs />} />
 
           <Route path="/clientsFeedback" element={<ClientsFBFull />} />

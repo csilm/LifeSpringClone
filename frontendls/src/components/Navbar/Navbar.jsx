@@ -49,16 +49,16 @@ const Navbar = () => {
         <div className="lg:w-1/2 w-full flex justify-center items-center flex-row flex-wrap lg:p-0 p-[.1rem]">
           <div className="text-sm text-white cursor-pointer hover:text-yellow-400 trns font-semibold px-2 bder">
             {" "}
-            <Link href="/login"> Log in </Link>
+            <Link to="/login"> Log in </Link>
           </div>
           <div className="text cursor-pointer text-white hover:text-yellow-400 trns font-semibold px-3 bder">
-            <Link href="/signup"> Register </Link>{" "}
+            <Link to="/signup"> Register </Link>{" "}
           </div>
           <div className="text cursor-pointer text-white hover:text-yellow-400 trns font-semibold px-3 ">
             <Link
               className=""
               target="blank"
-              href="https://www.facebook.com/lifespringinstitute/"
+              to="https://www.facebook.com/lifespringinstitute/"
             >
               {" "}
               <BsFacebook />{" "}
@@ -68,7 +68,7 @@ const Navbar = () => {
             <Link
               className=""
               target="blank"
-              href="https://www.youtube.com/channel/UCIhnNMshTmGQmkJaBLGe5aw"
+              to="https://www.youtube.com/channel/UCIhnNMshTmGQmkJaBLGe5aw"
             >
               {" "}
               <BsYoutube />{" "}
@@ -78,7 +78,7 @@ const Navbar = () => {
             <Link
               className=""
               target="blank"
-              href="https://www.instagram.com/lifespringinstitute/"
+              to="https://www.instagram.com/lifespringinstitute/"
             >
               {" "}
               <BsInstagram />{" "}
@@ -88,7 +88,7 @@ const Navbar = () => {
             <Link
               className=""
               target="blank"
-              href="https://www.linkedin.com/company/lifespring/"
+              to="https://www.linkedin.com/company/lifespring/"
             >
               {" "}
               <FaLinkedinIn />{" "}
@@ -104,7 +104,7 @@ const Navbar = () => {
       >
         <div className=" w-full flex flex-row justify-between items-center p-2">
           <div className=" lg:w-1/5 h-4/5 lg:pl-28 flex flex-row">
-            <Link href="/">
+            <Link to="/">
               {" "}
               <img className="w-[11rem]" src={Logo} alt="" />{" "}
             </Link>
@@ -127,7 +127,7 @@ const Navbar = () => {
                       {/* <li onClick={()=>{}} className=" py-2.5"><Link className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">All Department</Link></li> */}
                       <li className=" py-2.5">
                         <Link
-                          href="/allProffesionals"
+                          to="/allProffesionals"
                           className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer"
                         >
                           All Department
@@ -135,7 +135,7 @@ const Navbar = () => {
                       </li>
                       <li className=" py-2.5">
                         <Link
-                          href="/psychiatrist"
+                          to="/psychiatrist"
                           className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer"
                         >
                           Psychiatris
@@ -143,7 +143,7 @@ const Navbar = () => {
                       </li>
                       <li className=" py-2.5">
                         <Link
-                          href="/psychologist"
+                          to="/psychologist"
                           className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer"
                         >
                           Psychologist
@@ -151,7 +151,7 @@ const Navbar = () => {
                       </li>
                       <li className=" py-2.5">
                         <Link
-                          href="/counselor"
+                          to="/counselor"
                           className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer"
                         >
                           Counselor
@@ -159,7 +159,7 @@ const Navbar = () => {
                       </li>
                       <li className=" py-2.5">
                         <Link
-                          href="/child"
+                          to="/child"
                           className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer"
                         >
                           Child and Adolescent
@@ -167,7 +167,7 @@ const Navbar = () => {
                       </li>
                       <li className=" py-2.5">
                         <Link
-                          href="/dermatologist"
+                          to="/dermatologist"
                           className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer"
                         >
                           Dermatologist
@@ -175,7 +175,7 @@ const Navbar = () => {
                       </li>
                       <li className=" py-2.5">
                         <Link
-                          href="/sexual-health"
+                          to="/sexual-health"
                           className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer"
                         >
                           Sexual Health
@@ -183,7 +183,7 @@ const Navbar = () => {
                       </li>
                       <li className=" py-2.5">
                         <Link
-                          href="/gynechologist"
+                          to="/gynechologist"
                           className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer"
                         >
                           Gynechologist
@@ -191,7 +191,7 @@ const Navbar = () => {
                       </li>
                       <li className=" py-2.5">
                         <Link
-                          href="/internal-med"
+                          to="/internal-med"
                           className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer"
                         >
                           Internal Medicine
@@ -199,7 +199,7 @@ const Navbar = () => {
                       </li>
                       <li className=" py-2.5">
                         <Link
-                          href="/therapist"
+                          to="/therapist"
                           className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer"
                         >
                           Development Therapist
@@ -207,7 +207,7 @@ const Navbar = () => {
                       </li>
                       <li className=" py-2.5">
                         <Link
-                          href="/ent"
+                          to="/ent"
                           className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer"
                         >
                           ENT
@@ -215,7 +215,7 @@ const Navbar = () => {
                       </li>
                       <li className=" py-2.5">
                         <Link
-                          href="/nutritionist"
+                          to="/nutritionist"
                           className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer"
                         >
                           Nutritionist
@@ -223,7 +223,7 @@ const Navbar = () => {
                       </li>
                       <li className=" py-2.5">
                         <Link
-                          href="/paediatrics"
+                          to="/paediatrics"
                           className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer"
                         >
                           Paediatrics
@@ -235,14 +235,14 @@ const Navbar = () => {
                 <li className="dropdown inline px-4 text-black hover:text-blue-700 cursor-pointer font-semibold text-base tracking-wide">
                   <button className="btn">
                     {" "}
-                    <Link href="/listOfServices"> Services </Link>{" "}
+                    <Link to="/listOfServices"> Services </Link>{" "}
                     <div className="ub"></div>
                   </button>
                   <div className="dropdown-menu z-10 absolute hidden h-auto pt-4">
                     <ul className="block w-[17rem] mt-0 sty bg-white px-10 shadow-lg rounded-sm py-2 justify-start items-start ml-[12rem]">
                       <li className="py-2.5">
                         <Link
-                          href="/psychologicalCounseling"
+                          to="/psychologicalCounseling"
                           className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer"
                         >
                           Psychological Counseling
@@ -250,7 +250,7 @@ const Navbar = () => {
                       </li>
                       <li className="py-2.5">
                         <Link
-                          href="/corporateService"
+                          to="/corporateService"
                           className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer"
                         >
                           Corporate Service
@@ -258,7 +258,7 @@ const Navbar = () => {
                       </li>
                       <li className="py-2.5">
                         <Link
-                          href="/childDevelopment"
+                          to="/childDevelopment"
                           className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer"
                         >
                           Child Development
@@ -266,7 +266,7 @@ const Navbar = () => {
                       </li>
                       <li className="py-2.5">
                         <Link
-                          href="/mentalHealthTest"
+                          to="/mentalHealthTest"
                           className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer"
                         >
                           Free Mental health Test
@@ -277,7 +277,7 @@ const Navbar = () => {
                 </li>
                 <li className="inline px-4 text-black hover:text-blue-600 cursor-pointer font-semibold text-base tracking-wide">
                   {" "}
-                  <Link href="/courses">
+                  <Link to="/courses">
                     {" "}
                     <button className="btn">
                       Courses<div className="ub1"></div>
@@ -287,13 +287,13 @@ const Navbar = () => {
 
                 {/* <li className="inline px-4 text-black hover:text-blue-600 cursor-pointer font-semibold text-base tracking-wide">
                   <button className="btn">
-                    <Link href="/blog">Blogs</Link> <div className="ub1"></div>
+                    <Link to="/blog">Blogs</Link> <div className="ub1"></div>
                   </button>
                 </li> */}
 
                 <li className="inline px-4 text-black hover:text-blue-600 cursor-pointer font-semibold text-base tracking-wide">
                   {" "}
-                  <Link href="/blog">
+                  <Link to="/blog">
                     {" "}
                     <button className="btn">
                       Blogs<div className="ub1"></div>
@@ -309,7 +309,7 @@ const Navbar = () => {
                     <ul className="block w-[17rem] mt-0 sty bg-white px-10 shadow-lg rounded-sm  py-2 justify-start items-start ml-[30rem]">
                       <li className="py-2.5">
                         <Link
-                          href="/clientsFeedback"
+                          to="/clientsFeedback"
                           className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer"
                         >
                           Clients Feedback
@@ -317,7 +317,7 @@ const Navbar = () => {
                       </li>
                       <li className="py-2.5">
                         <Link
-                          href="/clientsReview"
+                          to="/clientsReview"
                           className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer"
                         >
                           Purify Class Review
