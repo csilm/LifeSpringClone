@@ -23,14 +23,14 @@ const securePassword = async (password) => {
 // signup controller
 const signupUser = async (req, res) => {
   // get info from body/user
-  const { email, password, name, mobile } = req.body;
+  const { email, password, name, mobile, role } = req.body;
 
   console.log(req.body);
   try {
-    const user = await UserModel.signup(email, password, name, mobile);
+    const user = await UserModel.signup(email, password, name, mobile, role);
     const token = createToken(user._id);
 
-    res.status(200).json({ email, token });
+    res.status(200).json({ email, token, role });
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
@@ -69,9 +69,9 @@ const updateUser = async (req, res) => {
       user_id,
       {
         name,
-        mobile_number,
+        mobile,
         about,
-        // profile_image,
+        profile,
       },
       {
         returnOriginal: false,
