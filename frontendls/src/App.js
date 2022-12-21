@@ -2,8 +2,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./App.css";
 import Homepage from "./components/Homepage/Homepage";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Prof from "./components/Proff/Prof"
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import Prof from "./components/Proff/Prof";
 import SingleVideo from "./components/Homepage/SingleVideo";
 import SingleCourse from "./components/SingleCourse/SingleCourse";
 import Login from "./components/Login/Login";
@@ -29,22 +29,40 @@ import Nutritionist from "./components/Prof_Sub/Nutritionist";
 import Paediatrics from "./components/Prof_Sub/Paediatrics";
 import Courses from "./components/Courses/Courses";
 import DashboardHome from "./components/Dashboard/DashboardHome";
+import Profile from "./components/Dashboard/Profile";
+import Wishlist from "./components/Dashboard/Wishlist";
+import Reviews from "./components/Dashboard/Reviews";
+import PurchaseHistory from "./components/Dashboard/PurchaseHistory";
+import Settings from "./components/Dashboard/Settings/Settings";
 import ActivePage from "./components/Dashboard/ActivePage";
-import Blogs from './components/Blogs/Blogs'
-import BlogDetails from './components/Blogs/DetailsPage'
-
+import Blogs from "./components/Blogs/Blogs";
+// import BlogDetails from "./components/Blogs/DetailsPage";
+import { useAuthContext } from "./hooks/useAuthContext";
+import AllCourses from "../src/components/Dashboard/EnrolledCourses/AllCourses";
+import EnrolledCourses from "./components/Dashboard/EnrolledCourses/EnrolledCourses";
+import ActiveCourses from "./components/Dashboard/EnrolledCourses/ActiveCourses";
+import CompleteCourses from "./components/Dashboard/EnrolledCourses/CompleteCourses";
+import SettingProfile from "./components/Dashboard/Settings/SettingProfile";
+import ResetPassword from "./components/Dashboard/Settings/ResetPassword";
 
 function App() {
+  const { user } = useAuthContext();
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
+          <Route
+            path="/login"
+            element={!user ? <Login /> : <Navigate to="/dashboard" />}
+          />
+          <Route
+            path="/signup"
+            element={!user ? <Signup /> : <Navigate to="/dashboard" />}
+          />
           <Route path="/allProffesionals" element={<Prof />} />
           <Route path="/singleVideo/:id" element={<SingleVideo />} />
-          <Route path="/singleCourse" element={<SingleCourse/>} />
+          <Route path="/singleCourse" element={<SingleCourse />} />
           <Route path="/psychiatrist" element={<Psychiatrist />} />
           <Route path="/psychologist" element={<Psychologist />} />
           <Route path="/counselor" element={<Counselor />} />
@@ -69,16 +87,30 @@ function App() {
 
           <Route path="/courses" element={<Courses />} />
           <Route path="/blog" element={<Blogs />} />
-          <Route path="/blogDetails" element={<BlogDetails />} />
 
           <Route path="/clientsFeedback" element={<ClientsFBFull />} />
           <Route path="/clientsReview" element={<ClientsReview />} />
           <Route path="/singleCourse" element={<SingleCourse />} />
 
           
+
           <Route path="/dashboard" element={<DashboardHome />}>
             <Route index element={<ActivePage />} />
-            <Route path="/dashboardActive" element={<ActivePage />} />
+            <Route path="profile" element={<Profile />} />
+            <Route path="enrolled-courses" element={<EnrolledCourses />}>
+              <Route index element={<AllCourses />} />
+              <Route path="all-courses" element={<AllCourses />} />
+              <Route path="active-courses" element={<ActiveCourses />} />
+              <Route path="complete-courses" element={<CompleteCourses />} />
+            </Route>
+            <Route path="wishlist" element={<Wishlist />} />
+            <Route path="reviews" element={<Reviews />} />
+            <Route path="purchase-history" element={<PurchaseHistory />} />
+            <Route path="settings" element={<Settings />}>
+              <Route index element={<SettingProfile />} />
+              <Route path="setting-profile" element={<SettingProfile />} />
+              <Route path="reset-password" element={<ResetPassword />} />
+            </Route>
           </Route>
         </Routes>
       </BrowserRouter>
