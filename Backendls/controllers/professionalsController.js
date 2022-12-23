@@ -25,8 +25,20 @@ const createProfessionals = async (req, res) => {
   }
 };
 
-
-
+// get a Professionals
+const getProfessional = async (req, res) => {
+  const { id } = req.params;
+  try {
+    const professional = await ProfessionalsModel.findById({ _id: id });
+    if (!professional) {
+      return res.status(400).json({ error: "Not such a professional." });
+    } else {
+      res.status(200).json(professional);
+    }
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
+};
 
 // get all professionals
 
@@ -89,6 +101,7 @@ const deleteProfessionals = async (req, res) => {
 module.exports = {
   createProfessionals,
   getProfessionals,
+  getProfessional,
   updateProfessionals,
   deleteProfessionals,
 };
