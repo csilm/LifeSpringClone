@@ -162,7 +162,7 @@ const SettingProfile = () => {
 
             <div className="">
               <div
-                class="grid grid-rows-2 grid-flow-col rounded-md"
+                className="grid grid-rows-2 grid-flow-col rounded-md"
                 style={{ height: "180px",  backgroundImage: `url(${img})` }}
               >
                 <div className="text-end p-4">
@@ -171,7 +171,7 @@ const SettingProfile = () => {
                   </button>
                 </div>
                 <div>
-                  <div class="grid grid-cols-2">
+                  <div className="grid grid-cols-2">
                     <div>
                       <div className="text-start p-4">
                         <img

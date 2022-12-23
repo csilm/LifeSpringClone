@@ -8,9 +8,12 @@ import SmallScreen from "./SmallScreen";
 import { useState } from "react";
 import Logo from "../static/img/lifespring-footer-logo.png";
 import { Link } from "react-router-dom";
+import { useAuthContext } from "../../hooks/useAuthContext";
 // import Blogs from "../Blogs/Blogs";
 
 const Navbar = () => {
+  const { user } = useAuthContext();
+
   const [color, setColor] = useState(false);
   const ChangeColor = () => {
     if (window.scrollY >= 100) {
@@ -49,7 +52,11 @@ const Navbar = () => {
         <div className="lg:w-1/2 w-full flex justify-center items-center flex-row flex-wrap lg:p-0 p-[.1rem]">
           <div className="text-sm text-white cursor-pointer hover:text-yellow-400 trns font-semibold px-2 bder">
             {" "}
-            <Link to="/login"> Log in </Link>
+            {user ? (
+              <Link to="/dashboard"> Dashboard </Link>
+            ) : (
+              <Link to="/login"> Log in </Link>
+            )}
           </div>
           <div className="text cursor-pointer text-white hover:text-yellow-400 trns font-semibold px-3 bder">
             <Link to="/signup"> Register </Link>{" "}

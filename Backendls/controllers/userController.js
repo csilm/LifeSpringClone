@@ -25,10 +25,11 @@ const signupUser = async (req, res) => {
   // get info from body/user
   const { email, password, name, mobile, role } = req.body;
 
-  console.log(req.body);
+  // console.log(req.body);
   try {
-    const user = await UserModel.signup(email, password, name, mobile, role);
+    const user = await UserModel.signup(email, password, name, mobile);
     const token = createToken(user._id);
+    const role = user.role;
 
     res.status(200).json({ email, token, role });
   } catch (error) {
@@ -41,10 +42,11 @@ const loginUser = async (req, res) => {
   const { email, password } = req.body;
 
   try {
-    const user = await UserModel.login(email, password);
-
+    const user = await UserModel.login(email, password).select("-password");
     const token = createToken(user._id);
-    res.status(200).json({ email, token });
+    const role = user.role;
+
+    res.status(200).json({ email, token, role });
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
@@ -63,7 +65,7 @@ const userProfile = async (req, res) => {
 // update user info
 const updateUser = async (req, res) => {
   const user_id = req.user;
-  const { email, name, mobile, about, profile } = req.body;
+  const { name, mobile, about, profile } = req.body;
   try {
     const user = await UserModel.findOneAndUpdate(
       user_id,

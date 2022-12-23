@@ -10,15 +10,19 @@ import {
   AiOutlineShoppingCart,
   AiOutlineNodeIndex,
   AiOutlineContainer,
-  AiOutlinePaperClip
+  AiOutlinePaperClip,
 } from "react-icons/ai";
-import {SiProtocolsdotio} from "react-icons/si"
+import { SiProtocolsdotio } from "react-icons/si";
 import { MdOutlineDashboard } from "react-icons/md";
 import { BsBook } from "react-icons/bs";
 import { Link, NavLink } from "react-router-dom";
+import { useLogout } from "../../hooks/useLogout";
+import { useAuthContext } from "../../hooks/useAuthContext";
 // import logo from '../image/30-removebg-preview.png';
 
 const Sidebar = () => {
+  const { user, role } = useAuthContext();
+  const { logout } = useLogout();
   const [open, setOpen] = useState(false);
 
   return (
@@ -96,28 +100,32 @@ const Sidebar = () => {
           <AiOutlineNodeIndex className="text-base" />
           <span className="ml-3">Category</span>
         </NavLink>
-        <NavLink
-          to="addCourse"
-          className={({ isActive }) =>
-            isActive
-              ? "bg-[#99CC33] text-white flex justify-start items-center space-x-2 rounded-md p-3 font-semibold pl-8 mt-2"
-              : "text-[#99CC33] flex justify-start items-center space-x-2 rounded-md p-3 pl-8 hover:bg-[#EDF0F9] font-semibold mt-2"
-          }
-        >
-          <AiOutlineContainer className="text-base" />
-          <span className="ml-3">Add Courses</span>
-        </NavLink>
-        <NavLink
-          to="addBlogs"
-          className={({ isActive }) =>
-            isActive
-              ? "bg-[#99CC33] text-white flex justify-start items-center space-x-2 rounded-md p-3 font-semibold pl-8 mt-2"
-              : "text-[#99CC33] flex justify-start items-center space-x-2 rounded-md p-3 pl-8 hover:bg-[#EDF0F9] font-semibold mt-2"
-          }
-        >
-          <AiOutlinePaperClip className="text-base" />
-          <span className="ml-3">Blogs</span>
-        </NavLink>
+        {user && role === "admin" && (
+          <NavLink
+            to="addCourse"
+            className={({ isActive }) =>
+              isActive
+                ? "bg-[#99CC33] text-white flex justify-start items-center space-x-2 rounded-md p-3 font-semibold pl-8 mt-2"
+                : "text-[#99CC33] flex justify-start items-center space-x-2 rounded-md p-3 pl-8 hover:bg-[#EDF0F9] font-semibold mt-2"
+            }
+          >
+            <AiOutlineContainer className="text-base" />
+            <span className="ml-3">Add Courses</span>
+          </NavLink>
+        )}
+        {user && role === "admin" && (
+          <NavLink
+            to="addBlogs"
+            className={({ isActive }) =>
+              isActive
+                ? "bg-[#99CC33] text-white flex justify-start items-center space-x-2 rounded-md p-3 font-semibold pl-8 mt-2"
+                : "text-[#99CC33] flex justify-start items-center space-x-2 rounded-md p-3 pl-8 hover:bg-[#EDF0F9] font-semibold mt-2"
+            }
+          >
+            <AiOutlinePaperClip className="text-base" />
+            <span className="ml-3">Blogs</span>
+          </NavLink>
+        )}
 
         <NavLink
           to="profile"
@@ -193,7 +201,10 @@ const Sidebar = () => {
           <span className="ml-3">Settings</span>
         </NavLink>
 
-        <button className="text-[#99CC33] flex justify-start items-center space-x-2 rounded-md p-3 pl-8 hover:bg-[#EDF0F9] w-full">
+        <button
+          onClick={() => logout()}
+          className="text-[#99CC33] flex justify-start items-center space-x-2 rounded-md p-3 pl-8 hover:bg-[#EDF0F9] w-full"
+        >
           <AiOutlineLogout className="text-base text-[#99CC33]" />
           <span className="ml-3">Logout</span>
         </button>

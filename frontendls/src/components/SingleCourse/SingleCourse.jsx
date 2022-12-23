@@ -96,7 +96,7 @@ const SingleCourse = () => {
             </p>
 
             {/* copy */}
-            <div class="tutor-course-content-content">
+            <div className="tutor-course-content-content">
               <p>
                 আপনার জীবনকে পুনরায় গড়ে তুলুন সাইকোলজি এবং স্পিরিচুয়ালিটির
                 মাধ্যমে
@@ -652,7 +652,7 @@ const SingleCourse = () => {
               <div
                 type="button"
                 onClick={() => btnHandle(1)}
-                class="font-medium border-gray-200 rounded-t-xl"
+                className="font-medium border-gray-200 rounded-t-xl"
                 data-accordion-target="#accordion-collapse-body-1"
                 aria-expanded="true"
                 aria-controls="accordion-collapse-body-1"
@@ -661,7 +661,7 @@ const SingleCourse = () => {
                 <span>
                   <svg
                     data-accordion-icon=""
-                    class="float-right w-6 h-6 rotate-180 shrink-0"
+                    className="float-right w-6 h-6 rotate-180 shrink-0"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg"
@@ -678,10 +678,10 @@ const SingleCourse = () => {
             {accordion && (
               <div
                 id="accordion-collapse-body-1"
-                class=""
+                className=""
                 aria-labelledby="accordion-collapse-heading-1"
               >
-                <div class="flex justify-between">
+                <div className="flex justify-between">
                   <p>Welcome to purify</p>
                   <div className="flex justify-between items-center">
                     <p>00:09:41</p>
@@ -702,7 +702,7 @@ const SingleCourse = () => {
               <div
                 type="button"
                 onClick={() => btnHandle(2)}
-                class="font-medium border-gray-200 rounded-t-xl"
+                className="font-medium border-gray-200 rounded-t-xl"
                 data-accordion-target="#accordion-collapse-body-1"
                 aria-expanded="true"
                 aria-controls="accordion-collapse-body-1"
@@ -711,7 +711,7 @@ const SingleCourse = () => {
                 <span>
                   <svg
                     data-accordion-icon=""
-                    class="float-right w-6 h-6 rotate-180 shrink-0"
+                    className="float-right w-6 h-6 rotate-180 shrink-0"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg"
@@ -728,10 +728,10 @@ const SingleCourse = () => {
             {accordion && (
               <div
                 id="accordion-collapse-body-1"
-                class=""
+                className=""
                 aria-labelledby="accordion-collapse-heading-1"
               >
-                <div class="flex justify-between">
+                <div className="flex justify-between">
                   <p>Welcome to purify</p>
                   <div className="flex justify-between items-center">
                     <p>00:09:41</p>
@@ -752,7 +752,7 @@ const SingleCourse = () => {
               <div
                 type="button"
                 onClick={() => btnHandle(3)}
-                class="font-medium border-gray-200 rounded-t-xl"
+                className="font-medium border-gray-200 rounded-t-xl"
                 data-accordion-target="#accordion-collapse-body-1"
                 aria-expanded="true"
                 aria-controls="accordion-collapse-body-1"
@@ -761,7 +761,7 @@ const SingleCourse = () => {
                 <span>
                   <svg
                     data-accordion-icon=""
-                    class="float-right w-6 h-6 rotate-180 shrink-0"
+                    className="float-right w-6 h-6 rotate-180 shrink-0"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg"
@@ -778,10 +778,10 @@ const SingleCourse = () => {
             {accordion && (
               <div
                 id="accordion-collapse-body-1"
-                class=""
+                className=""
                 aria-labelledby="accordion-collapse-heading-1"
               >
-                <div class="flex justify-between">
+                <div className="flex justify-between">
                   <p>Welcome to purify</p>
                   <div className="flex justify-between items-center">
                     <p>00:09:41</p>
@@ -797,7 +797,7 @@ const SingleCourse = () => {
         <div>
           {/* card */}
           <div className="w-[400px]">
-            <div class=" bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 mt-[-140px] sticky">
+            <div className=" bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 mt-[-140px] sticky">
               <a href="#!" className="w-[400px]">
                 <iframe
                   className="w-[100%]"
@@ -809,7 +809,7 @@ const SingleCourse = () => {
                   allowfullscreen
                 ></iframe>
               </a>
-              <div class="p-5">
+              <div className="p-5">
                 {/* <a href="#!"></a> */}
                 <div className="flex justify-between font-bold text-xl">
                   <p>Enrollment fee</p>

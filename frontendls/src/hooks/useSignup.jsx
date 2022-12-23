@@ -16,6 +16,7 @@ export const useSignup = () => {
       body: JSON.stringify({ name, email, mobile, password }),
     });
     const json = await response.json();
+    // console.log(response)
 
     if (!response.ok) {
       setIsLoading(false);
@@ -23,7 +24,8 @@ export const useSignup = () => {
     }
     if (response.ok) {
       // save the user to local storage
-      localStorage.setItem("user", JSON.stringify(json));
+      localStorage.setItem("token", JSON.stringify(json.token));
+      localStorage.setItem("role", JSON.stringify(json.role));
 
       // update the auth context
       dispatch({ type: "LOGIN", payload: json });

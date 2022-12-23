@@ -14,11 +14,11 @@ const Settings = () => {
             Settings
           </h3>
 
-          <div class="flex flex-col text-start text-[#ABABAB]">
-            <div class="basis-1/4">
+          <div className="flex flex-col text-start text-[#ABABAB]">
+            <div className="basis-1/4">
               <SettingsSidebar />
             </div>
-            <div class="basis-3/4 ml-8 mt-10">
+            <div className="basis-3/4 ml-8 mt-10">
               <Outlet />
             </div>
           </div>

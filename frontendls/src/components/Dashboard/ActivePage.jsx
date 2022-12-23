@@ -42,10 +42,10 @@ const ActivePage = () => {
             <h2>67% Complete.You are almost done!</h2>
               <div className="justify-start space-x-8 items-center">
                 
-                <div class="w-full  max-w-sm my-4 mx-auto rounded-lg overflow-hidden border border-gray-300">
+                <div className="w-full  max-w-sm my-4 mx-auto rounded-lg overflow-hidden border border-gray-300">
                   
                   <div
-                    class="bg-yellow-300 text-xs leading-none py-1"
+                    className="bg-yellow-300 text-xs leading-none py-1"
                     style={{ width: "67%" }}
                   ></div>
                 </div>

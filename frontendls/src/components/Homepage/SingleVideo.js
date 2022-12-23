@@ -21,9 +21,9 @@ const SingleVideo = () => {
                         <BsFillShareFill className='mr-5' />
                     </button>
                     {
-                        share && <div class="absolute overflow-hidden bg-grey-200 ml-[-120px] mt-6 w-36">
+                        share && <div className="absolute overflow-hidden bg-grey-200 ml-[-120px] mt-6 w-36">
 
-                            <div class=" bg-white text-black shadow-lg">
+                            <div className=" bg-white text-black shadow-lg">
                                 <ul className='grid grid-cols-1'>
                                     
                                     

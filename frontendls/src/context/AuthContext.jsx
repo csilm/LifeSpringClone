@@ -18,14 +18,15 @@ export const AuthContextProvider = ({ children }) => {
     user: null,
   });
   useEffect(() => {
-    const user = JSON.parse(localStorage.getItem("user"));
+    const user = JSON.parse(localStorage.getItem("token"));
+    const role = JSON.parse(localStorage.getItem("role"));
 
     if (user) {
-      dispatch({ type: "LOGIN", payload: user });
+      dispatch({ type: "LOGIN", payload: user, role });
     }
   }, []);
 
-  console.log("AuthContext state:", state);
+  // console.log("AuthContext state:", state);
 
   return (
     <AuthContext.Provider value={{ ...state, dispatch }}>

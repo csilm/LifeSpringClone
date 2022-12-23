@@ -21,8 +21,8 @@ const userSchema = new Schema({
     require: true,
   },
   role: {
-    type: Boolean,
-    default: false,
+    type: String,
+    default: "user",
   },
 });
 
