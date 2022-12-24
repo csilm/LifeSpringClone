@@ -37,7 +37,7 @@ import Settings from "./components/Dashboard/Settings/Settings";
 import ActivePage from "./components/Dashboard/ActivePage";
 import Blogs from "./components/Blogs/Blogs";
 import AddCourse from "./components/Dashboard/AddCourse";
-import Admin from "./components/Admin/Admin";
+// import Admin from "./components/Admin/Admin";
 import { useAuthContext } from "./hooks/useAuthContext";
 import AllCourses from "../src/components/Dashboard/EnrolledCourses/AllCourses";
 import EnrolledCourses from "./components/Dashboard/EnrolledCourses/EnrolledCourses";
@@ -95,6 +95,7 @@ function App() {
           <Route path="/clientsFeedback" element={<ClientsFBFull />} />
           <Route path="/clientsReview" element={<ClientsReview />} />
           {/* <Route path="/admin" element={<Admin />} /> */}
+
           <Route path="/dashboard" element={<DashboardHome />}>
             <Route index element={<ActivePage />} />
             <Route path="profile" element={<Profile />} />
@@ -106,8 +107,26 @@ function App() {
               <Route path="complete-courses" element={<CompleteCourses />} />
             </Route>
             <Route path="wishlist" element={<Wishlist />} />
-            <Route path="addCourse" element={<AddCourse />} />
-            <Route path="addBlogs" element={<AddBlog />} />
+            <Route
+              path="addCourse"
+              element={
+                user?.user && user?.role === "admin" ? (
+                  <AddCourse />
+                ) : (
+                  <Navigate to="/dashboard" />
+                )
+              }
+            />
+            <Route
+              path="addBlogs"
+              element={
+                user?.user && user?.role === "admin" ? (
+                  <AddBlog />
+                ) : (
+                  <Navigate to="/dashboard" />
+                )
+              }
+            />
             <Route path="addCategory" element={<AddCategory />} />
             <Route path="addprofessionals" element={<AddProfessionals />} />
             <Route path="reviews" element={<Reviews />} />
