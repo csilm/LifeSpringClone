@@ -11,8 +11,8 @@ const Profile = () => {
           <h3 className="capitalize font-extrabold text-2xl text-left">
             My Profile
           </h3>
-          <div class="flex flex-row text-start text-[#ABABAB]">
-            <div class="basis-1/4">
+          <div className="flex flex-row text-start text-[#ABABAB]">
+            <div className="basis-1/4">
               <p className="font-semibold my-2">Registration Date</p>
               <p className="font-semibold my-2">First Name</p>
               <p className="font-semibold my-2">Last Name</p>
@@ -22,7 +22,7 @@ const Profile = () => {
               <p className="font-semibold my-2">Job Title</p>
               <p className="font-semibold my-2">Bio</p>
             </div>
-            <div class="basis-3/4">
+            <div className="basis-3/4">
               <p className="my-2">_____</p>
               <p className="my-2">_____</p>
               <p className="my-2">_____</p>

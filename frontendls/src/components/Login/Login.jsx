@@ -23,9 +23,9 @@ const Login = () => {
           </div>
           <div>
             <form className="mt-10">
-              <div class="mb-4">
+              <div className="mb-4">
                 <label
-                  for="email"
+                  htmlFor="email"
                   className="block mb-2  font-medium text-white dark:text-gray-300 text-left text-md"
                 >
                   Email
@@ -38,9 +38,9 @@ const Login = () => {
                   required=""
                 />
               </div>
-              <div class="mb-4">
+              <div className="mb-4">
                 <label
-                  for="password"
+                  htmlFor="password"
                   className="block mb-2  font-medium text-white dark:text-gray-300 text-left text-md"
                 >
                   Password
@@ -54,8 +54,8 @@ const Login = () => {
                 />
               </div>
 
-              <div class="flex items-start mb-4">
-                <div class="flex items-center h-5">
+              <div className="flex items-start mb-4">
+                <div className="flex items-center h-5">
                   <input
                     id="remember"
                     type="checkbox"
@@ -65,8 +65,8 @@ const Login = () => {
                   />
                 </div>
                 <label
-                  for="remember"
-                  class="ml-2 text-sm font-medium text-white dark:text-gray-400"
+                  htmlFor="remember"
+                  className="ml-2 text-sm font-medium text-white dark:text-gray-400"
                 >
                   Remember Me
                 </label>

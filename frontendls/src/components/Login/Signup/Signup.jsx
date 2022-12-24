@@ -56,7 +56,7 @@ const Signup = () => {
           </div>
           <div>
             <form className="mt-10" onSubmit={handleSubmit}>
-              <div class="mb-4">
+              <div className="mb-4">
                 <label
                   for="name"
                   className="block font-medium text-white dark:text-gray-300 text-left text-md"
@@ -110,7 +110,7 @@ const Signup = () => {
                   />
                 </div>
               </div>
-              {/* <div class="mb-4">
+              {/* <div className="mb-4">
                 <label for='cellNum' className="block font-medium text-white dark:text-gray-300 text-left text-md">Mobile Number</label>
                 <div id="select" style={{ borderBottom: "2px solid white" }} className='bg-transparent mb-5 flex justify-center items-center'>
                   <div className="rounded-lg overflow-hidden">
@@ -127,7 +127,7 @@ const Signup = () => {
                 </div>
 
               </div> */}
-              <div class="mb-4">
+              <div className="mb-4">
                 <label className="block font-medium text-white dark:text-gray-300 text-left text-md">
                   Email
                 </label>
@@ -142,7 +142,7 @@ const Signup = () => {
                 />
               </div>
 
-              <div class="mb-4">
+              <div className="mb-4">
                 <label
                   for="password"
                   className="block font-medium text-white dark:text-gray-300 text-left text-md"

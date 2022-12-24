@@ -66,16 +66,16 @@ const Courses = () => {
                             const { name, img, lesson1,lesson2,price } = course;
                             return (
                                 <SwiperSlide className='mt-5'>
-                                <div class="max-w-sm dark:bg-gray-800 dark:border-gray-700 hover:overflow-hidden">
+                                <div className="max-w-sm dark:bg-gray-800 dark:border-gray-700 hover:overflow-hidden">
                             
-                                <img class="rounded-t-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:overflow-hidden duration-500" src={img} alt="" />
+                                <img className="rounded-t-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:overflow-hidden duration-500" src={img} alt="" />
                             
-                            <div class="p-5 text-left">
+                            <div className="p-5 text-left">
                                 <a href="#">
-                                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white hover:text-green-500">{name}</h5>
+                                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white hover:text-green-500">{name}</h5>
                                             </a>
                                             <p className='text-gray-500'><span>{lesson1}</span> <span>{lesson2} </span> </p>
-                                            <p class="mb-3 text-[#031f42] dark:text-gray-400 text-2xl font-bold">৳ { price}</p>
+                                            <p className="mb-3 text-[#031f42] dark:text-gray-400 text-2xl font-bold">৳ { price}</p>
 
                             </div>
                         </div>

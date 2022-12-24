@@ -94,7 +94,7 @@ function App() {
 
           <Route path="/clientsFeedback" element={<ClientsFBFull />} />
           <Route path="/clientsReview" element={<ClientsReview />} />
-          <Route path="/admin" element={<Admin />} />
+          {/* <Route path="/admin" element={<Admin />} /> */}
           <Route path="/dashboard" element={<DashboardHome />}>
             <Route index element={<ActivePage />} />
             <Route path="profile" element={<Profile />} />
