@@ -7,6 +7,7 @@ import { Rotate as Hamburger } from "hamburger-react";
 import SmallScreen from "./SmallScreen";
 import { useState } from "react";
 import Logo from "../static/img/lifespring-footer-logo.png";
+import { Link } from "react-router-dom";
 // import Blogs from "../Blogs/Blogs";
 
 const Navbar = () => {
@@ -48,50 +49,50 @@ const Navbar = () => {
         <div className="lg:w-1/2 w-full flex justify-center items-center flex-row flex-wrap lg:p-0 p-[.1rem]">
           <div className="text-sm text-white cursor-pointer hover:text-yellow-400 trns font-semibold px-2 bder">
             {" "}
-            <a href={"/login"}> Log in </a>
+            <Link to="/login"> Log in </Link>
           </div>
           <div className="text cursor-pointer text-white hover:text-yellow-400 trns font-semibold px-3 bder">
-            <a href={"/signup"}> Register </a>{" "}
+            <Link to="/signup"> Register </Link>{" "}
           </div>
           <div className="text cursor-pointer text-white hover:text-yellow-400 trns font-semibold px-3 ">
-            <a
+            <Link
               className=""
               target="blank"
-              href={"https://www.facebook.com/lifespringinstitute/"}
+              to="https://www.facebook.com/lifespringinstitute/"
             >
               {" "}
               <BsFacebook />{" "}
-            </a>
+            </Link>
           </div>
           <div className="text cursor-pointer text-white hover:text-yellow-400 trns font-semibold px-3 ">
-            <a
+            <Link
               className=""
               target="blank"
-              href={"https://www.youtube.com/channel/UCIhnNMshTmGQmkJaBLGe5aw"}
+              to="https://www.youtube.com/channel/UCIhnNMshTmGQmkJaBLGe5aw"
             >
               {" "}
               <BsYoutube />{" "}
-            </a>
+            </Link>
           </div>
           <div className="text cursor-pointer text-white hover:text-yellow-400 trns font-semibold px-3 ">
-            <a
+            <Link
               className=""
               target="blank"
-              href={"https://www.instagram.com/lifespringinstitute/"}
+              to="https://www.instagram.com/lifespringinstitute/"
             >
               {" "}
               <BsInstagram />{" "}
-            </a>
+            </Link>
           </div>
           <div className="text cursor-pointer text-white hover:text-yellow-400 trns font-semibold px-3 ">
-            <a
+            <Link
               className=""
               target="blank"
-              href={"https://www.linkedin.com/company/lifespring/"}
+              to="https://www.linkedin.com/company/lifespring/"
             >
               {" "}
               <FaLinkedinIn />{" "}
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -103,10 +104,10 @@ const Navbar = () => {
       >
         <div className=" w-full flex flex-row justify-between items-center p-2">
           <div className=" lg:w-1/5 h-4/5 lg:pl-28 flex flex-row">
-            <a href={"/"}>
+            <Link to="/">
               {" "}
               <img className="w-[11rem]" src={Logo} alt="" />{" "}
-            </a>
+            </Link>
           </div>
           <div className="lg:hidden block trans">
             <Hamburger toggled={click} toggle={setClick} />
@@ -123,110 +124,110 @@ const Navbar = () => {
                   </button>
                   <div className="dropdown-menu z-10 absolute hidden  h-auto  pt-4">
                     <ul className="block w-[17rem] ml-[5rem] sty bg-white px-10 shadow-lg rounded-sm py-2 justify-start items-start">
-                      {/* <li onClick={()=>{}} className=" py-2.5"><a className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">All Department</a></li> */}
+                      {/* <li onClick={()=>{}} className=" py-2.5"><Link className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer">All Department</Link></li> */}
                       <li className=" py-2.5">
-                        <a
-                          href={"/allProffesionals"}
+                        <Link
+                          to="/allProffesionals"
                           className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer"
                         >
                           All Department
-                        </a>
+                        </Link>
                       </li>
                       <li className=" py-2.5">
-                        <a
-                          href={"/psychiatrist"}
+                        <Link
+                          to="/psychiatrist"
                           className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer"
                         >
                           Psychiatris
-                        </a>
+                        </Link>
                       </li>
                       <li className=" py-2.5">
-                        <a
-                          href={"/psychologist"}
+                        <Link
+                          to="/psychologist"
                           className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer"
                         >
                           Psychologist
-                        </a>
+                        </Link>
                       </li>
                       <li className=" py-2.5">
-                        <a
-                          href={"/counselor"}
+                        <Link
+                          to="/counselor"
                           className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer"
                         >
                           Counselor
-                        </a>
+                        </Link>
                       </li>
                       <li className=" py-2.5">
-                        <a
-                          href={"/child"}
+                        <Link
+                          to="/child"
                           className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer"
                         >
                           Child and Adolescent
-                        </a>
+                        </Link>
                       </li>
                       <li className=" py-2.5">
-                        <a
-                          href={"/dermatologist"}
+                        <Link
+                          to="/dermatologist"
                           className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer"
                         >
                           Dermatologist
-                        </a>
+                        </Link>
                       </li>
                       <li className=" py-2.5">
-                        <a
-                          href={"/sexual-health"}
+                        <Link
+                          to="/sexual-health"
                           className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer"
                         >
                           Sexual Health
-                        </a>
+                        </Link>
                       </li>
                       <li className=" py-2.5">
-                        <a
-                          href={"/gynechologist"}
+                        <Link
+                          to="/gynechologist"
                           className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer"
                         >
                           Gynechologist
-                        </a>
+                        </Link>
                       </li>
                       <li className=" py-2.5">
-                        <a
-                          href={"/internal-med"}
+                        <Link
+                          to="/internal-med"
                           className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer"
                         >
                           Internal Medicine
-                        </a>
+                        </Link>
                       </li>
                       <li className=" py-2.5">
-                        <a
-                          href={"/therapist"}
+                        <Link
+                          to="/therapist"
                           className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer"
                         >
                           Development Therapist
-                        </a>
+                        </Link>
                       </li>
                       <li className=" py-2.5">
-                        <a
-                          href={"/ent"}
+                        <Link
+                          to="/ent"
                           className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer"
                         >
                           ENT
-                        </a>
+                        </Link>
                       </li>
                       <li className=" py-2.5">
-                        <a
-                          href={"/nutritionist"}
+                        <Link
+                          to="/nutritionist"
                           className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer"
                         >
                           Nutritionist
-                        </a>
+                        </Link>
                       </li>
                       <li className=" py-2.5">
-                        <a
-                          href={"/paediatrics"}
+                        <Link
+                          to="/paediatrics"
                           className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer"
                         >
                           Paediatrics
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -234,65 +235,65 @@ const Navbar = () => {
                 <li className="dropdown inline px-4 text-black hover:text-blue-700 cursor-pointer font-semibold text-base tracking-wide">
                   <button className="btn">
                     {" "}
-                    <a href={"/listOfServices"}> Services </a>{" "}
+                    <Link to="/listOfServices"> Services </Link>{" "}
                     <div className="ub"></div>
                   </button>
                   <div className="dropdown-menu z-10 absolute hidden h-auto pt-4">
                     <ul className="block w-[17rem] mt-0 sty bg-white px-10 shadow-lg rounded-sm py-2 justify-start items-start ml-[12rem]">
                       <li className="py-2.5">
-                        <a
-                          href={"/psychologicalCounseling"}
+                        <Link
+                          to="/psychologicalCounseling"
                           className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer"
                         >
                           Psychological Counseling
-                        </a>
+                        </Link>
                       </li>
                       <li className="py-2.5">
-                        <a
-                          href={"/corporateService"}
+                        <Link
+                          to="/corporateService"
                           className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer"
                         >
                           Corporate Service
-                        </a>
+                        </Link>
                       </li>
                       <li className="py-2.5">
-                        <a
-                          href={"/childDevelopment"}
+                        <Link
+                          to="/childDevelopment"
                           className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer"
                         >
-                          Child Developement
-                        </a>
+                          Child Development
+                        </Link>
                       </li>
                       <li className="py-2.5">
-                        <a
-                          href={"/mentalHealthTest"}
+                        <Link
+                          to="/mentalHealthTest"
                           className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer"
                         >
                           Free Mental health Test
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
                 </li>
                 <li className="inline px-4 text-black hover:text-blue-600 cursor-pointer font-semibold text-base tracking-wide">
                   {" "}
-                  <a href={"/courses"}>
+                  <Link to="/courses">
                     {" "}
                     <button className="btn">
                       Courses<div className="ub1"></div>
                     </button>
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="inline px-4 text-black hover:text-blue-600 cursor-pointer font-semibold text-base tracking-wide">
                   <button className="btn">
-                    <a href={"/blog"}>Blogs</a> <div className="ub1"></div>
+                    <Link to="/blog">Blogs</Link> <div className="ub1"></div>
                   </button>
                 </li>
 
                 {/* <li className="inline px-4 text-black hover:text-blue-600 cursor-pointer font-semibold text-base tracking-wide">
                   {" "}
-                  <a href={"/blog"}>
+                  <Link to="/blog">
                     {" "}
                     <button className="btn">
                       Blogs<div className="ub1"></div>
@@ -307,20 +308,20 @@ const Navbar = () => {
                   <div className="dropdown-menu z-10 absolute hidden h-auto pt-4">
                     <ul className="block w-[17rem] mt-0 sty bg-white px-10 shadow-lg rounded-sm  py-2 justify-start items-start ml-[30rem]">
                       <li className="py-2.5">
-                        <a
-                          href={"/clientsFeedback"}
+                        <Link
+                          to="/clientsFeedback"
                           className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer"
                         >
                           Clients Feedback
-                        </a>
+                        </Link>
                       </li>
                       <li className="py-2.5">
-                        <a
-                          href={"/clientsReview"}
+                        <Link
+                          to="/clientsReview"
                           className="block text-sm text-gray-500 font-bold hover:text-green-600 cursor-pointer"
                         >
                           Purify Class Review
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>

@@ -66,7 +66,7 @@ const SingleVideo = () => {
                 </div>
                 <div className='flex justify-center items-center'>
                     {
-                        id == 1 && <div>
+                        id === 1 && <div>
                             <iframe className='m-20' width="845" height="475" src="https://www.youtube.com/embed/NpIsCvK-03U" title="Ex boyfriend/girlfriend-র কাছে কি আবার ফিরে যাবো? | LifeSpring" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             <p className='text-white'>fsdh</p>
                         </div>
@@ -74,13 +74,13 @@ const SingleVideo = () => {
                     }
 
                     {
-                        id == 2 && <iframe className='m-20' width="845" height="475" src="https://www.youtube.com/embed/NpIsCvK-03U" title="Ex boyfriend/girlfriend-র কাছে কি আবার ফিরে যাবো? | LifeSpring" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        id === 2 && <iframe className='m-20' width="845" height="475" src="https://www.youtube.com/embed/NpIsCvK-03U" title="Ex boyfriend/girlfriend-র কাছে কি আবার ফিরে যাবো? | LifeSpring" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     }
                     {
-                        id == 3 && <iframe className='m-20' width="845" height="475" src="https://www.youtube.com/embed/NpIsCvK-03U" title="Ex boyfriend/girlfriend-র কাছে কি আবার ফিরে যাবো? | LifeSpring" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        id === 3 && <iframe className='m-20' width="845" height="475" src="https://www.youtube.com/embed/NpIsCvK-03U" title="Ex boyfriend/girlfriend-র কাছে কি আবার ফিরে যাবো? | LifeSpring" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     }
                     {
-                        id == 4 &&
+                        id === 4 &&
                         <iframe width="845" height="475" src="https://www.youtube.com/embed/wT92vXNS6To" title="অভিভাবক হিসেবে আমার কী করণীয় ? | LifeSpring Adda" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         
                     }

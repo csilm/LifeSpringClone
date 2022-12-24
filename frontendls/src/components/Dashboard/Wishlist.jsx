@@ -3,11 +3,11 @@ import DashboardHeader from "./DashboardHeader";
 
 const Wishlist = () => {
   return (
-    <div className="space-y-6 mt-3">
+    <div className="space-y-6 mt-12">
       <DashboardHeader />
 
       <div className="bg-[#F8F8F8] h-screen">
-        <div className="space-y-4 mt-6 ">
+        <div className="space-y-4 mt-6">
           <h3 className="capitalize font-extrabold text-2xl text-left pl-8">
             Wishlist
           </h3>

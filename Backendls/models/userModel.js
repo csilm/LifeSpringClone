@@ -20,18 +20,20 @@ const userSchema = new Schema({
     type: Number,
     require: true,
   },
-  isAdmin: {
-    type: Boolean,
-    default: false,
-  },
-  isPsychiatrist: {
+  role: {
     type: Boolean,
     default: false,
   },
 });
 
 // statics singup method
-userSchema.statics.signup = async function (email, password, name, mobile) {
+userSchema.statics.signup = async function (
+  email,
+  password,
+  name,
+  mobile,
+  role
+) {
   const exists = await this.findOne({ email });
 
   if (!email || !password || !name || !mobile) {
@@ -52,7 +54,8 @@ userSchema.statics.signup = async function (email, password, name, mobile) {
     email,
     password: hash,
     name,
-    // mobile,
+    mobile,
+    role,
   });
 
   return user;

@@ -8,8 +8,11 @@ import {
   AiOutlineHeart,
   AiOutlineStar,
   AiOutlineShoppingCart,
+  AiOutlineNodeIndex,
+  AiOutlineContainer,
+  AiOutlinePaperClip
 } from "react-icons/ai";
-
+import {SiProtocolsdotio} from "react-icons/si"
 import { MdOutlineDashboard } from "react-icons/md";
 import { BsBook } from "react-icons/bs";
 import { Link, NavLink } from "react-router-dom";
@@ -71,13 +74,57 @@ const Sidebar = () => {
           <MdOutlineDashboard className="text-base" />
           <span className="ml-3">Dashboard</span>
         </NavLink>
+        <NavLink
+          to="addProfessionals"
+          className={({ isActive }) =>
+            isActive
+              ? "bg-[#99CC33] text-white flex justify-start items-center space-x-2 rounded-md p-3 font-semibold pl-8 mt-2"
+              : "text-[#99CC33] flex justify-start items-center space-x-2 rounded-md p-3 pl-8 hover:bg-[#EDF0F9] font-semibold mt-2"
+          }
+        >
+          <SiProtocolsdotio className="text-base" />
+          <span className="ml-3">Professionals</span>
+        </NavLink>
+        <NavLink
+          to="addCategory"
+          className={({ isActive }) =>
+            isActive
+              ? "bg-[#99CC33] text-white flex justify-start items-center space-x-2 rounded-md p-3 font-semibold pl-8 mt-2"
+              : "text-[#99CC33] flex justify-start items-center space-x-2 rounded-md p-3 pl-8 hover:bg-[#EDF0F9] font-semibold mt-2"
+          }
+        >
+          <AiOutlineNodeIndex className="text-base" />
+          <span className="ml-3">Category</span>
+        </NavLink>
+        <NavLink
+          to="addCourse"
+          className={({ isActive }) =>
+            isActive
+              ? "bg-[#99CC33] text-white flex justify-start items-center space-x-2 rounded-md p-3 font-semibold pl-8 mt-2"
+              : "text-[#99CC33] flex justify-start items-center space-x-2 rounded-md p-3 pl-8 hover:bg-[#EDF0F9] font-semibold mt-2"
+          }
+        >
+          <AiOutlineContainer className="text-base" />
+          <span className="ml-3">Add Courses</span>
+        </NavLink>
+        <NavLink
+          to="addBlogs"
+          className={({ isActive }) =>
+            isActive
+              ? "bg-[#99CC33] text-white flex justify-start items-center space-x-2 rounded-md p-3 font-semibold pl-8 mt-2"
+              : "text-[#99CC33] flex justify-start items-center space-x-2 rounded-md p-3 pl-8 hover:bg-[#EDF0F9] font-semibold mt-2"
+          }
+        >
+          <AiOutlinePaperClip className="text-base" />
+          <span className="ml-3">Blogs</span>
+        </NavLink>
 
         <NavLink
           to="profile"
           className={({ isActive }) =>
             isActive
-              ? "bg-[#99CC33] text-white flex justify-start items-center space-x-2 rounded-md p-3 font-semibold pl-8 font-semibold"
-              : "text-[#99CC33] flex justify-start items-center space-x-2 rounded-md p-3 pl-8 hover:bg-[#EDF0F9] font-semibold"
+              ? "bg-[#99CC33] text-white flex justify-start items-center space-x-2 rounded-md p-3 font-semibold pl-8 mt-2"
+              : "text-[#99CC33] flex justify-start items-center space-x-2 rounded-md p-3 pl-8 hover:bg-[#EDF0F9] font-semibold mt-2"
           }
         >
           <AiOutlineUserAdd className="text-base" />
@@ -88,8 +135,8 @@ const Sidebar = () => {
           to="enrolled-courses"
           className={({ isActive }) =>
             isActive
-              ? "bg-[#99CC33] text-white flex justify-start items-center space-x-2 rounded-md p-3 font-semibold pl-8 font-semibold"
-              : "text-[#99CC33] flex justify-start items-center space-x-2 rounded-md p-3 pl-8 hover:bg-[#EDF0F9] font-semibold"
+              ? "bg-[#99CC33] text-white flex justify-start items-center space-x-2 rounded-md p-3 font-semibold pl-8 mt-2"
+              : "text-[#99CC33] flex justify-start items-center space-x-2 rounded-md p-3 pl-8 hover:bg-[#EDF0F9] font-semibold mt-2"
           }
         >
           <BsBook className="text-base" />
@@ -100,8 +147,8 @@ const Sidebar = () => {
           to="wishlist"
           className={({ isActive }) =>
             isActive
-              ? "bg-[#99CC33] text-white flex justify-start items-center space-x-2 rounded-md p-3 font-semibold pl-8 font-semibold"
-              : "text-[#99CC33] flex justify-start items-center space-x-2 rounded-md p-3 pl-8 hover:bg-[#EDF0F9] font-semibold"
+              ? "bg-[#99CC33] text-white flex justify-start items-center space-x-2 rounded-md p-3 font-semibold pl-8 mt-2"
+              : "text-[#99CC33] flex justify-start items-center space-x-2 rounded-md p-3 pl-8 hover:bg-[#EDF0F9] font-semibold mt-2"
           }
         >
           <AiOutlineHeart className="text-base" />
@@ -112,8 +159,8 @@ const Sidebar = () => {
           to="reviews"
           className={({ isActive }) =>
             isActive
-              ? "bg-[#99CC33] text-white flex justify-start items-center space-x-2 rounded-md p-3 font-semibold pl-8 font-semibold"
-              : "text-[#99CC33] flex justify-start items-center space-x-2 rounded-md p-3 pl-8 hover:bg-[#EDF0F9] font-semibold"
+              ? "bg-[#99CC33] text-white flex justify-start items-center space-x-2 rounded-md p-3 font-semibold pl-8 mt-2"
+              : "text-[#99CC33] flex justify-start items-center space-x-2 rounded-md p-3 pl-8 hover:bg-[#EDF0F9] font-semibold mt-2"
           }
         >
           <AiOutlineStar className="text-base" />
@@ -124,8 +171,8 @@ const Sidebar = () => {
           to="purchase-history"
           className={({ isActive }) =>
             isActive
-              ? "bg-[#99CC33] text-white flex justify-start items-center space-x-2 rounded-md p-3 font-semibold pl-8 font-semibold"
-              : "text-[#99CC33] flex justify-start items-center space-x-2 rounded-md p-3 pl-8 hover:bg-[#EDF0F9] font-semibold"
+              ? "bg-[#99CC33] text-white flex justify-start items-center space-x-2 rounded-md p-3 font-semibold pl-8 mt-2"
+              : "text-[#99CC33] flex justify-start items-center space-x-2 rounded-md p-3 pl-8 hover:bg-[#EDF0F9] font-semibold mt-2"
           }
         >
           <AiOutlineShoppingCart className="text-base" />
@@ -138,8 +185,8 @@ const Sidebar = () => {
           to="settings"
           className={({ isActive }) =>
             isActive
-              ? "bg-[#99CC33] text-white flex justify-start items-center space-x-2 rounded-md p-3 font-semibold pl-8 font-semibold"
-              : "text-[#99CC33] flex justify-start items-center space-x-2 rounded-md p-3 pl-8 hover:bg-[#EDF0F9] font-semibold"
+              ? "bg-[#99CC33] text-white flex justify-start items-center space-x-2 rounded-md p-3  pl-8 font-semibold mt-2"
+              : "text-[#99CC33] flex justify-start items-center space-x-2 rounded-md p-3 pl-8 hover:bg-[#EDF0F9] font-semibold mt-2"
           }
         >
           <AiOutlineSetting className="text-base" />
