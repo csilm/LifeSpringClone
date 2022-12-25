@@ -21,7 +21,9 @@ import { useAuthContext } from "../../hooks/useAuthContext";
 // import logo from '../image/30-removebg-preview.png';
 
 const Sidebar = () => {
-  const { user, role } = useAuthContext();
+  const { user } = useAuthContext();
+  console.log(user?.user);
+  console.log(user?.role);
   const { logout } = useLogout();
   const [open, setOpen] = useState(false);
 
@@ -78,17 +80,19 @@ const Sidebar = () => {
           <MdOutlineDashboard className="text-base" />
           <span className="ml-3">Dashboard</span>
         </NavLink>
-        <NavLink
-          to="addProfessionals"
-          className={({ isActive }) =>
-            isActive
-              ? "bg-[#99CC33] text-white flex justify-start items-center space-x-2 rounded-md p-3 font-semibold pl-8 mt-2"
-              : "text-[#99CC33] flex justify-start items-center space-x-2 rounded-md p-3 pl-8 hover:bg-[#EDF0F9] font-semibold mt-2"
-          }
-        >
-          <SiProtocolsdotio className="text-base" />
-          <span className="ml-3">Professionals</span>
-        </NavLink>
+        {user?.user && user?.role === "admin" && (
+          <NavLink
+            to="addProfessionals"
+            className={({ isActive }) =>
+              isActive
+                ? "bg-[#99CC33] text-white flex justify-start items-center space-x-2 rounded-md p-3 font-semibold pl-8 mt-2"
+                : "text-[#99CC33] flex justify-start items-center space-x-2 rounded-md p-3 pl-8 hover:bg-[#EDF0F9] font-semibold mt-2"
+            }
+          >
+            <SiProtocolsdotio className="text-base" />
+            <span className="ml-3">Professionals</span>
+          </NavLink>
+        )}
         <NavLink
           to="addCategory"
           className={({ isActive }) =>
@@ -100,7 +104,7 @@ const Sidebar = () => {
           <AiOutlineNodeIndex className="text-base" />
           <span className="ml-3">Category</span>
         </NavLink>
-        {user && role === "admin" && (
+        {user?.user && user?.role === "admin" && (
           <NavLink
             to="addCourse"
             className={({ isActive }) =>
@@ -113,7 +117,7 @@ const Sidebar = () => {
             <span className="ml-3">Add Courses</span>
           </NavLink>
         )}
-        {user && role === "admin" && (
+        {user?.user && user?.role === "admin" && (
           <NavLink
             to="addBlogs"
             className={({ isActive }) =>
