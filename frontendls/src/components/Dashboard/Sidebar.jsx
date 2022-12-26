@@ -22,8 +22,6 @@ import { useAuthContext } from "../../hooks/useAuthContext";
 
 const Sidebar = () => {
   const { user } = useAuthContext();
-  console.log(user?.user);
-  console.log(user?.role);
   const { logout } = useLogout();
   const [open, setOpen] = useState(false);
 

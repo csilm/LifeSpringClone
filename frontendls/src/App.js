@@ -96,7 +96,10 @@ function App() {
           <Route path="/clientsReview" element={<ClientsReview />} />
           {/* <Route path="/admin" element={<Admin />} /> */}
 
-          <Route path="/dashboard" element={<DashboardHome />}>
+          <Route
+            path="/dashboard"
+            element={user ? <DashboardHome /> : <Navigate to="/login" />}
+          >
             <Route index element={<ActivePage />} />
             <Route path="profile" element={<Profile />} />
 

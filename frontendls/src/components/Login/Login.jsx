@@ -1,16 +1,21 @@
-import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { useLogin } from "../../hooks/useLogin";
 
 const Login = () => {
-  let navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const { login, error, isLoading } = useLogin();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    login(email, password);
+  };
 
   return (
     <div className="bg-[#050210]">
-      <h1
-        onClick={() => navigate(-1)}
-        className="text-white text-left text-xl pl-10 py-5"
-      >
-        BACK
+      <h1 className="text-white text-left text-xl pl-10 py-5">
+        <Link to="/">BACK</Link>
       </h1>
       <div className="flex justify-center items-center w-3/3">
         <div>
@@ -22,35 +27,31 @@ const Login = () => {
             />
           </div>
           <div>
-            <form className="mt-10">
+            {error && <h3 className="text-red-500 text-xl">{error}</h3>}
+
+            <form onSubmit={handleSubmit} className="mt-10">
               <div className="mb-4">
-                <label
-                  htmlFor="email"
-                  className="block mb-2  font-medium text-white dark:text-gray-300 text-left text-md"
-                >
+                <label className="block mb-2  font-medium text-white dark:text-gray-300 text-left text-md">
                   Email
                 </label>
                 <input
                   style={{ borderBottom: "2px solid white" }}
+                  onChange={(e) => setEmail(e.target.value)}
                   type="email"
-                  id="email"
                   className="w-full bg-transparent text-white border-0 focus:outline-none focus:ring-0"
-                  required=""
+                  required
                 />
               </div>
               <div className="mb-4">
-                <label
-                  htmlFor="password"
-                  className="block mb-2  font-medium text-white dark:text-gray-300 text-left text-md"
-                >
+                <label className="block mb-2  font-medium text-white dark:text-gray-300 text-left text-md">
                   Password
                 </label>
                 <input
                   style={{ borderBottom: "2px solid white" }}
+                  onChange={(e) => setPassword(e.target.value)}
                   type="password"
-                  id="password"
                   className="w-full bg-transparent text-white border-0 focus:outline-none focus:ring-0"
-                  required=""
+                  required
                 />
               </div>
 
@@ -61,13 +62,9 @@ const Login = () => {
                     type="checkbox"
                     value=""
                     className="w-4 h-4 bg-gray-50 rounded border border-gray-300 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800"
-                    required=""
                   />
                 </div>
-                <label
-                  htmlFor="remember"
-                  className="ml-2 text-sm font-medium text-white dark:text-gray-400"
-                >
+                <label className="ml-2 text-sm font-medium text-white dark:text-gray-400">
                   Remember Me
                 </label>
               </div>
@@ -75,6 +72,7 @@ const Login = () => {
                 style={{ width: "50vh" }}
                 type="submit"
                 className="text-black bg-white hover:bg-yellow-300 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-xl px-2 py-3 text-center transition-all duration-300 ease-in-out "
+                disabled={isLoading}
               >
                 LOGIN
               </button>

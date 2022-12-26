@@ -9,10 +9,12 @@ import { useState } from "react";
 import Logo from "../static/img/lifespring-footer-logo.png";
 import { Link } from "react-router-dom";
 import { useAuthContext } from "../../hooks/useAuthContext";
+import { useLogout } from "../../hooks/useLogout";
 // import Blogs from "../Blogs/Blogs";
 
 const Navbar = () => {
   const { user } = useAuthContext();
+  const { logout } = useLogout();
 
   const [color, setColor] = useState(false);
   const ChangeColor = () => {
@@ -59,7 +61,11 @@ const Navbar = () => {
             )}
           </div>
           <div className="text cursor-pointer text-white hover:text-yellow-400 trns font-semibold px-3 bder">
-            <Link to="/signup"> Register </Link>{" "}
+            {user ? (
+              <button onClick={() => logout()}>Logout</button>
+            ) : (
+              <Link to="/signup"> Register </Link>
+            )}
           </div>
           <div className="text cursor-pointer text-white hover:text-yellow-400 trns font-semibold px-3 ">
             <Link
