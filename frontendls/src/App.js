@@ -1,4 +1,4 @@
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './App.css';
 import Homepage from './components/Homepage/Homepage';
@@ -27,46 +27,58 @@ import Therapist from "./components/Prof_Sub/Therapist";
 import Nutritionist from "./components/Prof_Sub/Nutritionist";
 import Paediatrics from "./components/Prof_Sub/Paediatrics";
 import Courses from "./components/Courses/Courses";
+import Appointment from "./components/Appointment/Appointment";
+import ProfessionalDetails from "./components/ProfessionalDetails/ProfessionalDetails";
+import AppoinmentTime from "./components/Appointment/AppoinmentTime";
+import AppointmentDetails from "./components/Appointment/AppointmentDetails";
+import Orders from "./components/Cart/Orders";
+
+
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <Routes>
+        <Routes>
 
-        <Route path="/" element={<Homepage/>}/>
-        <Route path="/login" element={<Login />}/>
-        <Route path="/signup" element={<Signup />}/>
-        
-        <Route path = "/allProffesionals" element = {<Prof/>}/>
-        <Route path = "/psychiatrist" element = {<Psychiatrist/>}/>
-        <Route path = "/psychologist" element = {<Psychologist/>}/>
-        <Route path = "/counselor" element = {<Counselor/>}/>
-        <Route path = "/child" element = {<Child/>}/>
-        <Route path = "/dermatologist" element = {<Dermatologist/>}/>
-        <Route path = "/sexual-health" element = {<Sexual />}/>
-        <Route path = "/gynechologist" element = {<Gynecologists />}/>
-        <Route path = "/internal-med" element = {<Internal />}/>
-        <Route path = "/therapist" element = {<Therapist />}/>
-        <Route path = "/ent" element = {<ENT />}/>
-        <Route path = "/nutritionist" element = {<Nutritionist />}/>
-        <Route path = "/paediatrics" element = {<Paediatrics />}/>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
 
-
-        <Route path = "/listOfServices" element = {<ListOfOurServices/>}/>
-        <Route path = "/psychologicalCounseling" element = {<PsychologicalCounseling/>}/>
-        <Route path = "/corporateService" element = {<CorporateService/>}/>
-        <Route path = "/childDevelopment" element = {<ChildDevelopement/>}/>
-        <Route path = "/mentalHealthTest" element = {<MentalHealthTest/>}/>
-
-        <Route path = "/courses" element = {<Courses />}/>
-
-        <Route path = "/clientsFeedback" element = {<ClientsFBFull/>}/>
-        <Route path = "/clientsReview" element = {<ClientsReview/>}/>
+          <Route path="/allProffesionals" element={<Prof />} />
+          <Route path="/psychiatrist" element={<Psychiatrist />} />
+          <Route path="/psychologist" element={<Psychologist />} />
+          <Route path="/counselor" element={<Counselor />} />
+          <Route path="/child" element={<Child />} />
+          <Route path="/dermatologist" element={<Dermatologist />} />
+          <Route path="/sexual-health" element={<Sexual />} />
+          <Route path="/gynechologist" element={<Gynecologists />} />
+          <Route path="/internal-med" element={<Internal />} />
+          <Route path="/therapist" element={<Therapist />} />
+          <Route path="/ent" element={<ENT />} />
+          <Route path="/nutritionist" element={<Nutritionist />} />
+          <Route path="/paediatrics" element={<Paediatrics />} />
 
 
-      </Routes>
-    </BrowserRouter>
+          <Route path="/listOfServices" element={<ListOfOurServices />} />
+          <Route path="/psychologicalCounseling" element={<PsychologicalCounseling />} />
+          <Route path="/corporateService" element={<CorporateService />} />
+          <Route path="/childDevelopment" element={<ChildDevelopement />} />
+          <Route path="/mentalHealthTest" element={<MentalHealthTest />} />
+
+          <Route path="/courses" element={<Courses />} />
+
+          <Route path="/clientsFeedback" element={<ClientsFBFull />} />
+          <Route path="/clientsReview" element={<ClientsReview />} />
+          <Route path="/appoinment" element={<Appointment></Appointment>}></Route>
+          <Route path="/allProffesionals/profDetails/:professionalsId" element={<ProfessionalDetails></ProfessionalDetails>}></Route>
+          <Route path="/appoinmenttime" element={<AppoinmentTime></AppoinmentTime>}></Route>
+          <Route path="/appoinmentdetails" element={<AppointmentDetails></AppointmentDetails>}></Route>
+          <Route path="/orders" element={<Orders></Orders>}></Route>
+
+
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
