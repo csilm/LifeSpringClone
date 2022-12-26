@@ -44,6 +44,7 @@ const Courses = () => {
                   <CourseCard name={items.name} price={items.price} tag1={items.tag1} tag3={items.tag3} tag2={items.tag2} info={items.info} img={items.img} details={items.details} />
                 )
               }
+              return null
             })
           }
           {on === 'certificate' &&

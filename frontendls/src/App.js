@@ -1,18 +1,19 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import './App.css';
-import Homepage from './components/Homepage/Homepage';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
+import Homepage from "./components/Homepage/Homepage";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import Prof from "./components/Proff/Prof";
+import SingleVideo from "./components/Homepage/SingleVideo";
+import SingleCourse from "./components/SingleCourse/SingleCourse";
 import Login from "./components/Login/Login";
 import Signup from "./components/Login/Signup/Signup";
-
-import Prof from "./components/Proff/Prof"
 import ListOfOurServices from "./components/ServicesPages/ListOfOurServices";
 import PsychologicalCounseling from "./components/ServicesPages/PsychologicalCounseling";
 import CorporateService from "./components/ServicesPages/CorporateService";
 import ChildDevelopement from "./components/ServicesPages/ChildDevelopement";
 import MentalHealthTest from "./components/ServicesPages/MentalHealthTest";
-import Psychiatrist from "./components/Prof_Sub/Psychiatrist"
+import Psychiatrist from "./components/Prof_Sub/Psychiatrist";
 import ClientsFBFull from "./components/Testomonials/ClientsFBFull";
 import ClientsReview from "./components/Testomonials/ClientsReview";
 import Psychologist from "./components/Prof_Sub/Psychologist";
@@ -27,15 +28,15 @@ import Therapist from "./components/Prof_Sub/Therapist";
 import Nutritionist from "./components/Prof_Sub/Nutritionist";
 import Paediatrics from "./components/Prof_Sub/Paediatrics";
 import Courses from "./components/Courses/Courses";
+import { useAuthContext } from "./hooks/useAuthContext";
 import Appointment from "./components/Appointment/Appointment";
 import ProfessionalDetails from "./components/ProfessionalDetails/ProfessionalDetails";
 import AppoinmentTime from "./components/Appointment/AppoinmentTime";
 import AppointmentDetails from "./components/Appointment/AppointmentDetails";
 import Orders from "./components/Cart/Orders";
 
-
-
 function App() {
+  const { user } = useAuthContext();
   return (
     <div className="App">
       <BrowserRouter>
@@ -59,6 +60,9 @@ function App() {
           <Route path="/nutritionist" element={<Nutritionist />} />
           <Route path="/paediatrics" element={<Paediatrics />} />
 
+          <Route path="/clientsFeedback" element={<ClientsFBFull />} />
+          <Route path="/clientsReview" element={<ClientsReview />} />
+          {/* <Route path="/admin" element={<Admin />} /> */}
 
           <Route path="/listOfServices" element={<ListOfOurServices />} />
           <Route path="/psychologicalCounseling" element={<PsychologicalCounseling />} />

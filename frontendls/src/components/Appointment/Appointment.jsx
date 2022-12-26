@@ -20,7 +20,7 @@ const Appointment = () => {
             <div className='min-h-full mx-10 md:mx-52 mt-10  mb-5 flex gap-1 justify-center'>
                 <div className='w-60'>
                     <h5 className=' font-bold' style={{ color: "#11b24c" }}>1.Service </h5>
-                    <Progress className=' h-4 rounded-l-lg' style={{ backgroundColor: "#11b24c" }} value={100} color="green" />
+                    <Progress className=' h-4 rounded-l-lg' style={{ backgroundColor: "#11b24c" }} value={100} color="#11b24c" />
 
                 </div>
                 <div className='w-60'>
