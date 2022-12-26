@@ -1,6 +1,6 @@
 import React from "react";
 import { BiError } from "react-icons/bi";
-import { BsPlayBtn, BsCheckCircle, BsDot } from "react-icons/bs";
+import { BsPlayBtn, BsCheckCircle } from "react-icons/bs";
 import { SlBookOpen } from "react-icons/sl";
 import DashboardHeader from "./DashboardHeader";
 
@@ -30,20 +30,24 @@ const ActivePage = () => {
                     to Profile <span className="text-semibold">Settings</span>
                   </p>
                   <ul className="flex gap-4">
-                  {/* <BsDot className="text-7xl text-orange-400" /> */}
-                    <li>Set Your <span className="text-semibold">Profile Photo</span></li>
-                    <li>Set Your <span className="text-semibold">Profile Photo</span></li>
+                    {/* <BsDot className="text-7xl text-orange-400" /> */}
+                    <li>
+                      Set Your{" "}
+                      <span className="text-semibold">Profile Photo</span>
+                    </li>
+                    <li>
+                      Set Your{" "}
+                      <span className="text-semibold">Profile Photo</span>
+                    </li>
                   </ul>
                 </div>
               </div>
             </div>
 
             <div className="p-6 mt-6">
-            <h2>67% Complete.You are almost done!</h2>
+              <h2>67% Complete.You are almost done!</h2>
               <div className="justify-start space-x-8 items-center">
-                
                 <div className="w-full  max-w-sm my-4 mx-auto rounded-lg overflow-hidden border border-gray-300">
-                  
                   <div
                     className="bg-yellow-300 text-xs leading-none py-1"
                     style={{ width: "67%" }}

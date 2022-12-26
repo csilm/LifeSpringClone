@@ -4,16 +4,16 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 
 const userRoutes = require("./routes/userRoutes");
-const courseRoutes = require("./routes/cousesRoutes");
+const courseRoutes = require("./routes/courseRoutes");
 
-// exxpress app
+// express app
 const app = express();
 app.use(express.json());
 
 // middleware
 app.use(cors());
-app.use(express.json({ limit: "50mb" }));
-app.use(express.urlencoded({ limit: "50mb" }));
+// app.use(express.json({ limit: "50mb" }));
+// app.use(express.urlencoded({ limit: "50mb" }));
 
 // route
 app.get("/", (req, res) => {
