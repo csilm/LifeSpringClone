@@ -59,7 +59,13 @@ const Navbar = () => {
             )}
           </div>
           <div className="text cursor-pointer text-white hover:text-yellow-400 trns font-semibold px-3 bder">
-            <Link to="/signup"> Register </Link>{" "}
+            {user? (
+                <Link to="/logout"> Logout </Link>
+            ):(
+              <Link to="/signup"> Register </Link>
+            )
+            }
+
           </div>
           <div className="text cursor-pointer text-white hover:text-yellow-400 trns font-semibold px-3 ">
             <Link
