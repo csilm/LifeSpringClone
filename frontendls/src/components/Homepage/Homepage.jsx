@@ -12,21 +12,32 @@ import HCourses from './HCourses';
 // import Banner from './Banner';
 import OurClients from './OurClients'
 import HealthServices from './HealthServices'
+
+
 import GotoTopBtn from '../GotoTopBtn/GotoTopBtn';
+
 import './common.css'
 import Img from './Overcoming-Depression.png'
 import { useState } from 'react';
 
+
+
+import './common.css';
+
+
+
+
 const Homepage = () => {
-   const [load , setLoad] = useState(false);
-   const [hide,sethide] = useState(true)
-      
+  const [load, setLoad] = useState(false);
+  const [hide, sethide] = useState(true)
+
   return (
     <div>
-      {load===false &&<div id="pop" className={hide===true? 'pop_Up': 'hidden'}>
+      {load === false && <div id="pop" className={hide === true ? 'pop_Up' : 'hidden'}>
         <div className="contain">
-          <button id="close" onClick={()=>{setLoad(true)
-          sethide(false)
+          <button id="close" onClick={() => {
+            setLoad(true)
+            sethide(false)
           }} className="button">&times;</button>
           <div className="top">
             <div >
@@ -49,14 +60,14 @@ const Homepage = () => {
       <AfterBanner />
       {/* <Courses /> */}
       <HCourses />
-      <HPContent/>
+      <HPContent />
       <OurClients />
       <HealthServices />
-      <ClientsFeedBack/>
-      <HealthBlog/>
-      <Video/>
-      <GotoTopBtn/>
-      <Footer/>
+      <ClientsFeedBack />
+      <HealthBlog />
+      <Video />
+      <GotoTopBtn />
+      <Footer />
     </div>
   )
 }

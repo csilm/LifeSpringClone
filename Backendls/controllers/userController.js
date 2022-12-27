@@ -42,7 +42,7 @@ const loginUser = async (req, res) => {
   const { email, password } = req.body;
 
   try {
-    const user = await UserModel.login(email, password).select("-password");
+    const user = await UserModel.login(email, password);
     const token = createToken(user._id);
     const role = user.role;
 
