@@ -47,7 +47,7 @@ const ProfessionalDetails = () => {
                             <Link to="/appoinment">
                                 <div className='flex'>
                                     <span className='title-font font-medium text-3xl text-gray-900 '></span>
-                                    <button className='flex ml-auto text-white bg-[#106731] border-0 py-2 px-6 focus:outline-none hover:bg-[#043919] rounded ml-0'>
+                                    <button className='flex text-white bg-[#106731] border-0 py-2 px-6 focus:outline-none hover:bg-[#043919] rounded ml-0'>
                                         Book an Appointment
                                     </button>
                                 </div>
