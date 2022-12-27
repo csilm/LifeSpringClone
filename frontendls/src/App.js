@@ -48,6 +48,11 @@ import ResetPassword from "./components/Dashboard/Settings/ResetPassword";
 import AddBlog from "./components/Dashboard/AddBlog";
 import AddCategory from "./components/Dashboard/AddCategory";
 import AddProfessionals from "./components/Dashboard/AddProfessionals";
+import Appointment from "./components/Appointment/Appointment";
+import Orders from "./components/Cart/Orders";
+import AppointmentDetails from "./components/Appointment/AppointmentDetails";
+import ProfessionalDetails from "./components/ProfessionalDetails/ProfessionalDetails";
+import AppoinmentTime from "./components/Appointment/AppoinmentTime";
 
 function App() {
   const { user } = useAuthContext();
@@ -140,6 +145,12 @@ function App() {
               <Route path="reset-password" element={<ResetPassword />} />
             </Route>
           </Route>
+
+          <Route path="/appoinment" element={<Appointment></Appointment>}></Route>
+          <Route path="/allProffesionals/profDetails/:professionalsId" element={<ProfessionalDetails></ProfessionalDetails>}></Route>
+          <Route path="/appoinmenttime" element={<AppoinmentTime></AppoinmentTime>}></Route>
+          <Route path="/appoinmentdetails" element={<AppointmentDetails></AppointmentDetails>}></Route>
+          <Route path="/orders" element={<Orders></Orders>}></Route>
         </Routes>
       </BrowserRouter>
     </div>
