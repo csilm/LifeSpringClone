@@ -54,7 +54,6 @@ import AppointmentDetails from "./components/Appointment/AppointmentDetails";
 import ProfessionalDetails from "./components/ProfessionalDetails/ProfessionalDetails";
 import AppoinmentTime from "./components/Appointment/AppoinmentTime";
 
-
 function App() {
   const { user } = useAuthContext();
   return (
