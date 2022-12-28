@@ -18,7 +18,7 @@ const ProfessionalDetails = () => {
 
     return (
         <div>
-            <Navbar></Navbar>
+            <Navbar/>
             <div className='w-full flex flex-row h-auto bg-slate-100 py-4 text-start px-10 text-md font-mono text-slate-600 font-semibold'>
                 <Link to={"/"}
                     className='hover:text-black mark flex flex-col flex-wrap first-letter mr-2' >Home
