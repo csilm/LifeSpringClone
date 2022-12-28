@@ -28,7 +28,7 @@ const Card = ({ img, prof, name, degree, id }) => {
                     </div>
                     <div className='text-left'>
                         {/* <a href='/appointment' className="text-sm text-lime-700 font-bold hover:text-black cursor-pointer"> Book an appointment </a> */}
-                        <Link to={"/appoinment"} onClick={()=>{window.location.replace("http://localhost:5000/ssl")}}
+                        <Link to={"/appoinment"} 
                             className="text-sm text-lime-700 font-bold hover:text-black cursor-pointer"
                         >Book an appointment</Link>
 

@@ -298,21 +298,21 @@ const Navbar = () => {
                   </Link>
                 </li>
 
-                {/* <li className="inline px-4 text-black hover:text-blue-600 cursor-pointer font-semibold text-base tracking-wide">
+                <li className="inline px-4 text-black hover:text-blue-600 cursor-pointer font-semibold text-base tracking-wide">
                   <button className="btn">
                     <Link to="/blog">Blogs</Link> <div className="ub1"></div>
                   </button>
-                </li> */}
+                </li>
 
-                <li className="inline px-4 text-black hover:text-blue-600 cursor-pointer font-semibold text-base tracking-wide">
+                {/* <li className="inline px-4 text-black hover:text-blue-600 cursor-pointer font-semibold text-base tracking-wide">
                   {" "}
                   <Link to="/blog">
                     {" "}
                     <button className="btn">
                       Blogs<div className="ub1"></div>
                     </button>
-                  </Link>
-                </li>
+                  </a>
+                </li> */}
 
                 <li className="dropdown inline px-4 text-black hover:text-blue-700 cursor-pointer font-semibold text-base tracking-wide">
                   <button className="btn">
