@@ -49,6 +49,7 @@ import AddBlog from "./components/Dashboard/AddBlog";
 import AddCategory from "./components/Dashboard/AddCategory";
 import AddProfessionals from "./components/Dashboard/AddProfessionals";
 
+
 function App() {
   const { user } = useAuthContext();
   return (
@@ -64,6 +65,7 @@ function App() {
             path="/signup"
             element={!user ? <Signup /> : <Navigate to="/dashboard" />}
           />
+          
           <Route path="/allProffesionals" element={<Prof />} />
           <Route path="/singleVideo/:id" element={<SingleVideo />} />
           <Route path="/singleCourse" element={<SingleCourse />} />

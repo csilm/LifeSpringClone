@@ -11,9 +11,7 @@ const Card = ({ img, prof, name, degree, id }) => {
             <div className="bg-white max-w-sm">
                 <div className='overflow-hidden rounded-lg'>
                     <Link to={`/allProffesionals/profDetails/${id}`}>
-                        <img
-                            className="hover:scale-125 ease-in-out duration-500" src={img} alt="" />
-
+                        <img className="hover:scale-125 ease-in-out duration-500" src={img} alt="" />
                     </Link>
 
 
@@ -30,7 +28,7 @@ const Card = ({ img, prof, name, degree, id }) => {
                     </div>
                     <div className='text-left'>
                         {/* <a href='/appointment' className="text-sm text-lime-700 font-bold hover:text-black cursor-pointer"> Book an appointment </a> */}
-                        <Link to={"/appoinment"}
+                        <Link to={"/appoinment"} onClick={()=>{window.location.replace("http://localhost:5000/ssl")}}
                             className="text-sm text-lime-700 font-bold hover:text-black cursor-pointer"
                         >Book an appointment</Link>
 
