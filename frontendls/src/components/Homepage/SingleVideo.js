@@ -57,7 +57,7 @@ const SingleVideo = () => {
           </Link>
         </div>
         <div className="flex justify-center items-center">
-          {id === 1 && (
+          {id == 1 && (
             <div>
               <iframe
                 className="m-20"
@@ -73,7 +73,7 @@ const SingleVideo = () => {
             </div>
           )}
 
-          {id === 2 && (
+          {id == 2 && (
             <iframe
               className="m-20"
               width="845"
@@ -85,7 +85,7 @@ const SingleVideo = () => {
               allowfullscreen
             ></iframe>
           )}
-          {id === 3 && (
+          {id == 3 && (
             <iframe
               className="m-20"
               width="845"
@@ -97,7 +97,7 @@ const SingleVideo = () => {
               allowfullscreen
             ></iframe>
           )}
-          {id === 4 && (
+          {id == 4 && (
             <iframe
               width="845"
               height="475"
