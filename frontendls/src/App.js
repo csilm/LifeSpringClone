@@ -69,6 +69,7 @@ function App() {
             path="/signup"
             element={!user ? <Signup /> : <Navigate to="/logout" />}
           />
+          
           <Route path="/allProffesionals" element={<Prof />} />
           <Route path="/singleVideo/:id" element={<SingleVideo />} />
           <Route path="/singleCourse" element={<SingleCourse />} />

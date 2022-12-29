@@ -1,6 +1,6 @@
 import { Progress } from '@material-tailwind/react';
 import React, { useState } from 'react';
-import { Calendar } from 'react-calendar';
+import Calendar from 'react-calendar'
 import { Link } from 'react-router-dom';
 import Footer from '../Footer/Footer';
 import Navbar from '../Navbar/Navbar';
@@ -65,7 +65,7 @@ const AppoinmentTime = () => {
                 <div className='flex'>
                     {/* <h1 className='text-center'>React Calendar</h1> */}
                     <div className='calendar-container rounded ' >
-                        <Calendar onChange={setDate} value={date} />
+                     <Calendar onChange={setDate} value={date} />
                     </div>
                     <div className='flex flex-col'>
 

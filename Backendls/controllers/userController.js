@@ -2,6 +2,7 @@ const jwt = require("jsonwebtoken");
 require("dotenv").config();
 const bcrypt = require("bcrypt");
 const UserModel = require("../models/userModel");
+const OtpModel = require("../models/otpModel");
 
 // create token
 const createToken = (_id) => {
@@ -85,28 +86,91 @@ const updateUser = async (req, res) => {
   }
 };
 
-// change password
-const changePassword = async (req, res) => {
-  try {
-    const user_id = req.user;
-    const password = req.body.password;
-
-    const newPassword = await securePassword(password);
-
-    const user = await UserModel.findOneAndUpdate(user_id, {
-      password: newPassword,
+// email send
+const emailSend = async (req, res) => {
+  const data = await UserModel.findOne({ email: req.body.email });
+  console.log(data);
+  const responseType = {};
+  if (data) {
+    let otpcode = Math.floor(Math.random() * 10000 + 1);
+    let otpData = new OtpModel({
+      email: req.body.email,
+      code: otpcode,
+      expiresIn: new Date().getTime() + 300 * 1000,
     });
-    res.status(200).json({ message: "Password change successfully" });
-  } catch (error) {
-    res.status(400).json({ error: error.message });
+    let otpResponse = await otpData.save();
+    responseType.statusText = "Success";
+    responseType.message = "Please check your mail";
+  } else {
+    responseType.statusText = "Error";
+    responseType.message = "Email is not exists";
   }
+  res.status(200).json(responseType);
 };
 
+// change password
+const changePassword = async (req, res) => {
+  let data = await OtpModel.find({
+    email: req.body.email,
+    code: req.body.otpcode,
+  });
+  const response = {};
+
+  if (data) {
+    let currentTime = new Date().getTime();
+    let diff = data.expiresIn - currentTime;
+
+    if (diff < 0) {
+      response.message = "Token Expire";
+      response.statusText = "Error";
+    } else {
+      let user = await UserModel.findOne({ email: req.body.email });
+      user.password = req.body.password;
+      user.save();
+      response.message = "Password Changes successfully";
+      response.statusText = "Success";
+    }
+  } else {
+    response.message = "Invalid Otp";
+    response.statusText = "Error";
+  }
+  res.status(200).json(response);
+};
+
+// Email formate
+const mailer = (email, otp) => {
+  var nodemailer = require("nodemailer");
+  var transporter = nodemailer.createTransport({
+    service: "gmail",
+    port: 587,
+    secure: false,
+    auth: {
+      user: "mostafizur15-10681@diu.edu.bd",
+      pass: "9898998",
+    },
+  });
+
+  var mailOptions = {
+    from: "mostafizur15-10681@diu.edu.bd",
+    to: "sourav10681@gmail.com",
+    subject: "Change Password",
+    text: "Thank you sir",
+  };
+
+  transporter.sendMail(mailOptions, function (error, info) {
+    if (error) {
+      console.log(error);
+    } else {
+      console.log("success");
+    }
+  });
+};
 // export modules
 module.exports = {
   signupUser,
   loginUser,
   userProfile,
   updateUser,
+  emailSend,
   changePassword,
 };

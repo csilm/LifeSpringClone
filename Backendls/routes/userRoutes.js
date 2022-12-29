@@ -1,5 +1,10 @@
 const express = require("express");
-const { signupUser, loginUser } = require("../controllers/userController");
+const {
+  signupUser,
+  loginUser,
+  emailSend,
+  changePassword,
+} = require("../controllers/userController");
 
 // const validation = require("../middlewares/validationMiddleware");
 // const {
@@ -18,6 +23,10 @@ router.post("/signup", signupUser);
 
 // login user
 router.post("/login", loginUser);
+
+router.post("/email-send", emailSend);
+
+router.post("/change-password", changePassword);
 
 // export modules
 module.exports = router;
