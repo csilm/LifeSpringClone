@@ -21,7 +21,6 @@
     "nodemailer": "^6.8.0",
     "nodemon": "^2.0.20",
     "sslcommerz": "^1.7.0",
-    "sslcommerz-lts": "^1.1.0",
     "yup": "^0.32.11"
   }
 }
