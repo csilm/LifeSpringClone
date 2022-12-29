@@ -62,6 +62,7 @@ const ProfessionalDetails = () => {
                                 className='text-md title-font text-gray-900 tracking-widest'
                                 style={{ cursor: 'auto' }}>
                                 {Appointment[(professionalsId - 1)]?.prof}
+                                {Appointment[(professionalsId - 1)]?.name}
                             </h2>
 
 
