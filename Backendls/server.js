@@ -14,10 +14,10 @@ const blogsRoutes = require("./routes/blogsRoutes");
 const app = express();
 app.use(express.json());
 
-app.use(json());
-app.use(urlencoded({
-  extended: false
-}));
+// app.use(json());
+// app.use(urlencoded({
+//   extended: false
+// }));
 
 
 // middleware
@@ -41,21 +41,17 @@ app.use("/api/blogs", blogsRoutes);
 
 // connect to DB
 mongoose.set('strictQuery', true);
+
 try {
-  mongoose
-  .connect(`${process.env.MONGO_DB_URL}`)
-  .then(() => {
-    // listen for request
-    app.listen(4000, () => {
-      console.log("I on listen for port 4000 😎");
-    });
-  })
-  .catch((error) => {
-    console.log(error);
-  });
+  mongoose.connect(`${process.env.MONGO_DB_URL}`);
 } catch (error) {
-  console.log(err);
+  console.log(error);
 }
+
+app.listen(4000 || process.env.PORT, () => {
+  console.log("I on listen for port 4000 😎");
+});
+
 
 
 app.use("/ssl",async(req,res,next)=>{
