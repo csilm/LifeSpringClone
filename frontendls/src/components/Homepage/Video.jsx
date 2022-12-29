@@ -16,8 +16,9 @@ const Video = () => {
         </p>
       </div>
 
-      <div className="mx-20">
-        <div className="grid grid-cols-4 gap-8">
+      <div className="lg:mx-20 mx-5">
+        <div className="grid lg:grid-cols-4 lg:gap-8">
+          <div className="my-5">
           <Link to="/singleVideo/1">
             <a href="https://www.lifespringint.com/#lg=1&slide=0">
               <div className="">
@@ -36,12 +37,14 @@ const Video = () => {
                     </div>
                   </div>
                 </div>
-                <p className="font-bold text-gray-400 text-xl">
+                <p className="font-bold text-gray-400 lg:text-xl">
                   প্রেসার বাড়লে যা করবেন
                 </p>
               </div>
             </a>
           </Link>
+          </div>
+          <div className="my-5">
           <Link to="/singleVideo/2">
             <a href="https://www.lifespringint.com/#lg=1&slide=0">
               <div className="">
@@ -60,12 +63,14 @@ const Video = () => {
                     </div>
                   </div>
                 </div>
-                <p className="font-bold text-gray-400 text-xl">
+                <p className="font-bold text-gray-400 lg:text-xl">
                   মেয়েদের অতিরিক্ত সাদা স্রাব
                 </p>
               </div>
             </a>
           </Link>
+          </div>
+          <div className="my-5">
           <Link to="/singleVideo/3">
             <a href="https://www.lifespringint.com/#lg=1&slide=0">
               <div className="">
@@ -84,12 +89,14 @@ const Video = () => {
                     </div>
                   </div>
                 </div>
-                <p className="font-bold text-gray-400 text-xl">
+                <p className="font-bold text-gray-400 lg:text-xl">
                   বিয়ের পরেও তাকে মনে পড়ে
                 </p>
               </div>
             </a>
           </Link>
+          </div>
+          <div className="my-5">
           <Link to="/singleVideo/4">
             <div className="">
               <div className="box hover:scale-105 ease-in-out duration-1000">
@@ -107,11 +114,12 @@ const Video = () => {
                   </div>
                 </div>
               </div>
-              <p className="font-bold text-gray-400 text-xl">
+              <p className="font-bold text-gray-400 lg:text-xl">
                 অভিভাবক হিসেবে করণীয়
               </p>
             </div>
           </Link>
+          </div>
         </div>
       </div>
     </div>

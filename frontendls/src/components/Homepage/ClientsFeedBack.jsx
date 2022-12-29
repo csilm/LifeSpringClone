@@ -52,8 +52,8 @@ const ClientsFeedBack = () => {
                     <div className="testimonialQuoteIcon">
                         <RiDoubleQuotesR className='text-lg' style={iconStyle} />
                     </div>
-                    <div className='mb-5'>
-                        <div className="img overflow-hidden rounded-full w-16 h-16 mx-[47%]">
+                    <div className='mb-10'>
+                        <div className="c-img overflow-hidden rounded-full w-16 lg:mx-[47%] mx-[40%]">
                             <img src={information.img} alt="" />
                         </div>
                     </div>
