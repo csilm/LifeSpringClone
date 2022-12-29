@@ -21,9 +21,13 @@ app.use(express.json());
 
 
 // middleware
-app.use(cors());
-// app.use(express.json({ limit: "50mb" }));
-// app.use(express.urlencoded({ limit: "50mb" }));
+try {
+  app.use(cors());
+  app.use(express.json({ limit: "50mb" }));
+  app.use(express.urlencoded({ limit: "50mb" }));
+} catch (error) {
+  console.log(error);
+}
 
 // route
 app.get("/", (req, res) => {
@@ -48,9 +52,6 @@ try {
   console.log(error);
 }
 
-app.listen(4000 || process.env.PORT, () => {
-  console.log("I on listen for port 4000 😎");
-});
 
 
 
@@ -133,3 +134,6 @@ app.post("/ssl-payment-ipn",async(req,res,next)=>
     })
 })
 
+app.listen(4000 || process.env.PORT, () => {
+  console.log("I on listen for port 4000 😎");
+});
