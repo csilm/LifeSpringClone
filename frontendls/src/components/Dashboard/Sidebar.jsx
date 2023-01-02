@@ -29,17 +29,17 @@ const Sidebar = () => {
     <div
       className={
         open
-          ? "shadow space-y-4 pt-4 min-h-screen min-w-[56px]  bg-white z-40"
-          : "shadow space-y-4 pt-4 min-h-screen min-w-[280px]  bg-white z-40"
+          ? "shadow space-y-4 pt-4 min-h-screen min-w-[20px]  bg-white z-40"
+          : "shadow space-y-4 pt-4 min-h-screen w-[280px]  bg-white z-40"
       }
     >
       <div className="flex  items-center">
         {open ? (
           <button
             onClick={() => setOpen(!open)}
-            className="px-4 ml-10 block cursor-pointer"
+            className="px-4 ml-6 block cursor-pointer"
           >
-            <AiOutlineBars className="text-2xl text-black " />
+            <AiOutlineBars className="text-2xl text-[#99CC33] " />
           </button>
         ) : (
           <div className="flex justify-between">
@@ -58,7 +58,7 @@ const Sidebar = () => {
               onClick={() => setOpen(!open)}
               className="px-4 cursor-pointer"
             >
-              <AiOutlineClose className="text-3xl text-black" />
+              <AiOutlineClose className="text-3xl text-[#99CC33]" />
             </button>
           </div>
         )}
@@ -66,7 +66,7 @@ const Sidebar = () => {
 
       {/* menu start here */}
 
-      <div className="ml-6">
+      <div className="">
         <NavLink
           to="/dashboard"
           className={({ isActive }) =>

@@ -61,6 +61,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Homepage />} />
+          <Route path="/dashboardabc" element={<DashboardHome />} />
           <Route
             path="/login"
             element={!user ? <Login /> : <Navigate to="/dashboard" />}
