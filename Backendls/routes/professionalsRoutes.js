@@ -1,14 +1,16 @@
 const express = require("express");
 const {
-     createProfessionals,
-     getProfessionals,
-     getProfessional,
-     updateProfessionals,
-     deleteProfessionals,
-} = require("../controllers/professionalsController")
+  createProfessionals,
+  getProfessionals,
+  getProfessional,
+  updateProfessionals,
+  deleteProfessionals,
+} = require("../controllers/professionalsController");
 const validation = require("../middlewares/validationMiddleware");
 const isPsychairtrist = require("../middlewares/isPsychairtrist");
-const { professionalsValidation } = require("../validation/professionalsValidation");
+const {
+  professionalsValidation,
+} = require("../validation/professionalsValidation");
 const userRequireAuth = require("../middlewares/userRequireAuth");
 
 // express router

@@ -16,9 +16,42 @@ const userSchema = new Schema({
     type: String,
     require: true,
   },
+  first: {
+    type: String,
+  },
+  last: {
+    type: String,
+  },
+  jobTitle: {
+    type: String,
+  },
   mobile: {
     type: Number,
     require: true,
+  },
+  bio: {
+    type: String,
+  },
+  facebook: {
+    type: String,
+  },
+  twitter: {
+    type: String,
+  },
+  instagram: {
+    type: String,
+  },
+  printerest: {
+    type: String,
+  },
+  youtube: {
+    type: String,
+  },
+  github: {
+    type: String,
+  },
+  image: {
+    type: String,
   },
   role: {
     type: String,
