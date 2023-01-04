@@ -29,15 +29,20 @@ const Sidebar = () => {
     <div
       className={
         open
-          ? "shadow space-y-4 pt-4 min-h-screen min-w-[20px]  bg-white z-40"
-          : "shadow space-y-4 pt-4 min-h-screen w-[280px]  bg-white z-40"
+          ? "shadow space-y-4 pt-8 min-h-screen w-[80px]  bg-white z-40"
+          : "shadow space-y-4  min-h-screen w-[280px]  bg-white z-40"
       }
     >
+      
+
+      {/* menu start here */}
+
+      <div className="">
       <div className="flex  items-center">
         {open ? (
           <button
             onClick={() => setOpen(!open)}
-            className="px-4 ml-6 block cursor-pointer"
+            className="pb-2 ml-8 block cursor-pointer"
           >
             <AiOutlineBars className="text-2xl text-[#99CC33] " />
           </button>
@@ -63,10 +68,6 @@ const Sidebar = () => {
           </div>
         )}
       </div>
-
-      {/* menu start here */}
-
-      <div className="">
         <NavLink
           to="/dashboard"
           className={({ isActive }) =>
@@ -76,7 +77,7 @@ const Sidebar = () => {
           }
         >
           <MdOutlineDashboard className="text-2xl" />
-          <span className={`ml-3 ${open && "scale-0"}`}>Dashboard</span>
+          <span className={`ml-3 ${open && "hidden"}`}>Dashboard</span>
         </NavLink>
         {user?.user && user?.role === "admin" && (
           <NavLink
@@ -100,7 +101,7 @@ const Sidebar = () => {
           }
         >
           <AiOutlineNodeIndex className="text-2xl" />
-          <span className={`ml-3 ${open && "scale-0"}`}>Category</span>
+          <span className={`ml-3 ${open && "hidden"}`}>Category</span>
         </NavLink>
         {user?.user && user?.role === "admin" && (
           <NavLink
@@ -138,7 +139,7 @@ const Sidebar = () => {
           }
         >
           <AiOutlineUserAdd className="text-2xl" />
-          <span className={`ml-3 ${open && "scale-0"}`}>My Profile</span>
+          <span className={`ml-3 ${open && "hidden"}`}>My Profile</span>
         </NavLink>
 
         <NavLink
@@ -150,7 +151,7 @@ const Sidebar = () => {
           }
         >
           <BsBook className="text-2xl" />
-          <span className={`ml-3 ${open && "scale-0"}`}>Enroll Course</span>
+          <span className={`ml-3 ${open && "hidden"}`}>Enroll Course</span>
         </NavLink>
 
         <NavLink
@@ -162,7 +163,7 @@ const Sidebar = () => {
           }
         >
           <AiOutlineHeart className="text-2xl" />
-          <span className={`ml-3 ${open && "scale-0"}`}>Wishlist</span>
+          <span className={`ml-3 ${open && "hidden"}`}>Wishlist</span>
         </NavLink>
 
         <NavLink
@@ -174,7 +175,7 @@ const Sidebar = () => {
           }
         >
           <AiOutlineStar className="text-2xl" />
-          <span className={`ml-3 ${open && "scale-0"}`}>Reviews</span>
+          <span className={`ml-3 ${open && "hidden"}`}>Reviews</span>
         </NavLink>
 
         <NavLink
@@ -186,10 +187,10 @@ const Sidebar = () => {
           }
         >
           <AiOutlineShoppingCart className="text-2xl" />
-          <span className={`ml-3 ${open && "scale-0"}`}>Purchase History</span>
+          <span className={`ml-3 ${open && "hidden"}`}>Purchase History</span>
         </NavLink>
 
-        <hr />
+        {/* <hr /> */}
 
         <NavLink
           to="settings"
@@ -200,7 +201,7 @@ const Sidebar = () => {
           }
         >
           <AiOutlineSetting className="text-2xl" />
-          <span className={`ml-3 ${open && "scale-0"}`}>Settings</span>
+          <span className={`ml-3 ${open && "hidden"}`}>Settings</span>
         </NavLink>
 
         <button
@@ -208,7 +209,7 @@ const Sidebar = () => {
           className="text-[#99CC33] flex justify-start items-center space-x-2 rounded-md p-3 pl-8 hover:bg-[#EDF0F9] w-full"
         >
           <AiOutlineLogout className="text-2xl text-[#99CC33]" />
-          <span className={`ml-3 ${open && "scale-0"}`}>Logout</span>
+          <span className={`ml-3 ${open && "hidden"}`}>Logout</span>
         </button>
       </div>
     </div>
