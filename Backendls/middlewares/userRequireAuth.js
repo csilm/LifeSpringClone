@@ -9,11 +9,11 @@ const userRequireAuth = async (req, res, next) => {
     res.status(401).send({ message: "Unauthorized User" });
   }
 
-  if (authorization && authorization.startsWith("Bearer")) {
+  if (authorization) {
     try {
       const token = authorization.split(" ")[1];
-      const { _id } = jwt.verify(token, process.env.ACCESS_TOKEN_SECRET);
-      req.user = await UserModel.findById({ _id }).select("-password");
+      const _id = jwt.verify(token, `${process.env.ACCESS_TOKEN_SECRET}`);
+      req.user = await UserModel.findById(_id).select("-password");
       next();
     } catch (error) {
       res.status(401).send({ message: "Unauthorized User" });

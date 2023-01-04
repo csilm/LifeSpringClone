@@ -53,36 +53,81 @@ const loginUser = async (req, res) => {
   }
 };
 
+// const userProfile = async (req, res) => {
+//   try {
+//     const user_id = req.user;
+//     const userProfile = await UserModel.findById(user_id).select("-password");
+//     res.status(200).json(userProfile);
+//   } catch (error) {
+//     res.status(400).json({ error: error.message });
+//   }
+// };
+
 const userProfile = async (req, res) => {
+  const { id } = req.user;
   try {
-    const user_id = req.user;
-    const userProfile = await UserModel.findById(user_id).select("-password");
-    res.status(200).json(userProfile);
+    const user = await UserModel.findById({ _id: id });
+    if (!user) {
+      return res.status(400).json({ error: "Not such a User." });
+    } else {
+      res.status(200).json({
+        user,
+        message: "user gets successfully!",
+      });
+    }
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
 };
-
 // update user info
 const updateUser = async (req, res) => {
   const user_id = req.user;
-  const { name, mobile, about, profile } = req.body;
+  const {
+    email,
+    name,
+    first,
+    last,
+    jobTitle,
+    bio,
+    mobile,
+    facebook,
+    twitter,
+    instagram,
+    printerest,
+    youtube,
+    github,
+    image,
+  } = req.body;
+
+  const responseType = {};
   try {
     const user = await UserModel.findOneAndUpdate(
-      user_id,
+      { _id: user_id },
       {
-        name,
+        first,
+        last,
+        jobTitle,
+        bio,
         mobile,
-        about,
-        profile,
+        facebook,
+        twitter,
+        instagram,
+        printerest,
+        youtube,
+        github,
+        image,
       },
       {
         returnOriginal: false,
       }
     ).select("-password");
     res.status(200).json(user);
+    // responseType.statusText = "Success";
+    // responseType.message = "Please check your mail";
   } catch (error) {
     res.status(400).json({ error: error.message });
+    // responseType.statusText = "Error";
+    // responseType.message = "Email is not exists";
   }
 };
 
