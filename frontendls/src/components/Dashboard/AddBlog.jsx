@@ -1,7 +1,31 @@
-import React from 'react'
-import DashboardHeader from './DashboardHeader'
+import React from "react";
+import { useAuthContext } from "../../hooks/useAuthContext";
+import DashboardHeader from "./DashboardHeader";
 
 const AddBlog = () => {
+  const { user } = useAuthContext();
+
+  const hangleAddBlogs = (e) => {
+    e.preventDefault();
+    const addblogs = {
+      title: e.target.title.value,
+      description: e.target.description.value,
+    };
+
+    console.log(addblogs);
+    fetch("/api/blogs/", {
+      method: "POST",
+      headers: {
+        authorization: `Bearer ${user.user}`,
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify(addblogs),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        // console.log(data);
+      });
+  };
   return (
     <div className="space-y-6 mt-12">
       <DashboardHeader />
@@ -9,7 +33,7 @@ const AddBlog = () => {
       <div className="bg-[#F8F8F8] h-screen">
         <div className="space-y-4 ">
           <div className="mx-auto max-w-6xl e py-20 px-12 lg:px-24 shadow-xl mb-24">
-            <form>
+            <form onSubmit={hangleAddBlogs}>
               <label className="uppercase tracking-wide text-black  font-semibold text-3xl">
                 Add New Blog
               </label>
@@ -18,7 +42,7 @@ const AddBlog = () => {
                   <div className="md:w-full px-3 text-start">
                     <label
                       className="uppercase tracking-wide text-black text-xs font-bold mb-2"
-                      for="company"
+                      htmlFor="company"
                     >
                       Blog Title
                     </label>
@@ -26,6 +50,7 @@ const AddBlog = () => {
                       className="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3"
                       id="application-link"
                       type="text"
+                      name="title"
                       placeholder="Mental Health"
                     />
                   </div>
@@ -34,7 +59,7 @@ const AddBlog = () => {
                   <div className="md:w-full px-3 text-start">
                     <label
                       className="uppercase tracking-wide text-black text-xs font-bold mb-2"
-                      for="application-link"
+                      htmlFor="application-link"
                     >
                       Blog Text
                     </label>
@@ -44,14 +69,20 @@ const AddBlog = () => {
                       type="text"
                       placeholder="http://...."
                     /> */}
-                    <textarea  rows="10" className="w-full bg-gray-200 text-black border border-gray-200 rounded py-3  mb-3  px-0 text-sm  dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400" placeholder="   Write a blog..." required></textarea>
+                    <textarea
+                      rows="10"
+                      className="w-full bg-gray-200 text-black border border-gray-200 rounded py-3  mb-3  px-0 text-sm  dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400"
+                      placeholder="   Write a blog..."
+                      name="description"
+                      required
+                    ></textarea>
                   </div>
                 </div>
                 {/* <div className="-mx-3 md:flex mb-2">
                   <div className="md:w-1/2 px-3 mb-6 md:mb-0 text-start">
                     <label
                       className="uppercase tracking-wide text-black text-xs font-bold mb-2"
-                      for="location"
+                      htmlFor="location"
                     >
                       Price
                     </label>
@@ -65,7 +96,7 @@ const AddBlog = () => {
                   <div className="md:w-1/2 px-3 text-start">
                     <label
                       className="uppercase tracking-wide text-black text-xs font-bold mb-2"
-                      for="job-type"
+                      htmlFor="job-type"
                     >
                       Lessons
                     </label>
@@ -79,7 +110,7 @@ const AddBlog = () => {
                   <div className="md:w-1/2 px-3 text-start">
                     <label
                       className="uppercase tracking-wide text-black text-xs font-bold mb-2"
-                      for="department"
+                      htmlFor="department"
                     >
                       Hours
                     </label>
@@ -104,7 +135,7 @@ const AddBlog = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default AddBlog
+export default AddBlog;
